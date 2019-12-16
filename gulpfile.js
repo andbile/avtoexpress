@@ -55,7 +55,7 @@ function scripts() {
 
 function browserSync() {
     bs.init({
-        proxy: 'petmode'
+        proxy: 'avto'
         //server: 'src'
     });
 }

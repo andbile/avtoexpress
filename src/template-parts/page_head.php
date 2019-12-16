@@ -16,9 +16,3 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-
-
-
-
-
-
