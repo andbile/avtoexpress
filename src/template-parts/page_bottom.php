@@ -3,8 +3,8 @@
 <script src="js/daterangepicker.js"></script>
 <script src="js/jquery.mask.min.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/slick.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>-->
-<script src="js/main.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

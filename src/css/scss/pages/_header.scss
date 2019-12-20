@@ -1,0 +1,373 @@
+.main-menu{
+  position: relative;
+  z-index: 2;
+}
+
+.main-menu__top-menu{
+  position: relative;
+  background-color: $bg-color-primary;
+}
+
+.main-menu__top-menu.fixed{
+  position: fixed;
+  width: 100%;
+  max-width: 1440px;
+  min-width: 320px;
+}
+
+.top-menu__wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.top-menu__wrapper{
+
+  .col-left{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+  }
+
+  .logo-wrp{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    margin-right: 100px;
+  }
+
+  .logo-wrp .logo a{
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 700;
+
+    &:hover{
+      color: $font-color-primary;
+    }
+  }
+
+  .logo-wrp .address-link{
+    white-space: nowrap;
+  }
+
+  .logo-wrp .address-link a{
+    position: relative;
+    padding-left: 18px;
+    color: $font-color-grey;
+    transition: all 0.4s;
+
+    &:before{
+      position: absolute;
+      font-family: 'svgfontregular';
+      content: 'a';
+      font-size: 15px;
+      left: 0;
+    }
+
+    span{
+      border-color: $font-color-grey;
+      border-width: 1px;
+      border-bottom-style: dashed;
+      color: $font-color-grey;
+      transition: all 0.4s;
+    }
+
+    &:hover{
+      color: $font-link-color-hover;
+    }
+
+    &:hover span{
+      border-color: $font-link-color-hover;
+      color: $font-link-color-hover;
+    }
+  }
+
+  // марки машин
+  .brands{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .brands li{
+    margin-right: 40px;
+  }
+  .brands a{
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .brands li:last-child{
+    margin-right: 0;
+  }
+
+  .brands--active a{
+    color: $font-color-grey;
+    transition: color 0.4s;
+  }
+
+  .brands--active a:hover{
+    color: $font-link-color-hover;
+  }
+
+  .main-menu__btn span{
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    height: 10px;
+    width: 36px;
+
+    &:before, &:after{
+      content: '';
+      top: 50%;
+      margin-top: -1px;
+      position: absolute;
+      width: 36px;
+      height: 2px;
+      background-color: $font-color-primary;
+      transition: all 0.5s;
+    }
+
+    &:before{
+     transform: translateY(-3px);
+    }
+
+    &:after{
+      transform: translateY(3px);
+    }
+  }
+
+  .main-menu__btn.active{
+    span:before, span:after{
+      width: 26px;
+    }
+
+    span:before{
+      transform: rotate(45deg);
+    }
+
+    span:after{
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+
+// общие стили для верхнего меню и собменю
+.main-menu{
+  .contacts{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: flex-end;
+  }
+
+  .address{
+    margin-right: 25px;
+    font-size: 14px;
+    color: $font-color-grey;
+    white-space: nowrap;
+  }
+
+  .tel a{
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+}
+
+
+// ---- popup menu ----
+.main-menu__popup-menu{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1000px;
+  opacity: 0;
+  display: none;
+  padding-top: 25px;
+  padding-bottom: 70px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $bg-color-grey;
+}
+
+.main-menu__popup-menu.active{
+  display: flex;
+}
+
+.popup-menu__wrp-left-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup-menu__nav{
+  display: flex;
+  list-style-type: none;
+  font-weight: 700;
+  padding: 0;
+
+  li{
+    margin-bottom: 15px;
+  }
+}
+
+.popup-menu__nav--left{
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 475px;
+  padding: 25px 0 0 0;
+  font-size: 24px;
+  line-height: 36px;
+
+  li{
+    width: 48%;
+  }
+
+  li:nth-child(odd){
+    margin-right: 2%;
+  }
+}
+
+.popup-menu__nav--right{
+  flex-direction: column;
+  text-align: right;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 80px;
+
+  li{
+    margin-bottom: 10px;
+  }
+}
+
+.popup-menu__wrp-right-col .contacts{
+  margin-bottom: 80px;
+}
+
+// нижние ссылки (Заявка на кредит / Запись на ТО / поиск)
+.popup-menu__wrp-right-col{
+  .links_wrp{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .links_wrp .credit{
+    margin-right: 40px;
+  }
+
+  .links_wrp .service{
+    margin-right: 70px;
+  }
+
+
+  .links_wrp .credit a,
+  .links_wrp .service a{
+    position: relative;
+    padding-left: 22px;
+
+    color: $font-color-primary;
+    transition: all 0.4s;
+  }
+
+  .links_wrp .credit a:before,
+  .links_wrp .service a:before{
+    position: absolute;
+    font-family: 'svgfontregular';
+    left: 0;
+  }
+
+  .links_wrp .credit a:before{
+    content: 'b';
+  }
+
+  .links_wrp .service a:before{
+    content: 'c';
+  }
+
+  .links_wrp .credit a:hover,
+  .links_wrp .service a:hover{
+    color: $font-link-color-hover;
+  }
+}
+
+// кнопка поиска
+.main-menu__search{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 20px;
+  padding: 1px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: $bg-color-grey;
+  transition: all 0.5s ease;
+  transform: translateY(-3px);
+  z-index: 1;
+
+  .input{
+    border: 0;
+    width: 0;
+    padding-left: 5px;
+    line-height: 1.5;
+    outline: none;
+    color: $font-color-primary;
+    transition: all 0.3s ease;
+    background-color: transparent;
+  }
+
+  .input::placeholder{
+    color: $font-link-color-hover;
+  }
+
+  .input.active{
+    width: calc(100% - 20px);
+    transition: width 0.5s ease;
+  }
+
+  input[type='submit']{
+    display: none;
+  }
+
+  input::placeholder {
+    color: $font-color-primary;
+  }
+}
+
+.main-menu__search.active{
+  box-shadow: 0 0 10px $font-link-color-hover;
+  width: 200px;
+}
+
+.main-menu__search-icon{
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  width: 20px;
+  color: $font-color-primary;
+}
+
+.main-menu__search-icon:hover{
+  color: $font-link-color-hover;
+}
+
+.main-menu__search-icon.active{
+  color: $font-link-color-hover;
+}
+
+.main-menu__search-icon:before{
+  position: absolute;
+  font-family: 'svgfontregular';
+  content: 'd';
+  left: 0;
+  width: 20px;
+}

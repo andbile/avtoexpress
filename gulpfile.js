@@ -46,10 +46,7 @@ function scriptsLint () {
 function scripts() {
     return gulp.src(['src/js/main.js', '!src/js/main.min.js'])
         .pipe(concat('main.min.js'))
-        .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(uglify())
-        .pipe(sourcemaps.write('/', {
-            sourceMappingURLPrefix: ''}))
         .pipe(gulp.dest('src/js'));
 }
 
@@ -75,8 +72,8 @@ function getSvgSprite() {
 // Watch files
 function watchFiles() {
     gulp.watch('src/css/scss/**/*.scss', {usePolling: true}, gulp.series(sass, css));
-    gulp.watch('src/*.html').on("change", bs.reload);
-    gulp.watch('src/*.php').on("change", bs.reload);
+   /* gulp.watch('src/!*.html').on("change", bs.reload);*/
+    gulp.watch('src/**/*.php').on("change", bs.reload);
     gulp.watch(['src/js/main.js'], gulp.series(scriptsLint, scripts));
 }
 
