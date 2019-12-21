@@ -60,12 +60,25 @@ jQuery(document).ready(function() {
     // слайдер в index.html
     $('[data-main-slider]').slick({
         speed: 1000,
-        /*autoplay: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows:false,
+        dots:true,
+        dotsClass: 'slick-dots slick-dots--type1'
+    });
+
+    // слайдер фото зданий в index.html
+    $('[data-slider-building]').slick({
+        speed: 1000,
+       /* autoplay: true,
         autoplaySpeed: 4000,*/
         arrows:false,
         dots:true,
-        dotsClass: 'slick-dots slick-dots--main-slider'
+        dotsClass: 'slick-dots slick-dots--type1'
     });
+
+    // select
+    $('select').niceSelect();
 
 
 });

@@ -11,7 +11,8 @@
     <script src="js/TimelineMax.min.js"></script>
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slick.css">
-    <!--<link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!--
     <link rel="stylesheet" href="css/daterangepicker.css">
 
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">-->

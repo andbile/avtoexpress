@@ -1,0 +1,119 @@
+/* slick Dots */
+.slick-dotted.slick-slider{
+  /* margin-bottom: 30px;*/
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li{
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 7px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  width: 10px;
+  height: 10px;
+  color: transparent;
+  border: 0;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus{
+  outline: none;
+}
+
+.slick-dots li button:before{
+  content: '';
+  position: relative;
+  display: inline-block;
+  left:0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #D6D6D6;
+  border-radius: 5px;
+}
+
+.slick-dots li.slick-active button:before{
+  background-color: #869791;
+}
+
+
+// кнопки переключения сладов
+.slick-dots--type1{
+  display: inline-block;
+  position: absolute;
+  width: auto;
+}
+
+.slick-dots--type1 li button{
+  width: 4px;
+  height: 4px;
+}
+
+.slick-dots--type1 li button:before{
+  width: 4px;
+  height: 4px;
+  background-color: #424243;
+  border-radius: 2px;
+}
+
+.slick-dots--type1 li.slick-active,
+.slick-dots--type1 li.slick-active button,
+.slick-dots--type1 li.slick-active button:before  {
+  width: 35px;
+}
+
+.slick-dots--type1 li.slick-active button:after{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left:6px;
+  top: 1px;
+  height: 4px;
+  background-color: $font-link-color-hover;
+  border-radius: 5px;
+  width: 19px;
+}
+
+.slick-dots--type1 li.slick-active button:before{
+  background-color: #424243;
+}
+
+
+.main-slider .slick-dots--type1{
+  bottom: 130px;
+  left: 2.8%;
+}
+
+.index-section-3 .slick-dots--type1{
+  right: 0;
+  bottom: -30px;
+
+  li button:before{
+    background-color: #E1E6E8;
+  }
+}

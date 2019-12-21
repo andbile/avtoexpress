@@ -80,13 +80,16 @@
 
         </div>
  </section>
-<section class="car-filter container">
-        <form action="" method="post" name="car-filter">
 
-            <div>Автомобили в наличии</div>
+<section class="car-filter container">
+
+    <form action="" method="post" name="car-filter">
+
+        <div class="car-filter__wrp">
+            <div class="car-filter__title">Автомобили<br> в наличии</div>
 
             <div class='car-filter__select'>
-                <label for="select-brand"></label>
+                <label for="select-brand">Марка</label>
                 <select id="select-brand" name="select-brand">
                     <option value="b1">Все</option>
                     <option value="b2">УАЗ</option>
@@ -97,7 +100,7 @@
 
 
             <div class='car-filter__select'>
-                <label for="select-model"></label>
+                <label for="select-model">Модель</label>
                 <select id="select-model" name="select-model">
                     <option value="b1">Все</option>
                     <option value="b2">Модель 1</option>
@@ -106,140 +109,156 @@
                 </select>
             </div>
 
-            <div><a href="">72 новых автомобиля</a></div>
+            <div class="car-filter__num-cars"><a href="">72 новых <br> автомобиля</a></div>
+        </div>
 
-            <div><a href="">Автомобили с пробегом</a></div>
+
+
+            <div class="car-filter__used-cars link-line link-line--grey"><a href=""><span>Автомобили</span><br><span>с пробегом</span> </a></div>
 
             <input type="submit" class="" name="car-filter" value="">
         </form>
 </section>
 
+<section class="index-section-2">
+
+    <div class="box-brand-items">
+
+        <div class="box-brand-item">
+            <div class="box-brand-item__img"><img src="img/car_01.jpg" alt="Фото автомобиля"></div>
+            <div class="box-brand-item__content">
+                <div class="box-brand-item__title">LADA</div>
+                <div class="box-brand-item__link link-line link-line--grey"><a href="">Смотреть</a></div>
+            </div>
+        </div>
+
+        <div class="box-brand-item">
+            <div class="box-brand-item__img"><img src="img/car_02.jpg" alt="Фото автомобиля"></div>
+            <div class="box-brand-item__content">
+                <div class="box-brand-item__title">УАЗ</div>
+                <div class="box-brand-item__link link-line link-line--grey"><a href="">Смотреть</a></div>
+            </div>
+        </div>
+
+        <div class="box-brand-item">
+            <div class="box-brand-item__img"><img src="img/car_03.jpg" alt="Фото автомобиля"></div>
+            <div class="box-brand-item__content">
+                <div class="box-brand-item__title">ГАЗ</div>
+                <div class="box-brand-item__link link-line link-line--grey"><a href="">Смотреть</a></div>
+            </div>
+        </div>
+
+    </div>
 
 
 
+    <ul class="box-brand__links">
+        <li class="link-line link-line--grey"><a href="">Сервис</a></li>
+        <li class="link-line link-line--grey"><a href="">Кузовной ремонт</a></li>
+        <li class="link-line link-line--grey"><a href="">Тест-драйв</a></li>
+        <li class="link-line link-line--grey"><a href="">Трейд-Ин</a></li>
+    </ul>
 
+</section>
 
+<section class="index-section-3">
 
+            <div class="index-section-3__content">
 
+                <h2 class="content__title">Официальный дилер «Автоэкспресс»</h2>
+                <div class="content__text">
+                    <p>Автоэкспресс заявил о себе в автомобильном бизнесе в 1992 году.</p>
+                    <p>На данный момент это один из крупнейших, успешно и стабильно развивающийся официальный дилер LADA, ГАЗ,
+                        УАЗ, Great Wall, Geely, Lifan, Fiat и Fiat Profesional. По маркам ГАЗ, УАЗ, GEELY, Fiat автосалон
+                        является Единственным официальным дилером в Иваново и Ивановской области.</p>
+                    <p>Преимуществом нашего автосалона является большой выставочный зал, где представлен широкий выбор
+                        автомобилей ЛАДА в разных комплектациях и цветах. Каждый квартал мы знакомим своих клиентов с новинками
+                        как отечественного, так и иностранного производства!</p>
 
-
-
-
-
-
-        <section class="">
-
-            <div>
-
-
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <p class="brand">LADA</p>
-                        <a href="">Смотреть</a>
-                    </div>
+                    <div class="content__link"><a href="">Узнать больше</a></div>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <p class="brand">УАЗ</p>
-                        <a href="">Смотреть</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <p class="brand">ГАЗ</p>
-                        <a href="">Смотреть</a>
-                    </div>
-                </div>
-
             </div>
 
+            <div class="index-section-3__slider">
 
-            <div>
+                <div class="address_wrp">
+                    <div class="address">зул. Калашникова, д. 26А</div>
+                </div>
 
-                <ul>
-                    <li><a href="">Сервис</a></li>
-                    <li><a href="">Кузовной ремонт</a></li>
-                    <li><a href="">Тест-драйв</a></li>
-                    <li><a href=""> Трейд-Ин</a></li>
-                </ul>
-
-
-
-
-            </div>
-
-        </section>
-
-        <section>
-
-            <div>
-
-                <h2>Официальный дилер «Автоэкспресс»</h2>
-                <p>Автоэкспресс заявил о себе в автомобильном бизнесе в 1992 году.</p>
-                <p>На данный момент это один из крупнейших, успешно и стабильно развивающийся официальный дилер LADA, ГАЗ,
-                    УАЗ, Great Wall, Geely, Lifan, Fiat и Fiat Profesional. По маркам ГАЗ, УАЗ, GEELY, Fiat автосалон
-                    является Единственным официальным дилером в Иваново и Ивановской области.</p>
-                <p>Преимуществом нашего автосалона является большой выставочный зал, где представлен широкий выбор
-                    автомобилей ЛАДА в разных комплектациях и цветах. Каждый квартал мы знакомим своих клиентов с новинками
-                    как отечественного, так и иностранного производства!</p>
-
-                <a href="">Узнать больше</a>
-            </div>
-
-            <div>
-                <p>ул. Калашникова, д. 26А</p>
-                <img src="" alt="">
+                <div class="slider" data-slider-building>
+                    <div class="img"><img src="img/slider_02_01.jpg" alt="Фото автоцентра"></div>
+                    <div class="img"><img src="img/slider_02_01.jpg" alt="Фото автоцентра"></div>
+                    <div class="img"><img src="img/slider_02_01.jpg" alt="Фото автоцентра"></div>
+                </div>
             </div>
 
             
 
+</section>
 
-        </section>
 
-        <section>
 
-            <div class="row">
+<section class="bars__section">
 
-                <div>
-                    <img src="" alt="">
-                    <h2>Газель Некст от 333 ₽ в день</h2>
-                    <p>Официальный дилер</p>
-                    <a href="">Узнать подробнее</a>
+            <div class="bars__row bar--m-bottom">
 
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h2>Городской формат для бизнеса</h2>
-                    <p>Покупайте Газель Некст у официального дилера</p>
-                    <a href="">Узнать подробнее</a>
-
-                </div>
-                
-                
-            </div>
-            <div class="row">
-
-                <div>
-                    <img src="" alt="">
-                    <h2>Мы дарим вам бонусы</h2>
-                    <p>За первую покупку или обращение в сервис</p>
-                    <a href="">Узнать подробнее</a>
-
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h2>Бонус от нашего партнера</h2>
-                    <p>Автошколы «Автостарт»</p>
-                    <a href="">Узнать подробнее</a>
-
+                <div class="bar__common bar__two-thirds bar--m-right">
+                    <div class="bar__img"><img src="img/bar_2-3_01.jpg" alt="Фото автомобиля"></div>
+                    <div class="bar__content-wrp">
+                        <div class="bar__content">
+                            <h2 class="content__title">Газель Некст<br> от 333 ₽ в день</h2>
+                            <p class="bar_text">Официальный дилер</p>
+                        </div>
+                        <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                    </div>
                 </div>
 
+
+                <div class="bar__common bar_third">
+                    <div class="bar__img"><img src="img/bar_1-3_01.jpg" alt="Фото автомобиля"></div>
+                    <div class="bar__content-wrp">
+                        <div class="bar__content">
+                            <h2 class="content__title">Городской формат для бизнеса</h2>
+                            <p class="bar_text">Покупайте Газель Некст у официального дилера</p>
+                        </div>
+                        <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                    </div>
+                </div>
             </div>
 
-        </section>
+
+            <div class="bars__row">
+
+
+                <div class="bar__common bar_third bar--m-right">
+                    <div class="bar__img"><img src="img/bar_1-3_02.jpg" alt="Фото автомобиля"></div>
+                    <div class="bar__content-wrp">
+                        <div class="bar__content">
+                            <h2 class="content__title">Мы дарим вам бонусы</h2>
+                            <p class="bar_text">За первую покупку или обращение в сервис</p>
+                        </div>
+                        <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                    </div>
+                </div>
+
+
+                <div class="bar__common bar__two-thirds">
+                    <div class="bar__img"><img src="img/bar_2-3_02.jpg" alt="Фото автомобиля"></div>
+                    <div class="bar__content-wrp">
+                        <div class="bar__content">
+                            <h2 class="content__title">Бонус от нашего<br> партнера</h2>
+                            <p class="bar_text">Автошколы «Автостарт»</p>
+                        </div>
+                        <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                    </div>
+                </div>
+
+            </div>
+</section>
+
+
+
+
 
         <section>
 

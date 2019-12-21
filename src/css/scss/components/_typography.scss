@@ -21,12 +21,14 @@ a{
 }
 
 .link-line a,
-span.link-line{
+span.link-line,
+.link-line a span{
   position: relative;
 }
 
 .link-line a:after,
-span.link-line:after{
+span.link-line:after,
+.link-line a span:after{
   content: '';
   position: absolute;
   width: 100%;
@@ -37,12 +39,14 @@ span.link-line:after{
 }
 
 .link-line--grey a:after,
-span.link-line--grey:after{
+span.link-line--grey:after,
+.link-line--grey a span:after{
   background-color: $bg-color-grey-link;
 }
 
 .link-line--grey a:hover:after,
-span.link-line--grey:hover:after{
+span.link-line--grey:hover:after,
+.link-line--grey a:hover span:after{
   background-color: $font-link-color-hover;
 }
 
@@ -54,8 +58,42 @@ ul{
   margin: 0;
 }
 
-/*
-.svg-font a:before{
-  font-family: 'svgfontregular';
-  position: absolute;
-}*/
+.content__title{
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.content__text p{
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.content__link{
+
+  a{
+    position: relative;
+    padding-right: 15px;
+    color: $font-link-color-hover;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  a:after{
+    position: absolute;
+    font-family: 'svgfontregular';
+    content: 'e';
+    font-size: 10px;
+    line-height: 12px;
+    bottom: 2px;
+    right: 0;
+  }
+
+  a:hover, a:hover:before{
+    color: darken($font-link-color-hover, 20%);
+  }
+}
+
+

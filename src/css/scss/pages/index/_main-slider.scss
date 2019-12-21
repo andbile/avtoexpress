@@ -80,47 +80,5 @@
   /*color: $font-color-grey;*/
 }
 
-.main-slider{
-  .slick-dots--main-slider{
-    display: inline-block;
-    position: absolute;
-    bottom: 130px;
-    left: 2.8%;
-    width: auto;
-  }
 
-  .slick-dots--main-slider li button{
-    width: 4px;
-    height: 4px;
-  }
-
-  .slick-dots--main-slider li button:before{
-    width: 4px;
-    height: 4px;
-    background-color: #424243;
-    border-radius: 2px;
-  }
-
-  .slick-dots--main-slider li.slick-active,
-  .slick-dots--main-slider li.slick-active button,
-  .slick-dots--main-slider li.slick-active button:before  {
-    width: 35px;
-  }
-
-  .slick-dots--main-slider li.slick-active button:after{
-    content: '';
-    position: absolute;
-    display: inline-block;
-    left:6px;
-    top: 1px;
-    height: 4px;
-    background-color: $font-link-color-hover;
-    border-radius: 5px;
-    width: 19px;
-  }
-
-  .slick-dots--main-slider li.slick-active button:before{
-    background-color: #424243;
-  }
-}
 
