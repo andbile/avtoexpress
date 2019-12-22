@@ -1,0 +1,131 @@
+.information-title_wrp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 50px;
+
+
+}
+
+.information__items{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.information__item{
+  width: 307px;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+.information__item:hover{
+  text-decoration: none;
+  box-shadow: 0 10px 10px rgba(41,52,73, 0.5);
+  transition: box-shadow 0.3s;
+  background-color: #fff;
+  color: #000000;
+}
+
+.information__item:visited{
+  color: #000000;
+}
+
+.information__img{
+  position: relative;
+  height: 160px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.information__img img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.information__content{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.information__title{
+  margin-bottom: 5px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+
+}
+
+.information_description{
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.information_description__date{
+  font-size: 12px;
+  line-height: 24px;
+  opacity: 0.4;
+}
+
+.information__item--opacity{
+  opacity: 0.2;
+}
+
+.information__item--opacity .information__item:hover{
+  box-shadow: none;
+}
+
+// TODO Кнопку убрать и сделать отдельно иначе не будет работать событие клик
+/*.icon-arrow-next .information__img:after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(25px, -15px);
+  width: 40px;
+  height: 40px;
+  background: url('#{$dir_img}/icon_arrow_next.svg') center center no-repeat;
+  z-index: 1;
+}*/
+
+/*.icon-arrow-next .information__img:after:hover{
+  transform: scale(1.1);
+}*/
+
+
+
+// slider
+.information__items--slider{
+
+  .slick-track{
+  /*  position: relative;
+    display: flex;
+    flex-direction: row;*/
+   /* width: calc(317px * 15) !important;
+    transform: translate3d(calc(-317px * 5), 0px, 0px);*/
+  }
+
+  .slick-slide{
+    /*width: 307px !important;*/
+   /* margin-left: 5px;
+    margin-right: 5px;*/
+  }
+
+  .slick-arrow{
+    /*bottom: -100px;
+    width: 100px;
+    height: 100px;*/
+  }
+
+  .information__item{
+
+  }
+}

@@ -113,6 +113,10 @@
     color: $font-link-color-hover;
   }
 
+  .main-menu__btn{
+    cursor: pointer;
+  }
+
   .main-menu__btn span{
     position: relative;
     display: inline-block;

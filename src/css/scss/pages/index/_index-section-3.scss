@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  .content__title{
+    margin-bottom: 40px;
+  }
 }
 
 .index-section-3__content{

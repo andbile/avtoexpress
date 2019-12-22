@@ -77,6 +77,21 @@ jQuery(document).ready(function() {
         dotsClass: 'slick-dots slick-dots--type1'
     });
 
+    // слайдер для блока - полезная информация / акции
+    $('[data-slider-information]').slick({
+        arrows:false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots:true
+    });
+
+
+
+
+
+
+
+
     // select
     $('select').niceSelect();
 

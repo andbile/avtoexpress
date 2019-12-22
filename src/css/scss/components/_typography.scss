@@ -63,7 +63,6 @@ ul{
   line-height: 40px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 40px;
 }
 
 .content__text p{
@@ -82,13 +81,7 @@ ul{
   }
 
   a:after{
-    position: absolute;
-    font-family: 'svgfontregular';
-    content: 'e';
-    font-size: 10px;
-    line-height: 12px;
-    bottom: 2px;
-    right: 0;
+
   }
 
   a:hover, a:hover:before{
@@ -96,4 +89,9 @@ ul{
   }
 }
 
+/*
+svg{
+  height: 20px;
+}
+*/
 
