@@ -4,7 +4,7 @@ a{
   color: $font-color-primary;
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: color 0.4s;
 
   &:visited{
     color: $font-color-primary;
@@ -88,10 +88,3 @@ ul{
     color: darken($font-link-color-hover, 20%);
   }
 }
-
-/*
-svg{
-  height: 20px;
-}
-*/
-

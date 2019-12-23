@@ -145,4 +145,57 @@
   font-style: normal;
 }
 // end svg fonts
+@font-face {
+  font-family: 'avtoexpress';
+  src: url('../fonts/avtoexpress.eot?30680207');
+  src: url('../fonts/avtoexpress.eot?30680207#iefix') format('embedded-opentype'),
+  url('../fonts/avtoexpress.woff2?30680207') format('woff2'),
+  url('../fonts/avtoexpress.woff?30680207') format('woff'),
+  url('../fonts/avtoexpress.ttf?30680207') format('truetype'),
+  url('../fonts/avtoexpress.svg?30680207#avtoexpress') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-rocket:before { content: '\e800'; } /* '' */
+.icon-search:before { content: '\e801'; } /* '' */
+.icon-speedometer:before { content: '\e802'; } /* '' */
+.icon-steering_wheel:before { content: '\e803'; } /* '' */
+.icon-car:before { content: '\e804'; } /* '' */
+.icon-mark_map:before { content: '\e805'; } /* '' */
+.icon-palm:before { content: '\e806'; } /* '' */
+.icon-path_right:before { content: '\e807'; } /* '' */
+
+.icon:before{
+  font-family: 'avtoexpress';
+  font-size: 15px;
+}
+
+.icon-rocket:before{
+  font-size: 18px;
+}
+
+.icon-search:before{
+
+}
+
+.icon-speedometer:before{
+
+}
+
+.icon-car:before{
+  font-size: 13px;
+}
+
+.icon-steering_wheel:before{
+  font-size: 17px;
+}
+
+.icon-mark_map:before{
+
+}
+
+.icon-palm:before{
+  font-size: 18px;
+}
 
