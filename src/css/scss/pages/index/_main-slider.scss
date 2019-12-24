@@ -77,8 +77,15 @@
 }
 
 .main-slider__list a:hover{
-  /*color: $font-color-grey;*/
+  color: $font-link-color-hover;
 }
+
+.main-slider__list a:after{
+  background-color: $font-color-white;
+  opacity: 0.2;
+}
+
+
 
 
 

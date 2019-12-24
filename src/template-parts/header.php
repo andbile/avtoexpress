@@ -8,7 +8,10 @@
             <div class="col-left">
                 <div class="logo-wrp">
                     <div class="logo"><a href="index.php">Автоэкспресс</a></div>
-                    <div class="address-link"><a href=""><span>Иваново</span></a></div>
+                    <div class="address-link">
+                        <span class="icon icon-mark_map"></span>
+                        <a href="">Иваново</a>
+                    </div>
                 </div>
 
                 <ul class="brands">
@@ -31,17 +34,16 @@
         <!-- подменю -->
         <div class="container main-menu__popup-menu" data-main-submenu>
 
-
             <div class="popup-menu__wrp-left-col">
 
                 <ul class="popup-menu__nav popup-menu__nav--left ">
-                    <li class="link-line link-line--grey"><a href="">О компании</a></li>
-                    <li class="link-line link-line--grey"><a href="">Акции</a></li>
-                    <li class="link-line link-line--grey"><a href="">Услуги</a></li>
-                    <li class="link-line link-line--grey"><a href="">Вакансии</a></li>
-                    <li class="link-line link-line--grey"><a href="">Сервис</a></li>
-                    <li class="link-line link-line--grey"><a href="">Контакты</a></li>
-                    <li class="link-line link-line--grey"><a href="">Новости</a></li>
+                    <li class="link-line"><a href="">О компании</a></li>
+                    <li class="link-line"><a href="">Акции</a></li>
+                    <li class="link-line"><a href="">Услуги</a></li>
+                    <li class="link-line"><a href="">Вакансии</a></li>
+                    <li class="link-line"><a href="">Сервис</a></li>
+                    <li class="link-line"><a href="">Контакты</a></li>
+                    <li class="link-line"><a href="">Новости</a></li>
                 </ul>
 
                 <div class="btn btn--orange"><a href="">Записаться на тест-драйв</a></div>
@@ -56,31 +58,33 @@
                     <a class="tel" href="tel:+74932938852">+7 (4932) 938 852</a>
                 </div>
 
-
-
                 <ul class="popup-menu__nav popup-menu__nav--right">
-                    <li class="link-line link-line--grey"><a href="">Сервис</a></li>
-                    <li class="link-line link-line--grey"><a href="">Кузовной ремонт</a></li>
-                    <li class="link-line link-line--grey"><a href="">Тест-драйв</a></li>
-                    <li class="link-line link-line--grey"><a href="">Трейд-Ин</a></li>
-                    <li class="link-line link-line--grey"><a href="">Автомобили с пробегом</a></li>
+                    <li class="link-line"><a href="">Сервис</a></li>
+                    <li class="link-line"><a href="">Кузовной ремонт</a></li>
+                    <li class="link-line"><a href="">Тест-драйв</a></li>
+                    <li class="link-line"><a href="">Трейд-Ин</a></li>
+                    <li class="link-line"><a href="">Автомобили с пробегом</a></li>
                 </ul>
 
 
 
                 <div class="links_wrp">
-                    <div class="credit"><a href=""><span class="link-line link-line--grey">Заявка на кредит</span></a></div>
-                    <div class="service"><a href=""><span class="link-line link-line--grey">Запись на ТО</span></a></div>
+                    <div class="credit link-line">
+                        <span class="icon icon-palm"></span>
+                        <a href="">Заявка на кредит</a>
+                    </div>
+                    <div class="service link-line">
+                        <span class="icon icon-steering_wheel"></span>
+                        <a href="">Запись на ТО</a>
+                    </div>
 
-                    <form class="main-menu__search svg-font" action="" method="get" name="search">
+                    <form class="main-menu__search" action="" method="get" name="search">
                         <label><input type="text" class="input" placeholder="Поиск"></label>
-                        <span class="main-menu__search-icon"></span>
+                        <span class="icon icon-search" data-btn-search></span>
                         <input type="submit" name="search">
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
-
 </header>

@@ -20,39 +20,44 @@ a{
   }
 }
 
+// линия под ссылкой
 .link-line a,
-span.link-line,
-.link-line a span{
+.link-line-span span{
   position: relative;
 }
 
 .link-line a:after,
-span.link-line:after,
-.link-line a span:after{
+.link-line-span span:after{
   content: '';
   position: absolute;
   width: 100%;
   height: 1px;
   bottom: 0;
   left: 0;
-  transition: background-color 0.4s;
+  background-color: $bg-color-black;
+  opacity: 0.2;
+  transition: all 0.4s;
 }
 
-.link-line--grey a:after,
-span.link-line--grey:after,
-.link-line--grey a span:after{
-  background-color: $bg-color-grey-link;
-}
-
-.link-line--grey a:hover:after,
-span.link-line--grey:hover:after,
-.link-line--grey a:hover span:after{
+.link-line a:hover:after{
   background-color: $font-link-color-hover;
+  opacity: 1;
+}
+
+.link-line-white a:after{
+  background-color: $font-color-white;
+}
+
+.link-line-span--white span:after{
+  background-color: $font-color-white;
+}
+
+.link-line-span--white:hover span:after{
+  background-color: $font-link-color-hover;
+  opacity: 1;
 }
 
 // ---- end links ----
-
-
 
 ul{
   margin: 0;
@@ -71,20 +76,27 @@ ul{
 }
 
 .content__link{
-
   a{
     position: relative;
-    padding-right: 15px;
+    margin-right: 5px;
     color: $font-link-color-hover;
     font-size: 15px;
     font-weight: 700;
   }
 
-  a:after{
-
+  .icon{
+    display: inline-block;
+    transform: translateY(-1px);
   }
 
-  a:hover, a:hover:before{
+  .icon:before{
+    font-size: 10px;
+    color: $font-link-color-hover;
+  }
+}
+
+.content__link:hover{
+  a:hover,.icon:before{
     color: darken($font-link-color-hover, 20%);
   }
 }

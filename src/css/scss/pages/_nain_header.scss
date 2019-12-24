@@ -50,39 +50,23 @@
 
   .logo-wrp .address-link{
     white-space: nowrap;
+    opacity: 0.4;
+    transition: all 0.4s;
   }
 
   .logo-wrp .address-link a{
-    position: relative;
-    padding-left: 18px;
-    color: $font-color-grey;
-    transition: all 0.4s;
-
-    &:before{
-      position: absolute;
-      font-family: 'svgfontregular';
-      content: 'a';
-      font-size: 15px;
-      left: 0;
-    }
-
-    span{
-      border-color: $font-color-grey;
-      border-width: 1px;
-      border-bottom-style: dashed;
-      color: $font-color-grey;
-      transition: all 0.4s;
-    }
-
-    &:hover{
-      color: $font-link-color-hover;
-    }
-
-    &:hover span{
-      border-color: $font-link-color-hover;
-      color: $font-link-color-hover;
-    }
+    border-bottom: 1px dashed $font-color-primary;
   }
+
+  .logo-wrp .address-link:hover{
+    opacity: 1;
+    color: $font-link-color-hover;
+  }
+
+  .logo-wrp .address-link:hover a{
+    border-bottom: 1px dashed $font-link-color-hover;
+  }
+
 
   // марки машин
   .brands{
@@ -113,6 +97,7 @@
     color: $font-link-color-hover;
   }
 
+  // кнопка включения выпадающего меню
   .main-menu__btn{
     cursor: pointer;
   }
@@ -160,7 +145,7 @@
 }
 
 
-// общие стили для верхнего меню и собменю
+// общие стили для верхнего меню и соб-меню
 .main-menu{
   .contacts{
     display: flex;
@@ -261,8 +246,6 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
-    font-size: 14px;
-    line-height: 24px;
   }
 
   .links_wrp .credit{
@@ -273,34 +256,22 @@
     margin-right: 70px;
   }
 
-
   .links_wrp .credit a,
   .links_wrp .service a{
-    position: relative;
-    padding-left: 22px;
-
-    color: $font-color-primary;
+    font-size: 14px;
+    line-height: 24px;
     transition: all 0.4s;
   }
 
-  .links_wrp .credit a:before,
-  .links_wrp .service a:before{
-    position: absolute;
-    font-family: 'svgfontregular';
-    left: 0;
+  .links_wrp .credit .icon:before,
+  .links_wrp .service .icon:before{
+    font-size: 14px;
   }
 
-  .links_wrp .credit a:before{
-    content: 'b';
-  }
-
-  .links_wrp .service a:before{
-    content: 'c';
-  }
-
-  .links_wrp .credit a:hover,
-  .links_wrp .service a:hover{
+  .links_wrp .credit:hover,
+  .links_wrp .service:hover{
     color: $font-link-color-hover;
+    transition: color 0.4s;
   }
 }
 
@@ -325,7 +296,7 @@
     line-height: 1.5;
     outline: none;
     color: $font-color-primary;
-    transition: all 0.3s ease;
+    transition: width 0.3s ease;
     background-color: transparent;
   }
 
@@ -344,34 +315,27 @@
 
   input::placeholder {
     color: $font-color-primary;
+    font-weight: 400;
+  }
+
+  .icon{
+    position: absolute;
+    right: 3px;
+    cursor: pointer;
+    line-height: 1.5;
+    transform: translateY(2px);
+  }
+
+  .icon:hover{
+    color: $font-link-color-hover;
+  }
+
+  .icon.active{
+    color: $font-link-color-hover;
   }
 }
 
 .main-menu__search.active{
   box-shadow: 0 0 10px $font-link-color-hover;
   width: 200px;
-}
-
-.main-menu__search-icon{
-  position: absolute;
-  display: inline-block;
-  right: 0;
-  width: 20px;
-  color: $font-color-primary;
-}
-
-.main-menu__search-icon:hover{
-  color: $font-link-color-hover;
-}
-
-.main-menu__search-icon.active{
-  color: $font-link-color-hover;
-}
-
-.main-menu__search-icon:before{
-  position: absolute;
-  font-family: 'svgfontregular';
-  content: 'd';
-  left: 0;
-  width: 20px;
 }

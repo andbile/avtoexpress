@@ -4,7 +4,6 @@
 
 <main>
 
-
 <section class="main-slider">
 
         <div class="main-slider__items" data-main-slider>
@@ -22,17 +21,17 @@
 
 
                 <ul class="main-slider__list">
-                    <li class="link-line link-line--grey"><a href="">Патриот АКПП</a></li>
-                    <li class="link-line link-line--grey"><a href="">Обновленный Патриот</a></li>
-                    <li class="link-line link-line--grey"><a href="">Обновленный Пикап</a></li>
-                    <li class="link-line link-line--grey"><a href="">Хантер</a></li>
-                    <li class="link-line link-line--grey"><a href="">Хантер Экспедиционный</a></li>
-                    <li class="link-line link-line--grey"><a href="">Коммерческие автомобили</a></li>
-                    <li class="link-line link-line--grey"><a href="">«Буханка» Комби Трофи</a></li>
+                    <li class="link-line"><a href="">Патриот АКПП</a></li>
+                    <li class="link-line"><a href="">Обновленный Патриот</a></li>
+                    <li class="link-line"><a href="">Обновленный Пикап</a></li>
+                    <li class="link-line"><a href="">Хантер</a></li>
+                    <li class="link-line"><a href="">Хантер Экспедиционный</a></li>
+                    <li class="link-line"><a href="">Коммерческие автомобили</a></li>
+                    <li class="link-line"><a href="">«Буханка» Комби Трофи</a></li>
                 </ul>
             </div>
 
-            <div class="main-slider__item" >
+            <div class="main-slider__item">
 
                 <div class="main-slider__img"><img src="img/main_slide_01.jpg" alt="Фото машины"></div>
 
@@ -45,13 +44,13 @@
 
 
                 <ul class="main-slider__list">
-                    <li class="link-line link-line--grey"><a href="">Патриот АКПП</a></li>
-                    <li class="link-line link-line--grey"><a href="">Обновленный Патриот</a></li>
-                    <li class="link-line link-line--grey"><a href="">Обновленный Пикап</a></li>
-                    <li class="link-line link-line--grey"><a href="">Хантер</a></li>
-                    <li class="link-line link-line--grey"><a href="">Хантер Экспедиционный</a></li>
-                    <li class="link-line link-line--grey"><a href="">Коммерческие автомобили</a></li>
-                    <li class="link-line link-line--grey"><a href="">«Буханка» Комби Трофи</a></li>
+                    <li class="link-line"><a href="">Патриот АКПП</a></li>
+                    <li class="link-line"><a href="">Обновленный Патриот</a></li>
+                    <li class="link-line"><a href="">Обновленный Пикап</a></li>
+                    <li class="link-line"><a href="">Хантер</a></li>
+                    <li class="link-line"><a href="">Хантер Экспедиционный</a></li>
+                    <li class="link-line"><a href="">Коммерческие автомобили</a></li>
+                    <li class="link-line"><a href="">«Буханка» Комби Трофи</a></li>
                 </ul>
             </div>
 
@@ -68,13 +67,13 @@
 
 
                 <ul class="main-slider__list">
-                    <li class="link-line link-line--grey"><a href="">Патриот АКПП</a></li>
-                    <li class="link-line link-line--grey"><a href="">Обновленный Патриот</a></li>
-                    <li class="link-line link-line--grey"><a href="">Обновленный Пикап</a></li>
-                    <li class="link-line link-line--grey"><a href="">Хантер</a></li>
-                    <li class="link-line link-line--grey"><a href="">Хантер Экспедиционный</a></li>
-                    <li class="link-line link-line--grey"><a href="">Коммерческие автомобили</a></li>
-                    <li class="link-line link-line--grey"><a href="">«Буханка» Комби Трофи</a></li>
+                    <li class="link-line"><a href="">Патриот АКПП</a></li>
+                    <li class="link-line"><a href="">Обновленный Патриот</a></li>
+                    <li class="link-line"><a href="">Обновленный Пикап</a></li>
+                    <li class="link-line"><a href="">Хантер</a></li>
+                    <li class="link-line"><a href="">Хантер Экспедиционный</a></li>
+                    <li class="link-line"><a href="">Коммерческие автомобили</a></li>
+                    <li class="link-line"><a href="">«Буханка» Комби Трофи</a></li>
                 </ul>
             </div>
 
@@ -114,7 +113,7 @@
 
 
 
-            <div class="car-filter__used-cars link-line link-line--grey"><a href=""><span>Автомобили</span><br><span>с пробегом</span> </a></div>
+            <div class="car-filter__used-cars link-line-span link-line-span--white"><a href=""><span>Автомобили</span><br><span>с пробегом</span></a></div>
 
             <input type="submit" class="" name="car-filter" value="">
         </form>
@@ -128,7 +127,7 @@
             <div class="box-brand-item__img"><img src="img/car_01.jpg" alt="Фото автомобиля"></div>
             <div class="box-brand-item__content">
                 <div class="box-brand-item__title">LADA</div>
-                <div class="box-brand-item__link link-line link-line--grey"><a href="">Смотреть</a></div>
+                <div class="box-brand-item__link link-line link-line-white"><a href="">Смотреть</a></div>
             </div>
         </div>
 
@@ -136,7 +135,7 @@
             <div class="box-brand-item__img"><img src="img/car_02.jpg" alt="Фото автомобиля"></div>
             <div class="box-brand-item__content">
                 <div class="box-brand-item__title">УАЗ</div>
-                <div class="box-brand-item__link link-line link-line--grey"><a href="">Смотреть</a></div>
+                <div class="box-brand-item__link link-line link-line-white"><a href="">Смотреть</a></div>
             </div>
         </div>
 
@@ -144,7 +143,7 @@
             <div class="box-brand-item__img"><img src="img/car_03.jpg" alt="Фото автомобиля"></div>
             <div class="box-brand-item__content">
                 <div class="box-brand-item__title">ГАЗ</div>
-                <div class="box-brand-item__link link-line link-line--grey"><a href="">Смотреть</a></div>
+                <div class="box-brand-item__link link-line link-line-white"><a href="">Смотреть</a></div>
             </div>
         </div>
 
@@ -153,10 +152,10 @@
 
 
     <ul class="box-brand__links">
-        <li class="link-line link-line--grey"><a href="">Сервис</a></li>
-        <li class="link-line link-line--grey"><a href="">Кузовной ремонт</a></li>
-        <li class="link-line link-line--grey"><a href="">Тест-драйв</a></li>
-        <li class="link-line link-line--grey"><a href="">Трейд-Ин</a></li>
+        <li class="link-line"><a href="">Сервис</a></li>
+        <li class="link-line"><a href="">Кузовной ремонт</a></li>
+        <li class="link-line"><a href="">Тест-драйв</a></li>
+        <li class="link-line"><a href="">Трейд-Ин</a></li>
     </ul>
 
 </section>
@@ -175,7 +174,10 @@
                         автомобилей ЛАДА в разных комплектациях и цветах. Каждый квартал мы знакомим своих клиентов с новинками
                         как отечественного, так и иностранного производства!</p>
 
-                    <div class="content__link"><a href="">Узнать больше</a></div>
+                    <div class="content__link">
+                        <a href="">Узнать больше</a>
+                        <span class="icon icon-path_right"></span>
+                    </div>
                 </div>
             </div>
 
@@ -259,12 +261,15 @@
 <section class="index-section-4">
     <div class="information-title_wrp">
         <h2 class="content__title">Полезная информация</h2>
-        <div class="content__link"><a href="">Смотреть все новости</a></div>
+        <div class="content__link">
+            <a href="">Смотреть все новости</a>
+            <span class="icon icon-path_right"></span>
+        </div>
     </div>
 
     <div class="information__items information__items--slider" data-slider-information>
 
-        <div>
+        <div class="information-item--slider-wrp">
             <a href="" class="information__item">
                 <div class="information__img">
                     <img  src="img/information_preview_01.jpg" alt="Полезная информация">
@@ -277,7 +282,7 @@
             </a>
         </div>
 
-        <div>
+        <div class="information-item--slider-wrp">
             <a href="" class="information__item">
                 <div class="information__img">
                     <img  src="img/information_preview_02.jpg" alt="Полезная информация">
@@ -290,7 +295,7 @@
             </a>
         </div>
 
-        <div>
+        <div class="information-item--slider-wrp">
             <a href="" class="information__item">
                 <div class="information__img">
                     <img  src="img/information_preview_03.jpg" alt="Полезная информация">
@@ -303,7 +308,7 @@
             </a>
         </div>
 
-        <div>
+        <div class="information-item--slider-wrp">
             <a href="" class="information__item">
                 <div class="information__img">
                     <img  src="img/information_preview_04.jpg" alt="Полезная информация">
@@ -316,7 +321,7 @@
             </a>
         </div>
 
-        <div>
+        <div class="information-item--slider-wrp">
             <a href="" class="information__item">
                 <div class="information__img">
                     <img  src="img/information_preview_01.jpg" alt="Полезная информация">
@@ -329,7 +334,7 @@
             </a>
         </div>
 
-        <div>
+        <div class="information-item--slider-wrp">
             <a href="" class="information__item">
                 <div class="information__img">
                     <img  src="img/information_preview_02.jpg" alt="Полезная информация">

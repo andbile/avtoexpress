@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 50px;
+  padding-right: 2.8%;
 
 
 }
@@ -16,13 +17,16 @@
   overflow: hidden;
 }
 
+.information-item--slider-wrp{
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
 .information__item{
   width: 307px;
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
-  margin-right: 5px;
-  margin-left: 5px;
   margin-bottom: 15px;
 }
 
