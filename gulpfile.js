@@ -74,7 +74,7 @@ function watchFiles() {
     gulp.watch('src/css/scss/**/*.scss', {usePolling: true}, gulp.series(sass, css));
    /* gulp.watch('src/!*.html').on("change", bs.reload);*/
     gulp.watch('src/**/*.php').on("change", bs.reload);
-    gulp.watch(['src/js/main.js'], gulp.series(scriptsLint, scripts));
+    gulp.watch('src/js/main.js', {usePolling: true}, gulp.series(scriptsLint, scripts));
 }
 
 // define complex tasks

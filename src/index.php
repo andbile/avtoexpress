@@ -20,15 +20,117 @@
                 </div>
 
 
-                <ul class="main-slider__list">
-                    <li class="link-line"><a href="">Патриот АКПП</a></li>
-                    <li class="link-line"><a href="">Обновленный Патриот</a></li>
-                    <li class="link-line"><a href="">Обновленный Пикап</a></li>
-                    <li class="link-line"><a href="">Хантер</a></li>
-                    <li class="link-line"><a href="">Хантер Экспедиционный</a></li>
-                    <li class="link-line"><a href="">Коммерческие автомобили</a></li>
-                    <li class="link-line"><a href="">«Буханка» Комби Трофи</a></li>
+                <ul class="main-slider__list" data-btn-hover-list>
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="1">
+                        <div class="car__img"><img src="img/hover_car_01.png" alt="Фото машины"></div>
+                        <span class="list-btn">Патриот АКПП</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="2">
+                        <div class="car__img"><img src="img/hover_car_02.png" alt="Фото машины"></div>
+                        <span class="list-btn">Обновленный Патриот</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="3">
+                        <div class="car__img"><img src="img/hover_car_03.png" alt="Фото машины"></div>
+                        <span class="list-btn">Обновленный Пикап</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="4">
+                        <div class="car__img"><img src="img/hover_car_04.png" alt="Фото машины"></div>
+                        <span class="list-btn">Хантер</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="5">
+                        <div class="car__img"><img src="img/hover_car_05.png" alt="Фото машины"></div>
+                        <span class="list-btn">Хантер Экспедиционный</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="6">
+                        <div class="car__img"><img src="img/hover_car_06.png" alt="Фото машины"></div>
+                        <span class="list-btn">Коммерческие автомобили</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="7">
+                        <div class="car__img"><img src="img/hover_car_07.png" alt="Фото машины"></div>
+                        <span class="list-btn">«Буханка» Комби Трофи</span>
+                    </li>
                 </ul>
+
+               <div class="main-slider__popup-items" data-popup-items>
+
+                   <div class="main-slider__popup-item container" data-slide-id="1">
+                       <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                       <div class="popup__content">
+                           <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                           <div class="popup__header">1 Обновленный Патриот</div>
+                           <div class="popup__price">от 984 000 Р</div>
+                           <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                       </div>
+                    </div>
+
+                   <div class="main-slider__popup-item container" data-slide-id="2">
+                       <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                       <div class="popup__content">
+                           <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                           <div class="popup__header">2 Обновленный Патриот</div>
+                           <div class="popup__price">от 984 000 Р</div>
+                           <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                       </div>
+                   </div>
+
+                   <div class="main-slider__popup-item container" data-slide-id="3">
+                       <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                       <div class="popup__content">
+                           <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                           <div class="popup__header">3 Обновленный Патриот</div>
+                           <div class="popup__price">от 984 000 Р</div>
+                           <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                       </div>
+                   </div>
+
+                   <div class="main-slider__popup-item container" data-slide-id="4">
+                       <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                       <div class="popup__content">
+                           <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                           <div class="popup__header">4 Обновленный Патриот</div>
+                           <div class="popup__price">от 984 000 Р</div>
+                           <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                       </div>
+                   </div>
+
+                   <div class="main-slider__popup-item container" data-slide-id="5">
+                       <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                       <div class="popup__content">
+                           <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                           <div class="popup__header">5 Обновленный Патриот</div>
+                           <div class="popup__price">от 984 000 Р</div>
+                           <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                       </div>
+                   </div>
+
+                   <div class="main-slider__popup-item container" data-slide-id="6">
+                       <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                       <div class="popup__content">
+                           <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                           <div class="popup__header">6 Обновленный Патриот</div>
+                           <div class="popup__price">от 984 000 Р</div>
+                           <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                       </div>
+                   </div>
+
+                   <div class="main-slider__popup-item container" data-slide-id="7">
+                       <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                       <div class="popup__content">
+                           <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                           <div class="popup__header">7 Обновленный Патриот</div>
+                           <div class="popup__price">от 984 000 Р</div>
+                           <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                       </div>
+                   </div>
+
+                </div>
+
             </div>
 
             <div class="main-slider__item">
@@ -43,18 +145,120 @@
                 </div>
 
 
-                <ul class="main-slider__list">
-                    <li class="link-line"><a href="">Патриот АКПП</a></li>
-                    <li class="link-line"><a href="">Обновленный Патриот</a></li>
-                    <li class="link-line"><a href="">Обновленный Пикап</a></li>
-                    <li class="link-line"><a href="">Хантер</a></li>
-                    <li class="link-line"><a href="">Хантер Экспедиционный</a></li>
-                    <li class="link-line"><a href="">Коммерческие автомобили</a></li>
-                    <li class="link-line"><a href="">«Буханка» Комби Трофи</a></li>
+                <ul class="main-slider__list" data-btn-hover-list>
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="1">
+                        <div class="car__img"><img src="img/hover_car_01.png" alt="Фото машины"></div>
+                        <span class="list-btn">Патриот АКПП</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="2">
+                        <div class="car__img"><img src="img/hover_car_02.png" alt="Фото машины"></div>
+                        <span class="list-btn">Обновленный Патриот</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="3">
+                        <div class="car__img"><img src="img/hover_car_03.png" alt="Фото машины"></div>
+                        <span class="list-btn">Обновленный Пикап</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="4">
+                        <div class="car__img"><img src="img/hover_car_04.png" alt="Фото машины"></div>
+                        <span class="list-btn">Хантер</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="5">
+                        <div class="car__img"><img src="img/hover_car_05.png" alt="Фото машины"></div>
+                        <span class="list-btn">Хантер Экспедиционный</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="6">
+                        <div class="car__img"><img src="img/hover_car_06.png" alt="Фото машины"></div>
+                        <span class="list-btn">Коммерческие автомобили</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="7">
+                        <div class="car__img"><img src="img/hover_car_07.png" alt="Фото машины"></div>
+                        <span class="list-btn">«Буханка» Комби Трофи</span>
+                    </li>
                 </ul>
+
+                <div class="main-slider__popup-items" data-popup-items>
+
+                    <div class="main-slider__popup-item container" data-slide-id="1">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">1 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                    <div class="main-slider__popup-item container" data-slide-id="2">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">2 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                    <div class="main-slider__popup-item container" data-slide-id="3">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">3 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                    <div class="main-slider__popup-item container" data-slide-id="4">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">4 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                    <div class="main-slider__popup-item container" data-slide-id="5">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">5 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                    <div class="main-slider__popup-item container" data-slide-id="6">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">6 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                    <div class="main-slider__popup-item container" data-slide-id="7">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">7 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="main-slider__item" >
+            <div class="main-slider__item">
 
                 <div class="main-slider__img"><img src="img/main_slide_01.jpg" alt="Фото машины"></div>
 
@@ -66,16 +270,120 @@
                 </div>
 
 
-                <ul class="main-slider__list">
-                    <li class="link-line"><a href="">Патриот АКПП</a></li>
-                    <li class="link-line"><a href="">Обновленный Патриот</a></li>
-                    <li class="link-line"><a href="">Обновленный Пикап</a></li>
-                    <li class="link-line"><a href="">Хантер</a></li>
-                    <li class="link-line"><a href="">Хантер Экспедиционный</a></li>
-                    <li class="link-line"><a href="">Коммерческие автомобили</a></li>
-                    <li class="link-line"><a href="">«Буханка» Комби Трофи</a></li>
+                <ul class="main-slider__list" data-btn-hover-list>
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="1">
+                        <div class="car__img"><img src="img/hover_car_01.png" alt="Фото машины"></div>
+                        <span class="list-btn">Патриот АКПП</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="2">
+                        <div class="car__img"><img src="img/hover_car_02.png" alt="Фото машины"></div>
+                        <span class="list-btn">Обновленный Патриот</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="3">
+                        <div class="car__img"><img src="img/hover_car_03.png" alt="Фото машины"></div>
+                        <span class="list-btn">Обновленный Пикап</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="4">
+                        <div class="car__img"><img src="img/hover_car_04.png" alt="Фото машины"></div>
+                        <span class="list-btn">Хантер</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="5">
+                        <div class="car__img"><img src="img/hover_car_05.png" alt="Фото машины"></div>
+                        <span class="list-btn">Хантер Экспедиционный</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="6">
+                        <div class="car__img"><img src="img/hover_car_06.png" alt="Фото машины"></div>
+                        <span class="list-btn">Коммерческие автомобили</span>
+                    </li>
+
+                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="7">
+                        <div class="car__img"><img src="img/hover_car_07.png" alt="Фото машины"></div>
+                        <span class="list-btn">«Буханка» Комби Трофи</span>
+                    </li>
                 </ul>
+
+                <div class="main-slider__popup-items" data-popup-items>
+
+                    <div class="main-slider__popup-item container" data-slide-id="1">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">1 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                    <div class="main-slider__popup-item container" data-slide-id="2">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">2 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                    <div class="main-slider__popup-item container" data-slide-id="3">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">3 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                    <div class="main-slider__popup-item container" data-slide-id="4">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">4 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                    <div class="main-slider__popup-item container" data-slide-id="5">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">5 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                    <div class="main-slider__popup-item container" data-slide-id="6">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">6 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                    <div class="main-slider__popup-item container" data-slide-id="7">
+                        <div class="logotype_img"><img src="img/logotype_uaz.png" alt="Логотип"></div>
+                        <div class="popup__content">
+                            <div class="popup__logo-text">Официальный дилер<br> «Автоэкспресс»</div>
+                            <div class="popup__header">7 Обновленный Патриот</div>
+                            <div class="popup__price">от 984 000 Р</div>
+                            <div class="bar__link"><a href="">Узнать подробнее</a></div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+
+
 
         </div>
  </section>
