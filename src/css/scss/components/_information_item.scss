@@ -10,6 +10,7 @@
 }
 
 .information__items{
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -86,50 +87,37 @@
 .information__item--opacity .information__item:hover{
   box-shadow: none;
 }
-
-// TODO Кнопку убрать и сделать отдельно иначе не будет работать событие клик
-/*.icon-arrow-next .information__img:after{
-  content: '';
+ // кнопки
+.information-btn-wrp{
   position: absolute;
-  right: 0;
-  bottom: 0;
-  transform: translate(25px, -15px);
+  width: 100%;
+  z-index: 5;
+}
+
+.information-btn{
+  position: absolute;
+  bottom: -140px;
+  display: inline-block;
   width: 40px;
   height: 40px;
-  background: url('#{$dir_img}/icon_arrow_next.svg') center center no-repeat;
-  z-index: 1;
-}*/
+  cursor: pointer;
+}
 
-/*.icon-arrow-next .information__img:after:hover{
-  transform: scale(1.1);
-}*/
+.information-btn:after{
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
 
+.information-btn--prev{
+  background: url("../img/icon_arrow_next.svg") no-repeat center center;
+  transform: rotate(180deg);
+  display: none;
+}
 
-
-// slider
-.information__items--slider{
-
-  .slick-track{
-  /*  position: relative;
-    display: flex;
-    flex-direction: row;*/
-   /* width: calc(317px * 15) !important;
-    transform: translate3d(calc(-317px * 5), 0px, 0px);*/
-  }
-
-  .slick-slide{
-    /*width: 307px !important;*/
-   /* margin-left: 5px;
-    margin-right: 5px;*/
-  }
-
-  .slick-arrow{
-    /*bottom: -100px;
-    width: 100px;
-    height: 100px;*/
-  }
-
-  .information__item{
-
-  }
+.information-btn--next:after{
+  background: url("../img/icon_arrow_next.svg") no-repeat center center;
 }

@@ -5,6 +5,10 @@ jQuery(document).ready(function() {
     // появление модального окна в слайдере (index.php) при наведении на название марки машины
     showPopupWindowInMainSlider();
 
+    // слайдер "Полезная информация"
+
+    sliderInformation();
+
 
     // слайдер фото зданий в index.html
     $('[data-slider-building]').slick({
@@ -20,6 +24,197 @@ jQuery(document).ready(function() {
     $('select').niceSelect();
 
 });
+
+
+// слайдер "Полезная информация"
+function sliderInformation(){
+    // основная обёртка
+    var $parentSliders = $('[data-slider-information]');
+    if(!$parentSliders.is('[data-slider-information]')) return;
+
+    // родитель навигационных кнопок
+    var $parentBtm = $parentSliders.find('.information-btn-wrp');
+
+
+    function CurrentState() {
+        // список всех слайдов
+        this.slides = $parentSliders.find('.information-item--slider-wrp');
+        // общее количество слайдов
+        this.numberOfSlides = this.slides.length;
+        // видимая часть обёртки
+        this.visibleWidth = $parentSliders.innerWidth();
+        // ширина слайда
+        this.slideWidth = $parentSliders.find('.information-item--slider-wrp').filter(':first').innerWidth();
+
+
+        // используются для первоначальной стилизации слайдов и кнопок
+        // количество полных видимых слайдов
+        this.numberOfVisibleSlides = getNumberOfVisibleSlides(this.visibleWidth, this.slideWidth);
+        // количество полупрозразных слайдов
+        this.numGreySliders = this.numberOfSlides - this.numberOfVisibleSlides;
+
+
+        // --- текущие состояния
+        // текущий последний видимый слайд
+        this.currentVisibleSlide = this.slides.eq(this.numberOfVisibleSlides - 1);
+        // оставшиеся полупрозрачные слайды
+        this.currentGreySlides = this.numGreySliders;
+        // всего видимых слайдов
+        this.currentVisibleSlides = this.numberOfVisibleSlides;
+
+
+        // кнопка
+        this.btnRight = $parentSliders.find('[data-next]');
+        this.btnLeft = $parentSliders.find('[data-prev]');
+        // показанная кнопка
+        this.isbtnLeftShow = false;
+        this.isbtnRightShow = false;
+
+        // текущий сдвиг
+        this.currentMargin = 0;
+    }
+
+
+    var currentState = new CurrentState();
+    console.log(currentState);
+
+    // делаем неактивными слайды которые не влазят в видимую область
+    paintingSliders();
+
+    // выравнивание кнопки
+    alignBtn(currentState.btnRight);
+    alignBtn(currentState.btnLeft);
+
+    // смена слайдов
+    $parentBtm.on('click', show);
+
+
+    function show(event) {
+
+        var $target = $(event.target);
+        if(!$target.is('.information-btn')) return;
+
+        var shift = 0;
+        var $currentGreySlide = $();
+
+        if($target.is('[data-next]')){
+
+            // проверка наличия невидимых слайдов
+            if(currentState.currentGreySlides > 0){
+
+                // вычисление необходимого сдвига
+                shift = currentState.currentMargin - currentState.slideWidth;
+                currentState.currentMargin = shift;
+
+                // --- обновление состояния ----
+                // оставшийся невидимые слайды
+                currentState.currentGreySlides = currentState.currentGreySlides - 1;
+                // всего видимых слайдов
+                currentState.currentVisibleSlides = currentState.currentVisibleSlides + 1;
+
+                // --- стилизация и поиск ---
+                // поиск текущего невидимого слайда
+                $currentGreySlide = currentState.slides.eq(currentState.currentVisibleSlides - 1);
+
+                TweenMax.to($currentGreySlide, 0.5, {opacity: 1});
+                $currentGreySlide.removeClass('information__item--opacity');
+                TweenMax.to(currentState.slides.eq(0), 0.5, {marginLeft: shift});
+
+                // прячем кнопку правую кнопку
+                if (currentState.currentGreySlides === 0){
+                    currentState.btnRight.css('display', 'none');
+                    currentState.isbtnRightShow = false;
+                }
+
+                // показываем левую кнопку
+                if(!currentState.isbtnLeftShow){
+                    currentState.btnLeft.css('display', 'inline-block');
+                    currentState.isbtnLeftShow = true;
+                }
+            }
+        }
+
+
+        if($target.is('[data-prev]')){
+
+            // проверка - пока текущее количество серых слайдов меньше начального
+            if(currentState.currentGreySlides < currentState.numGreySliders){
+
+                // вычисление необходимого сдвига
+                shift = currentState.currentMargin + currentState.slideWidth;
+                currentState.currentMargin = shift;
+
+                // --- обновление состояния ----
+                // оставшийся прозрачные слайды
+                currentState.currentGreySlides = currentState.currentGreySlides + 1;
+
+
+                // поиск текущего невидимого слайда
+                $currentGreySlide = currentState.slides.eq(currentState.currentVisibleSlides - 1);
+
+                TweenMax.to($currentGreySlide, 0.5, {opacity: 0.2});
+                $currentGreySlide.addClass('information__item--opacity');
+                TweenMax.to(currentState.slides.eq(0), 0.5, {marginLeft: shift});
+
+                // всего видимых слайдов
+                currentState.currentVisibleSlides = currentState.currentVisibleSlides - 1;
+
+                // показываем кнопку
+                if(!currentState.isbtnRightShow){
+                    currentState.btnRight.css('display', 'inline-block');
+                    currentState.isbtnRightShow = true;
+                }
+
+                // прячем кнопку
+                if (currentState.currentGreySlides >= currentState.numGreySliders){
+                    currentState.btnLeft.css('display', 'none');
+                    currentState.isbtnLeftShow = false;
+                }
+            }
+        }
+    }
+
+    // выравнивание кнопки на последнем видимом боке
+    function alignBtn($btnNode) {
+
+        // показываем правую кнопку на последнем видимом слайде
+        if($btnNode.is('[data-next]')){
+            var $lastVisibleSlide =  currentState.currentVisibleSlide;
+
+            // координаты последнего слайда
+            var rightPositionLastVisibleSlide = $lastVisibleSlide.position().left + currentState.slideWidth;
+            // координаты сдвига кнопки
+            var rightBtnPosition =  currentState.visibleWidth - rightPositionLastVisibleSlide - $btnNode.innerWidth() / 2;
+            console.log(rightBtnPosition);
+
+            $btnNode.css('right', rightBtnPosition);
+        }
+
+        // показываем левую кнопку на первом видимом слайде
+        if($btnNode.is('[data-prev]')){
+            var leftBntPosition = currentState.slideWidth - $btnNode.innerWidth() / 2;
+            $btnNode.css('left', leftBntPosition);
+        }
+    }
+
+    // делаем неактивными слайды которые не влазят в видимую область
+    function paintingSliders() {
+
+        for(var i = currentState.numberOfVisibleSlides; i < currentState.numberOfSlides; i++){
+            currentState.slides.eq(i).addClass('information__item--opacity');
+        }
+    }
+    
+    // количество видимых секций
+    function getNumberOfVisibleSlides(visibleWidth, sectionWidth) {
+        return Math.floor(visibleWidth / sectionWidth);
+    }
+}
+
+
+
+
+
 
 
 // появление модального окна в слайдере (index.php) при наведении на название марки машины

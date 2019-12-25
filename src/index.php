@@ -575,7 +575,13 @@
         </div>
     </div>
 
+
     <div class="information__items information__items--slider" data-slider-information>
+
+        <div class="information-btn-wrp">
+            <span class="information-btn information-btn--prev" data-prev></span>
+            <span class="information-btn information-btn--next" data-next></span>
+        </div>
 
         <div class="information-item--slider-wrp">
             <a href="" class="information__item">
@@ -654,7 +660,6 @@
                 </div>
             </a>
         </div>
-
     </div>
 </section>
 
