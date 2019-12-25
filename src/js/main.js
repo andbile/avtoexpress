@@ -6,6 +6,16 @@ jQuery(document).ready(function() {
     showPopupWindowInMainSlider();
 
 
+    // слайдер фото зданий в index.html
+    $('[data-slider-building]').slick({
+        speed: 1000,
+        /* autoplay: true,
+         autoplaySpeed: 4000,*/
+        arrows:false,
+        dots:true,
+        dotsClass: 'slick-dots slick-dots--type1'
+    });
+
     // select
     $('select').niceSelect();
 
