@@ -15,9 +15,9 @@
                 </div>
 
                 <ul class="brands">
-                    <li class="brands--active"><a href="">УАЗ</a></li>
-                    <li><a href="">LADA</a></li>
-                    <li><a href="">ГАЗ</a></li>
+                    <li><a href="brand_page.php">УАЗ</a></li> <!-- class="brands--active" -->
+                    <li><a href="brand_page.php">LADA</a></li>
+                    <li><a href="brand_page.php">ГАЗ</a></li>
                     <li class="main-menu__btn" data-popup-btn><span></span></li>
                 </ul>
             </div>

@@ -29,6 +29,7 @@
 .main-slider__img img{
   position: absolute;
   right: 0;
+  // TODO исправить когда будет адаптив
   width: 1440px;
   height: 100%;
 }
@@ -36,8 +37,8 @@
 .main-slider__content, .main-slider__list{
   position: relative;
   color: $font-color-white;
-  padding-left: 2.8%;
-  padding-right: 2.8%;
+  padding-left: 6.11%;
+  padding-right: 6.11%;
   z-index: 1;
 }
 
