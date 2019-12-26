@@ -72,6 +72,36 @@
   color: $font-link-color-hover;
 }
 
+.car-filter__links-wrp{
+  display: flex;
+  flex-direction: row;
+
+  div{
+    margin-right: 40px;
+  }
+
+  div:last-child{
+    margin-right: 0;
+  }
+
+  a{
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 24px;
+    transition: all 0.4s;
+  }
+
+  .credit:hover,
+  .service:hover{
+    color: $font-link-color-hover;
+    transition: color 0.4s;
+
+    a{
+      color: $font-link-color-hover;
+    }
+  }
+
+}
 
 
 // стили вендоров nice-select

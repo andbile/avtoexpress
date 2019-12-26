@@ -76,7 +76,6 @@ function sliderInformation(){
 
 
     var currentState = new CurrentState();
-    console.log(currentState);
 
     // делаем неактивными слайды которые не влазят в видимую область
     paintingSliders();
@@ -185,7 +184,6 @@ function sliderInformation(){
             var rightPositionLastVisibleSlide = $lastVisibleSlide.position().left + currentState.slideWidth;
             // координаты сдвига кнопки
             var rightBtnPosition =  currentState.visibleWidth - rightPositionLastVisibleSlide - $btnNode.innerWidth() / 2;
-            console.log(rightBtnPosition);
 
             $btnNode.css('right', rightBtnPosition);
         }
