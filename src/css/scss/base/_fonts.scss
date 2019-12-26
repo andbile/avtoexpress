@@ -165,6 +165,11 @@
 .icon-mark_map:before { content: '\e805'; } /* '' */
 .icon-palm:before { content: '\e806'; } /* '' */
 .icon-path_right:before { content: '\e807'; } /* '' */
+.icon-path_left:before { content: '\e812'; } /* '' */
+
+
+
+
 
 .icon:before{
   font-family: 'avtoexpress';
@@ -199,7 +204,8 @@
   font-size: 18px;
 }
 
-.icon-path_right:before{
+.icon-path_right:before,
+.icon-path_left:before{
   /*font-size: 10px;*/
 }
 
