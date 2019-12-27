@@ -341,7 +341,7 @@
 
 <section class="mp-information-slider">
         <div class="information-title_wrp">
-            <h2 class="content__title">Полезная информация</h2>
+            <h2 class="content__title">Новости и события</h2>
             <div class="content__link">
                 <a href="">Смотреть все новости</a>
                 <span class="icon icon-path_right"></span>

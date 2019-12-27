@@ -2431,6 +2431,8 @@ button.mp-slider-btn.slick-next {
   padding-left: 88px; }
 
 .mp-specifications__table td {
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 14px;
   line-height: 24px;
   min-width: 120px; }
@@ -2527,6 +2529,9 @@ button.mp-slider-btn.slick-next {
   padding-right: 6.11%;
   padding-top: 24px;
   padding-bottom: 24px; }
+
+.mp-other-equipment__content-row:last-child {
+  border-bottom: 1px solid #E1E6E8; }
 
 .mp-other-equipment__content-row {
   -webkit-box-align: center;
