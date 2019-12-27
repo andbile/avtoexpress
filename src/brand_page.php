@@ -8,7 +8,7 @@
     <div class="brand__content">
         <div class="brand__logo">
             <div class="brand__img"><img src="img/logotype_lada.png" alt="Логотип"></div>
-            <div class="brand__header">LADA</div>
+            <div class="content__title--type2">LADA</div>
         </div>
         <div class="brand__text">Автомобили LADA у официального дилера «Автоэкспресс»</div>
     </div>

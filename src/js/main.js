@@ -20,6 +20,19 @@ jQuery(document).ready(function() {
         dotsClass: 'slick-dots slick-dots--type1'
     });
 
+    // слайдер фото зданий в model_page.html
+    $('[data-slider-model-page]').slick({
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        /*arrows:false,*/
+        dots:false,
+        prevArrow: $(''),
+        nextArrow: $('.mp-slider__btn .slick-next')
+    });
+
+
+
     // select
     $('select').niceSelect();
 

@@ -12,7 +12,7 @@
                 <a href="brand_page.php">LADA Granta</a>
             </div>
 
-            <div class="mp-main_preview__model">Лифтбек Норма Платина</div>
+            <div class="content__title--type2">Лифтбек Норма Платина</div>
             <div class="mp-main_preview__price">от 499 400 &#x20bd;</div>
             <div class="btn btn--orange"><a href="">Записаться на тест-драйв</a></div>
         </div>
@@ -46,8 +46,428 @@
     </div>
 </section>
 
+<section class="mp-slider container">
+    <div class="mp-slider__content">
+        <div class="content__title--type2">Новая LADA Granta держит слово</div>
+        <p class="mp-slider__text">
+            Моя сила не в блеске внешних украшений и вещей. Не в достижениях виртуальной жизни. Моя сила в том, что я выполняю обещания. Не меняю мировоззрение раз в полгода, а иду к цели и помогаю другим достичь ее.
+        </p>
+    </div>
 
 
+    <div class="mp-slider__wrp">
+        <div class="mp-slider__btn">
+            <button class="mp-slider-btn slick-prev slick-arrow" aria-label="Prev" type="button" style="">Pre</button>
+            <button class="mp-slider-btn slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
+        </div>
+        <div class="mp-slider__items" data-slider-model-page>
+            <div class="mp-slider__img"><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
+            <div class="mp-slider__img"><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
+            <div class="mp-slider__img"><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
+            <div class="mp-slider__img"><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
+            <div class="mp-slider__img"><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mp-bars">
+
+        <div class="bars__row">
+
+            <div class="bar__common--type2 bar__one-two bar__one-two--h708 bar--m-right">
+                <div class="bar__img"><img src="img/bar_1-2_01.jpg" alt="Фото автомобиля"></div>
+            </div>
+
+            <div class="bar__common--type2 bar__one-two">
+
+                <div class="bars__column">
+                    <div class="bar__one-two bar__one-two--h366 bar--m-bottom">
+                        <div class="bar__img"><img src="img/bar_1-2_02.jpg" alt="Фото автомобиля"></div>
+                    </div>
+
+                    <div class="bars__row">
+                        <div class="bar__common--type2 bar__one-two-small bar__one-two--h338 bar--m-right">
+                            <div class="bar__img"><img src="img/bar_1-2_03.jpg" alt="Фото автомобиля"></div>
+                        </div>
+
+                        <div class="bar__common--type2 bar__one-two-small bar__one-two--h338">
+                            <div class="bar__img"><img src="img/bar_1-2_04.jpg" alt="Фото автомобиля"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<section class="mp-specifications container">
+
+    <div class="mp-specifications__col-1">
+        <div class="content__title">Характеристики</div>
+
+        <table class="mp-specifications__table">
+            <tr>
+                <td>Марка</td>
+                <td class="table__content">LADA</td>
+            </tr>
+            <tr>
+                <td>Модель</td>
+                <td class="table__content">Granta</td>
+            </tr>
+            <tr>
+                <td>Комплектация</td>
+                <td class="table__content">Норма</td>
+            </tr>
+            <tr>
+                <td>Цвет</td>
+                <td class="table__content">Персей</td>
+            </tr>
+            <tr>
+                <td> Год выпуска</td>
+                <td class="table__content">2017</td>
+            </tr>
+            <tr>
+                <td>Кузов</td>
+                <td class="table__content">Лифтбек</td>
+            </tr>
+            <tr>
+                <td> Тип двигателя</td>
+                <td class="table__content">Бензин</td>
+            </tr>
+            <tr>
+                <td>Привод</td>
+                <td class="table__content">—</td>
+            </tr>
+            <tr>
+                <td>Объем двиг.</td>
+                <td class="table__content">1,6 см<sup>3</sup></td>
+            </tr>
+            <tr>
+                <td>Коробка</td>
+                <td class="table__content">5МТ</td>
+            </tr>
+            <tr>
+                <td>Мощность двиг.</td>
+                <td class="table__content">87 л.с.</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="mp-specifications__col-2">
+        <div class="content__title">Комплектация</div>
+
+        <div class="mp-specifications__list-wrp">
+
+            <ul class="mp-specifications__list">
+                <li>Подушка безопасности водителя;</li>
+                <li>Подголовники задних сидений 2 шт.;</li>
+                <li>Крепления для детских сидений ISOFIX;</li>
+                <li>Блокировка задних дверей от открывания детьми;</li>
+                <li>Иммобилайзер;</li>
+                <li>Дневные ходовые огни;</li>
+                <li>Антиблокировочная система тормозов с усилителем экстренного торможения (ABS+BAS);</li>
+                <li>Электронная система распределения тормозных усилий (EBD);</li>
+                <li>Бортовой компьютер;</li>
+                <li>Подсказчик переключения передач в комбинации приборов;</li>
+                <li>Заднее сиденье с раскладкой в пропорции 60/40;</li>
+            </ul>
+
+            <ul class="mp-specifications__list">
+                <li>Розетка 12V;</li>
+                <li>Электроусилитель рулевого управления;</li>
+                <li>Регулируемая по высоте рулевая колонка;</li>
+                <li>Воздушный фильтр салона;</li>
+                <li>Легкая тонировка стекол;</li>
+                <li>Электростеклоподъемники передних дверей;</li>
+                <li>Аудиоподготовка;</li>
+                <li>Рамки дверей черного цвета;</li>
+                <li>Молдинги боковых дверей;</li>
+                <li>Колеса штампованные 14’’;</li>
+                <li>Колпаки колес декоративные;</li>
+                <li>Запасное колесо штампованное полноразмерное 14’’.</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+<section class="mp-links--2 container">
+        <div class="mp-links__col-1">
+
+            <div class="mp-link link-line link-line--grey">
+                <span class="icon icon-steering_wheel"></span>
+                <a href="">Заявка на кредит</a>
+            </div>
+
+            <div class="mp-link link-line link-line--grey">
+                <span class="icon icon-speedometer"></span>
+                <a href="">Заявка на покупку</a>
+            </div>
+
+            <div class="mp-link link-line link-line--grey">
+                <span class="icon icon-rocket"></span>
+                <a href="">Аксессуары</a>
+            </div>
+
+        </div>
+
+
+        <div class="btn btn--orange"><a href="">Записаться на тест-драйв</a></div>
+
+    </section>
+
+<section class="mp-other-equipment">
+        <div class="mp-other-equipment__head container">
+            <div class="content__title">Другие комплектации</div>
+            <div class="mp-other-equipment__link">
+                <a href="">По названию</a>
+                <span class="icon icon-path_left"></span>
+            </div>
+        </div>
+
+        <div class="mp-other-equipment__content">
+
+            <div class="mp-other-equipment__content-row">
+                <div class="col-1">
+                    <div class="spec">1.6л 8-кл (87 л.с.), 5МТ / Standart</div>
+                    <div class="art">(21901-A0-545)</div>
+                </div>
+                <div class="col-2">
+                    <div class="price">444 900 &#x20bd;</div>
+                    <div class="test-link link-line">
+                        <a href="">Тест-драйв</a>
+                    </div>
+                    <div class="look-link link-line">
+                        <a href="">Смотреть</a>
+                        <span class="icon icon-path_right"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mp-other-equipment__content-row">
+                <div class="col-1">
+                    <div class="spec">1.6л 8-кл (87 л.с.), 5МТ / Classic</div>
+                    <div class="art">(21901-A1-567)</div>
+                </div>
+                <div class="col-2">
+                    <div class="price">480 500 &#x20bd;</div>
+                    <div class="test-link link-line">
+                        <a href="">Тест-драйв</a>
+                    </div>
+                    <div class="look-link link-line">
+                        <a href="">Смотреть</a>
+                        <span class="icon icon-path_right"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mp-other-equipment__content-row">
+                <div class="col-1">
+                    <div class="spec">1.6л 8-кл (87 л.с.), 5МТ / Classic / Optima</div>
+                    <div class="art">(21901-A1-575)</div>
+                </div>
+                <div class="col-2">
+                    <div class="price">506 500 &#x20bd;</div>
+                    <div class="test-link link-line">
+                        <a href="">Тест-драйв</a>
+                    </div>
+                    <div class="look-link link-line">
+                        <a href="">Смотреть</a>
+                        <span class="icon icon-path_right"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mp-other-equipment__content-row">
+                <div class="col-1">
+                    <div class="spec">1.6л 8-кл (87 л.с.), 5МТ / Comfort</div>
+                    <div class="art">(21901-A1-568)</div>
+                </div>
+                <div class="col-2">
+                    <div class="price">526 500 &#x20bd;</div>
+                    <div class="test-link link-line">
+                        <a href="">Тест-драйв</a>
+                    </div>
+                    <div class="look-link link-line">
+                        <a href="">Смотреть</a>
+                        <span class="icon icon-path_right"></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+</section>
+
+
+<section class="mp-information-slider">
+        <div class="information-title_wrp">
+            <h2 class="content__title">Полезная информация</h2>
+            <div class="content__link">
+                <a href="">Смотреть все новости</a>
+                <span class="icon icon-path_right"></span>
+            </div>
+        </div>
+
+
+        <div class="information__items information__items--slider" data-slider-information>
+
+            <div class="information-btn-wrp">
+                <span class="information-btn information-btn--prev" data-prev></span>
+                <span class="information-btn information-btn--next" data-next></span>
+            </div>
+
+            <div class="information-item--slider-wrp">
+                <a href="" class="information__item">
+                    <div class="information__img">
+                        <img  src="img/information_preview_01.jpg" alt="Полезная информация">
+                    </div>
+                    <div class="information__content">
+                        <p class="information__title">ГАЗель Некст от 333 руб. в день</p>
+                        <p  class="information_description">Данная программа призвана обезопасить клиента, который …</p>
+                        <p class="information_description__date">27 сентября 2016</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="information-item--slider-wrp">
+                <a href="" class="information__item">
+                    <div class="information__img">
+                        <img  src="img/information_preview_02.jpg" alt="Полезная информация">
+                    </div>
+                    <div class="information__content">
+                        <p class="information__title">Лифан в Иваново, цены и комплектации</p>
+                        <p  class="information_description">С появлением на отечественном авторынке такой марки как …</p>
+                        <p class="information_description__date">3 марта 2017</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="information-item--slider-wrp">
+                <a href="" class="information__item">
+                    <div class="information__img">
+                        <img  src="img/information_preview_03.jpg" alt="Полезная информация">
+                    </div>
+                    <div class="information__content">
+                        <p class="information__title">Конкурс «Мисс ЛАДА» Иваново </p>
+                        <p  class="information_description">21 августа состоялся яркий полуфинал конкурса «Автоледи …</p>
+                        <p class="information_description__date">21 августа 2016</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="information-item--slider-wrp">
+                <a href="" class="information__item">
+                    <div class="information__img">
+                        <img  src="img/information_preview_04.jpg" alt="Полезная информация">
+                    </div>
+                    <div class="information__content">
+                        <p class="information__title">Пятидесятилетие «АвтоВаза». Как это было!</p>
+                        <p  class="information_description">В субботу, 16 июля, по всей России официальные дилеры LADA …</p>
+                        <p class="information_description__date">16 июля 2016</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="information-item--slider-wrp">
+                <a href="" class="information__item">
+                    <div class="information__img">
+                        <img  src="img/information_preview_01.jpg" alt="Полезная информация">
+                    </div>
+                    <div class="information__content">
+                        <p class="information__title">ГАЗель Некст от 333 руб. в день</p>
+                        <p  class="information_description">Данная программа призвана обезопасить клиента, который …</p>
+                        <p class="information_description__date">27 сентября 2016</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="information-item--slider-wrp">
+                <a href="" class="information__item">
+                    <div class="information__img">
+                        <img  src="img/information_preview_02.jpg" alt="Полезная информация">
+                    </div>
+                    <div class="information__content">
+                        <p class="information__title">ГАЗель Некст от 333 руб. в день</p>
+                        <p  class="information_description">Данная программа призвана обезопасить клиента, который …</p>
+                        <p class="information_description__date">27 сентября 2016</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+</section>
+
+<section class="section-map">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=40b8a09d-8389-4a22-a0ac-2e18995eae34&lang=ru_RU"
+                type="text/javascript">
+        </script>
+        <div id="map">
+
+        </div>
+
+        <script>
+            ymaps.ready(function () {
+                var myMap = new ymaps.Map("map", {
+                    center: [57.026488, 40.968522],
+                    zoom: 16,
+                    controls: []
+                });
+
+
+                var myPlacemark = new ymaps.GeoObject({
+                    geometry: {
+                        type: "Point",
+                        coordinates:  [57.026488, 40.968522]
+                    },
+                    properties: {
+                        // Контент метки.
+                        hintContent: 'г. Иваново, ул. Калашникова, д. 26а'
+                    }
+                });
+
+                myMap.geoObjects.add(myPlacemark);
+            });
+        </script>
+    </section>
 </main>
 <!-- footer -->
 <?php require_once 'template-parts/footer.php'?>
