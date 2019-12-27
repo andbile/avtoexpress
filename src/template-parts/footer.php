@@ -66,7 +66,7 @@
                     <li><a href="">Сервис</a></li>
                     <li><a href="">Акции</a></li>
                     <li><a href="">Галерея</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li><a href="contacts.php">Контакты</a></li>
                 </ul>
             </nav>
 

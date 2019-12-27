@@ -32,6 +32,15 @@ jQuery(document).ready(function() {
     });
 
 
+    // contacts.php
+/*    $('[data-fancybox-map]').fancybox(
+        {
+            buttons: ["close"],
+            clickSlide: 'close',
+            clickContent : "close",
+            clickOutside: "close"
+        });*/
+
 
     // select
     $('select').niceSelect();

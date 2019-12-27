@@ -2605,4 +2605,102 @@ button.mp-slider-btn.slick-next {
 .mp-information-slider {
   padding-top: 100px; }
 
+.contacts-page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-top: 1px solid #E1E6E8; }
+
+.contacts-page .contacts__col-1,
+.contacts-page .contacts__col-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  width: 50%;
+  padding-top: 56px;
+  padding-bottom: 100px; }
+
+.contacts-page .contacts__col-1 {
+  border-right: 1px solid #E1E6E8;
+  padding-right: 6.11%; }
+
+.contacts-page .contacts__col-2 {
+  padding-left: 6.11%; }
+
+.contacts-page .contacts__name {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700; }
+
+.contacts-page .contacts__address--big {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 24px;
+  font-weight: 700; }
+
+.contacts-page .contacts__address--full {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 32px; }
+  .contacts-page .contacts__address--full .icon {
+    display: inline-block;
+    color: #A5A1A2;
+    -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+            transform: translateY(-2px); }
+  .contacts-page .contacts__address--full .icon:before {
+    font-size: 12px; }
+
+.contacts-page .contacts__wrp {
+  margin-bottom: 18px; }
+
+.contacts-page .contacts__wrp .contacts__type {
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.4;
+  margin-bottom: 5px; }
+
+.contacts-page .contacts__wrp a {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700; }
+
+.contacts-page .contacts__schedule {
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 48px; }
+
+.contacts-page .schedule {
+  margin-bottom: 12px; }
+
+.contacts-page .contacts__map-wrp {
+  width: 100%;
+  height: 360px; }
+
+.contacts-page #contacts__map1,
+.contacts-page #contacts__map2 {
+  width: 100%;
+  height: 100%; }
+
 /*# sourceMappingURL=main.css.map */

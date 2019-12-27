@@ -42,7 +42,7 @@
                     <li class="link-line"><a href="">Услуги</a></li>
                     <li class="link-line"><a href="">Вакансии</a></li>
                     <li class="link-line"><a href="">Сервис</a></li>
-                    <li class="link-line"><a href="">Контакты</a></li>
+                    <li class="link-line"><a href="contacts.php">Контакты</a></li>
                     <li class="link-line"><a href="">Новости</a></li>
                 </ul>
 
