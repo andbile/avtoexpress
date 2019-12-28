@@ -105,7 +105,8 @@
 
 
 // стили вендоров nice-select
-.car-filter__select{
+.car-filter__select,
+.form-test-drive__select{
   width: 180px;
 
   label{
@@ -148,4 +149,97 @@
   .nice-select .option.selected.focus{
     background-color: #3f3f42;
   }
+}
+
+.form-test-drive__select{
+  width: auto;
+  margin-right: 32px;
+
+  label{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    color: $bg-color-black;
+    opacity: 0.4;
+    margin-bottom: 7px;
+  }
+
+
+
+
+  .nice-select{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .nice-select:after{
+    top: 13px;
+    border-color: $bg-color-black;
+  }
+
+  .nice-select .current{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+
+  .nice-select .list{
+    background-color: $bg-color-grey;
+  }
+
+  .nice-select .list li:hover{
+    background-color: #BCBDBE;
+  }
+
+  .nice-select .option.focus,
+  .nice-select .option.selected.focus{
+    background-color: #BCBDBE;
+  }
+}
+
+.form-test-drive__select--time{
+  width: 200px;
+}
+
+
+.form-test-drive__select#test-drive-calendar{
+  position: relative;
+  width: 200px;
+
+  input[name="test-drive-calendar"]{
+    border: none;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    background-color: transparent;
+    width: 100%;
+  }
+
+
+}
+
+.form-test-drive__select#test-drive-calendar:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form-test-drive__select#test-drive-calendar:before{
+  content: '';
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  height: 9px;
+  width: 9px;
+  border-bottom: 2px solid $bg-color-black;
+  border-right: 2px solid $bg-color-black;
+  display: block;
+  margin-top: -4px;
+  pointer-events: none;
+  transform-origin: 66% 66%;
+  transform: rotate(45deg);
+  transition: all 0.15s ease-in-out;
 }

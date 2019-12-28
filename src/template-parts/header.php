@@ -46,7 +46,7 @@
                     <li class="link-line"><a href="">Новости</a></li>
                 </ul>
 
-                <div class="btn btn--orange"><a href="">Записаться на тест-драйв</a></div>
+                <div class="btn btn--orange"><a href="test_drive.php">Записаться на тест-драйв</a></div>
             </div>
 
 

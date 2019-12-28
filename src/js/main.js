@@ -45,6 +45,9 @@ jQuery(document).ready(function() {
     // select
     $('select').niceSelect();
 
+    // календарь
+    calendarInput();
+
 });
 
 
@@ -456,4 +459,53 @@ function showMainMenu(){
         $(".main-menu__search").toggleClass("active");
         $(this).toggleClass('active');
     });
+}
+
+function calendarInput(){
+    var dateRangePickerOptions = {
+        singleDatePicker: true,
+        showDropdowns: true,
+        "locale": {
+            "format": "MM/DD/YYYY",
+            "separator": " - ",
+            "applyLabel": "Применить",
+            "cancelLabel": "Отмена",
+            "fromLabel": "От",
+            "toLabel": "До",
+            "customRangeLabel": "Свой",
+            "daysOfWeek": [
+                "Вс",
+                "Пн",
+                "Вт",
+                "Ср",
+                "Чт",
+                "Пт",
+                "Сб"
+            ],
+            "monthNames": [
+                "Январь",
+                "Февраль",
+                "Март",
+                "Апрель",
+                "Май",
+                "Июнь",
+                "Июль",
+                "Август",
+                "Сентябрь",
+                "Октябрь",
+                "Ноябрь",
+                "Декабрь"
+            ],
+            "firstDay": 1
+        }
+    };
+
+    if(document.getElementById('test-drive-calendar')){
+
+
+
+        $(function() {
+            $('#test-drive-calendar input[name="test-drive-calendar"]').daterangepicker(dateRangePickerOptions);
+        });
+    }
 }

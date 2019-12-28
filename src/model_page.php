@@ -14,7 +14,7 @@
 
             <div class="content__title--type2">Лифтбек Норма Платина</div>
             <div class="mp-main_preview__price">от 499 400 &#x20bd;</div>
-            <div class="btn btn--orange"><a href="">Записаться на тест-драйв</a></div>
+            <div class="btn btn--orange"><a href="test_drive.php">Записаться на тест-драйв</a></div>
         </div>
 
 
@@ -242,7 +242,7 @@
         </div>
 
 
-        <div class="btn btn--orange"><a href="">Записаться на тест-драйв</a></div>
+        <div class="btn btn--orange"><a href="test_drive.php">Записаться на тест-драйв</a></div>
 
     </section>
 
@@ -265,7 +265,7 @@
                 <div class="col-2">
                     <div class="price">444 900 &#x20bd;</div>
                     <div class="test-link link-line">
-                        <a href="">Тест-драйв</a>
+                        <a href="test_drive.php">Тест-драйв</a>
                     </div>
                     <div class="look-link link-line">
                         <a href="">Смотреть</a>
@@ -283,7 +283,7 @@
                 <div class="col-2">
                     <div class="price">480 500 &#x20bd;</div>
                     <div class="test-link link-line">
-                        <a href="">Тест-драйв</a>
+                        <a href="test_drive.php">Тест-драйв</a>
                     </div>
                     <div class="look-link link-line">
                         <a href="">Смотреть</a>
@@ -301,7 +301,7 @@
                 <div class="col-2">
                     <div class="price">506 500 &#x20bd;</div>
                     <div class="test-link link-line">
-                        <a href="">Тест-драйв</a>
+                        <a href="test_drive.php">Тест-драйв</a>
                     </div>
                     <div class="look-link link-line">
                         <a href="">Смотреть</a>
@@ -319,7 +319,7 @@
                 <div class="col-2">
                     <div class="price">526 500 &#x20bd;</div>
                     <div class="test-link link-line">
-                        <a href="">Тест-драйв</a>
+                        <a href="test_drive.php">Тест-драйв</a>
                     </div>
                     <div class="look-link link-line">
                         <a href="">Смотреть</a>

@@ -1,0 +1,140 @@
+.section-test-drive{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #E1E6E8;
+
+  .test-drive__col-1,
+  .test-drive__col-2{
+    flex: 0 0 50%;
+    width: 50%;
+  }
+
+  .test-drive__col-1{
+    padding-top: 56px;
+  }
+
+  .test-drive__img{
+    width: 726px;
+    height: 701px;
+  }
+
+  .test-drive__img img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+  .content__title{
+    margin-bottom: 8px;
+  }
+
+  .test-drive__text{
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 40px;
+  }
+}
+
+form.form-test-drive{
+  position: relative;
+}
+
+.form-test-drive__select-wrp{
+  position: absolute;
+  padding: 40px 56px;
+  background-color: $bg-color-grey;
+}
+
+.form-test-drive__select-wrp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-test-drive__select{
+  margin-right: 30px;
+}
+
+.form-test-drive__input-wrp{
+  position: relative;
+  top: 180px;
+
+  .title{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  .form-test-drive__item{
+    width: 60%;
+  }
+
+  input{
+    font-size: 14px;
+    line-height: 20px;
+    color: $bg-color-black;
+    opacity: 0.5;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  input:focus{
+    color: $bg-color-black;
+    opacity: 1;
+  }
+
+  .form-test-drive__item--checkbox{
+    padding-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+
+
+    input{
+      display: none;
+    }
+
+    label{
+      position: relative;
+      cursor: pointer;
+      padding-left: 25px;
+      transition: all 0.4s;
+    }
+
+    label:before{
+      font-family: avtoexpress, sans-serif;
+      content: '\f096';
+      position: absolute;
+      left: 0;
+      top: 1px;
+      font-size: 20px;
+      color: #B2B2B2;
+    }
+
+    label:hover:before,
+    label:hover{
+      color: $font-link-color-hover;
+      transition: all 0.4s;
+    }
+
+    input[type="checkbox"]:checked + label:before{
+      content: '\e808';
+      color: $font-link-color-hover;
+    }
+  }
+
+  input[type='submit']{
+    width: 300px;
+    opacity: 1;
+    color: $font-color-white;
+    cursor: pointer;
+  }
+}
+
+
+

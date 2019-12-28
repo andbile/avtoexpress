@@ -4,7 +4,7 @@
         <div class="link-item link-line link-line--grey">
             <div class="link-item__links_wrp">
                 <span class="icon icon-steering_wheel"></span>
-                <a href="">Тест-драйв</a>
+                <a href="test_drive.php">Тест-драйв</a>
             </div>
         </div>
 
