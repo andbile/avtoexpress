@@ -15,7 +15,7 @@
                 </div>
 
                 <ul class="brands">
-                    <li><a href="brand_page.php">УАЗ</a></li> <!-- class="brands--active" -->
+                    <li><a href="brand_page.php">УАЗ</a></li>
                     <li><a href="brand_page.php">LADA</a></li>
                     <li><a href="brand_page.php">ГАЗ</a></li>
                     <li class="main-menu__btn" data-popup-btn><span></span></li>
@@ -37,7 +37,7 @@
             <div class="popup-menu__wrp-left-col">
 
                 <ul class="popup-menu__nav popup-menu__nav--left ">
-                    <li class="link-line"><a href="">О компании</a></li>
+                    <li class="link-line"><a href="about.php">О компании</a></li>
                     <li class="link-line"><a href="">Акции</a></li>
                     <li class="link-line"><a href="">Услуги</a></li>
                     <li class="link-line"><a href="">Вакансии</a></li>
@@ -61,7 +61,7 @@
                 <ul class="popup-menu__nav popup-menu__nav--right">
                     <li class="link-line"><a href="">Сервис</a></li>
                     <li class="link-line"><a href="">Кузовной ремонт</a></li>
-                    <li class="link-line"><a href="">Тест-драйв</a></li>
+                    <li class="link-line"><a href="test_drive.php">Тест-драйв</a></li>
                     <li class="link-line"><a href="">Трейд-Ин</a></li>
                     <li class="link-line"><a href="">Автомобили с пробегом</a></li>
                 </ul>

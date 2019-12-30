@@ -1,0 +1,78 @@
+.slider__wrapper{
+  position: relative;
+}
+
+.slide-item--opacity{
+  opacity: 0.2;
+}
+
+// кнопки слайдра
+.slider-btn-wrp{
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
+.slider-btn{
+  position: absolute;
+  bottom: -140px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.slider-btn:after{
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.slider-btn--prev{
+  background: url("../img/icon_arrow_next.svg") no-repeat center center;
+  transform: rotate(180deg);
+  display: none;
+}
+
+.slider-btn--next:after{
+  background: url("../img/icon_arrow_next.svg") no-repeat center center;
+}
+
+// слайдер - сертификаты
+.slider-btn-wrp--certificate{
+  .slider-btn{
+    bottom: -330px;
+  }
+}
+
+
+// ----------- responsive ----------
+@media (max-width: 992px){
+
+
+}
+
+@media (max-width: 768px){
+  .slider-btn-wrp--certificate{
+    .slider-btn{
+      bottom: -310px;
+    }
+  }
+}
+
+@media (max-width: 576px){
+
+
+
+}
+
+
+
+@media (max-width: 320px){
+
+
+}
+// ----------- end responsive ----------

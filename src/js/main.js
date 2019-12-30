@@ -1,4 +1,4 @@
-jQuery(document).ready(function() {
+jQuery(document).ready(function($) {
     // main-menu
     showMainMenu();
 
@@ -6,9 +6,42 @@ jQuery(document).ready(function() {
     showPopupWindowInMainSlider();
 
     // слайдер "Полезная информация"
-
     sliderInformation();
 
+    // разворачивание списка
+    expandSingleList ('[data-single-expandingList-open]', '[data-single-list-open-btn]');
+
+    function expandSingleList(selectorList, selectorBtn){
+
+        var $btn = $(selectorBtn);
+        var $list = $(selectorList);
+
+        $btn.on('click', showList);
+
+        function showList(event) {
+            event.preventDefault();
+            var $target = $(event.target);
+
+            console.log($target);
+            console.log($list);
+
+            $btn.toggleClass('active');
+            $list.toggleClass('active');
+
+
+
+          /*  var listItemNode = target.parentElement;*/
+
+           /* if(!listItemNode.classList.contains('how-get__list-item')) return;
+            listItemNode.classList.toggle('how-get__list-item--current');*/
+
+        }
+
+    }
+
+
+    //  маска ввода в полях ввода телефона
+    $('[data-tel]').mask('+7 (000) 000-00-00');
 
     // слайдер фото зданий в index.html
     $('[data-slider-building]').slick({
@@ -25,22 +58,20 @@ jQuery(document).ready(function() {
         speed: 1000,
         autoplay: true,
         autoplaySpeed: 4000,
-        /*arrows:false,*/
         dots:false,
         prevArrow: $(''),
         nextArrow: $('.mp-slider__btn .slick-next')
     });
 
 
-    // contacts.php
-/*    $('[data-fancybox-map]').fancybox(
+    // about.php
+    $('[data-fancybox-img]').fancybox(
         {
             buttons: ["close"],
             clickSlide: 'close',
             clickContent : "close",
             clickOutside: "close"
-        });*/
-
+        });
 
     // select
     $('select').niceSelect();
@@ -48,7 +79,229 @@ jQuery(document).ready(function() {
     // календарь
     calendarInput();
 
+
+    // слайдер сертификаты
+    var certSlider = new Slider('[data-slider-certificates]');
+    certSlider.run();
+
+
 });
+
+// slider
+function Slider(dataAttr) {
+    this.$parentSlider = $(dataAttr);
+    var self = this;
+
+    this.run = function () {
+        if(!self.$parentSlider.is(dataAttr)) return;
+
+        this.initialSliders();
+
+        // расстановка кнопок
+        this.setBtnPosition($btnRight);
+        this.setBtnPosition($btnLeft);
+    };
+
+    if(!this.$parentSlider.is(dataAttr)) return;
+
+
+    // --- слайды ---
+    // коллекция слайдов
+    var $slides = this.$parentSlider.find('.slide-item');
+    // ширина видимой часть слайдера
+    var visibleWidth = this.$parentSlider.innerWidth();
+    // ширина слайда
+    var slideWidth = $slides.filter(':first').innerWidth();
+    // первый слайд в слайдере, который будем двигать
+    var $firstSlide = this.$parentSlider.find('.slide-item').filter(':first');
+
+
+    // --- кнопки ---
+    // родитель навигационных кнопок
+    var $parentBtn = this.$parentSlider.find('.slider-btn-wrp');
+    // кнопка
+    var $btnRight = $parentBtn.find('[data-next]');
+    var $btnLeft = $parentBtn.find('[data-prev]');
+    // --- end кнопки ---
+
+
+    // --- смена слайдов ---
+    // текущий сдвиг
+    var currentMargin = 0;
+    // счётчик прокрученных слайдов
+    var countSliders = 0;
+
+    // смена слайдов
+    $parentBtn.on('click', show);
+
+    // при сресайзе, сбрасываем все настройки по умолчанию
+    var isEventResize = false;
+    $(window).resize(function() {
+
+        setTimeout(function () {
+            if(!isEventResize){
+                reset();
+                isEventResize = true;
+            }
+
+        },500);
+        isEventResize = false;
+    });
+
+    function reset() {
+        // ширина видимой часть слайдера
+        visibleWidth = self.$parentSlider.innerWidth();
+        // ширина слайда
+        slideWidth = $slides.filter(':first').innerWidth();
+
+        currentMargin = 0;
+        // счётчик прокрученных слайдов
+        countSliders = 0;
+
+        // перематываем слайды на начало
+        TweenMax.to($firstSlide, 0.5, {marginLeft: 0, onComplete:function () {
+
+                // заново инициируем слайды
+                self.initialSliders();
+
+                // расстановка кнопок
+                self.setBtnPosition($btnRight);
+                $btnRight.css('display', '');
+                self.setBtnPosition($btnLeft);
+                $btnLeft.css('display', 'none');
+            }});
+
+        // удаляем классы "slide-item--opacity"
+        var $sliders = self.$parentSlider.find('.slide-item');
+        $sliders.each(function (index) {
+           $(this).removeClass('slide-item--opacity');
+
+           if($(this).css('opacity') === '1'){
+               $(this).css('opacity', '');
+           }
+        });
+
+    }
+
+
+    // смена слайдов
+    function show (event) {
+        var $target = $(event.target);
+        if(!$target.is('.slider-btn')) return;
+
+        var shift = 0;
+
+        if($target.is('[data-next]')){
+
+            // проверка наличия слайдов, которые не влезли в видимую область
+            var $unVisibleSliders = self.$parentSlider.find('.slide-item--opacity');
+            if($unVisibleSliders.length > 0){
+
+                // вычисление необходимого сдвига
+                shift = currentMargin - slideWidth;
+                currentMargin = shift;
+
+                // поиск текущего невидимого слайда
+                var $currentUnVisibleSliders = $unVisibleSliders.filter(':first');
+
+                // двигаем слайды
+                TweenMax.to($currentUnVisibleSliders, 0.5, {opacity: 1, onStart:function () {
+                        $currentUnVisibleSliders.removeClass('slide-item--opacity');
+                        // прячем правую кнопку, если блоков которые не влазят больше не осталось
+                        // сравниваем с 1, так как на последнем событии присутствовал один элемент
+                        if($unVisibleSliders.length === 1){
+                            $btnRight.css('display', 'none');
+                        }
+                    }});
+
+                TweenMax.to($firstSlide, 0.5, {marginLeft: shift});
+
+                countSliders++;
+
+                // показываем левую кнопку
+                $btnLeft.css('display', 'inline-block');
+            }
+        }
+
+        if($target.is('[data-prev]')){
+
+            // проверка количества прокрученных слайдов, которые не влезли в видимую область
+            if(countSliders > 0){
+
+                // вычисление необходимого сдвига
+                shift = currentMargin + slideWidth;
+                currentMargin = shift;
+
+                // поиск последнего видимого слайда, который нужно зарисовать
+                var $lastVisibleSlide =  self.$parentSlider.find('.slide-item').not('.slide-item--opacity').filter(':last');
+
+                TweenMax.to($lastVisibleSlide, 0.5, {opacity: 0.2, onStart:function () {
+                        $lastVisibleSlide.addClass('slide-item--opacity');
+                        // прячем правую кнопку, сравниваем с 1, так как расчёт количества одет ниже по коду
+                        if(countSliders === 0){
+                            $btnLeft.css('display', 'none');
+                        }
+
+                    }});
+
+                TweenMax.to($firstSlide, 0.5, {marginLeft: shift});
+
+                countSliders--;
+
+                // показываем левую кнопку
+                $btnRight.css('display', 'inline-block');
+            }
+        }
+    }
+
+    this.setBtnPosition = function ($btnNode) {
+
+        // показываем правую кнопку на последнем видимом слайде
+        if($btnNode.is('[data-next]')){
+            var $lastVisibleSlide =  $slides.not('.slide-item--opacity').filter(':last');
+            // координаты последнего слайда
+            var rightPositionLastVisibleSlide = $lastVisibleSlide.position().left + slideWidth;
+            // координаты сдвига кнопки
+            var rightBtnPosition =  visibleWidth - rightPositionLastVisibleSlide - $btnNode.innerWidth() / 2;
+            /*console.log(rightBtnPosition);
+            console.log(visibleWidth);*/
+
+            if(rightBtnPosition < 0) rightBtnPosition = 0;
+            // если меньше двух слайдов
+            if($slides.not('.slide-item--opacity').length < 2){
+                rightBtnPosition = $(window).width()/2 - $btnNode.innerWidth()*2 + 10;
+                console.log($(window).width());
+            }
+
+            $btnNode.css('right', rightBtnPosition);
+        }
+
+        // показываем левую кнопку на первом видимом слайде
+        if($btnNode.is('[data-prev]')){
+            var leftBntPosition = slideWidth - $btnNode.innerWidth() / 2;
+
+            if($slides.not('.slide-item--opacity').length < 2){
+                leftBntPosition = $(window).width()/2 - $btnNode.innerWidth() + 10;
+                console.log($(window).width());
+            }
+
+            $btnNode.css('left', leftBntPosition);
+        }
+    };
+
+    // первоначальное определение видимых/не видимых слайдов и расстановка классов
+    this.initialSliders = function () {
+        // количество слайдов, которые полностью входят в видимую часть сладера
+        var numberVisibleSlides = Math.floor(visibleWidth / slideWidth);
+
+        // расстановка классов для слайдеров которые не влазят в видимую часть
+        for(var i = numberVisibleSlides; i < $slides.length; i++){
+            $slides.eq(i).addClass('slide-item--opacity');
+        }
+    };
+
+
+}
 
 
 // слайдер "Полезная информация"
@@ -374,9 +627,6 @@ function showPopupWindowInMainSlider() {
         if(currentState.slideImg.is('.blur')){
             currentState.slideImg.removeClass('blur');
         }
-
-
-
     }
 
     // отображаем фото машины
@@ -406,10 +656,6 @@ function showPopupWindowInMainSlider() {
 
         currentState.imgBtn.css('left', shift);
     }
-
-
-
-
 }
 
 // main-menu
@@ -501,11 +747,6 @@ function calendarInput(){
     };
 
     if(document.getElementById('test-drive-calendar')){
-
-
-
-        $(function() {
-            $('#test-drive-calendar input[name="test-drive-calendar"]').daterangepicker(dateRangePickerOptions);
-        });
+       $('#test-drive-calendar input[name="test-drive-calendar"]').daterangepicker(dateRangePickerOptions);
     }
 }

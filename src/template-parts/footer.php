@@ -59,7 +59,7 @@
 
             <nav class="main-footer__nav">
                 <ul>
-                    <li><a href="">О компании</a></li>
+                    <li><a href="about.php">О компании</a></li>
                     <li><a href="">Об авто</a></li>
                     <li><a href="">Услуги</a></li>
                     <li><a href="">Автозаметки</a></li>

@@ -92,7 +92,7 @@
 
 
                         <div class="form-test-drive__item form-test-drive__item--checkbox">
-                            <input type="checkbox" name="per-data" value="" id="per-data">
+                            <input type="checkbox" name="per-data" value="yes" id="per-data" required>
                             <label for="per-data">Соглашаюсь с «обработкой персональнных данных»</label>
                         </div>
 
