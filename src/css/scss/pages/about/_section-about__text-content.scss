@@ -175,40 +175,11 @@
   max-height:1500px;
 }
 
-.section-about__your-choice-list-link.active{
-  .icon{
-    transform: rotate(90deg) translateX(2px);
-  }
-}
+.section-about__your-choice-wrp{
 
-.section-about__your-choice-list-link{
-  display: inline-block;
-
-  a{
-    font-size: 14px;
-    line-height: 28px;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
-    margin-right: 5px;
-    transition: all 0.4s;
-  }
-
-  .icon{
-    display: inline-block;
-    transform: rotate(-90deg) translateX(-2px);
-    transition: all 0.4s;
-  }
-  .icon:before{
-    font-size: 12px;
-  }
-
-  &:hover{
-    a{
-      border-bottom: 1px dashed $font-link-color-hover;
-    }
-
+  .link-with-border--path-bottom.active{
     .icon{
-      color: $font-link-color-hover;
+      transform: rotate(90deg) translateX(2px);
     }
   }
 }
-

@@ -95,27 +95,5 @@
   font-size: 15px;
 }
 
-.bar__link{
-  align-self: flex-start;
-  padding: 15px 50px;
-  border: 1px solid #ffffff;
-  transition: all 0.4s;
-  cursor: pointer;
-  display: inline-block;
-
-  a{
-    font-size: 14px;
-    color: $font-color-white;
-    font-weight: 700;
-  }
-
-  &:hover{
-    background-color: rgba(241, 243, 244, 0.8);
-  }
-
-  &:hover a{
-    color: $font-link-color-hover;
-  }
-}
 
 

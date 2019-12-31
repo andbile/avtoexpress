@@ -87,9 +87,7 @@
                 <li>Продавец-консультант проведет для вас бесплатно Тест-драйв с презентацией автомобиля.</li>
             </ul>
 
-
-
-            <div class="section-about__your-choice-list-link" data-single-list-open-btn>
+            <div class="link-with-border--path-bottom" data-single-list-open-btn>
                 <a href="">Читать больше</a>
                 <span class="icon icon-path_left"></span>
             </div>
@@ -149,6 +147,8 @@
             <a href="">Узнать больше</a>
             <span class="icon icon-path_right"></span>
         </div>
+
+
 
 
     </div>

@@ -10,38 +10,9 @@
   .content__title{
     margin-bottom: 5px;
   }
-}
 
-.mp-other-equipment__link{
-  display: inline-block;
-  margin-bottom: 40px;
-
-  a{
-    font-size: 14px;
-    line-height: 28px;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
-    margin-right: 5px;
-    transition: all 0.4s;
-  }
-
-  .icon{
-    display: inline-block;
-    transform: rotate(-90deg) translateX(-2px);
-    transition: all 0.4s;
-  }
-  .icon:before{
-    font-size: 12px;
-  }
-}
-
-.mp-other-equipment__link:hover{
-
-  a{
-    border-bottom: 1px dashed $font-link-color-hover;
-  }
-
-  .icon{
-    color: $font-link-color-hover;
+  .link-with-border--path-bottom{
+    margin-bottom: 40px;
   }
 }
 
@@ -103,41 +74,5 @@
     font-weight: 700;
     margin-right: 24px;
 
-  }
-
-  .look-link{
-    color: $font-link-color-hover;
-
-    a{
-      font-size: 14px;
-      line-height: 18px;
-      font-weight: 700;
-      color: $font-link-color-hover;
-      transition: all 0.4s;
-    }
-
-    a:after{
-      background-color: $font-link-color-hover;
-    }
-
-    .icon{
-      transition: all 0.4s;
-    }
-
-    .icon:before{
-      font-size: 10px;
-    }
-  }
-
-  .look-link:hover{
-    a{
-      color: darken($font-link-color-hover, 20%);
-    }
-    a:after{
-      background-color: darken($font-link-color-hover, 20%);
-    }
-    .icon{
-      color: darken($font-link-color-hover, 20%);
-    }
   }
 }

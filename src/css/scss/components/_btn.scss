@@ -20,3 +20,61 @@
 .btn.btn--orange:hover{
   background-color: darken($font-link-color-hover, 20%);
 }
+
+// кнопки с border
+// на плитках с фото
+.bar__link{
+  align-self: flex-start;
+  padding: 15px 50px;
+  border: 1px solid #ffffff;
+  transition: all 0.4s;
+  cursor: pointer;
+  display: inline-block;
+
+  a{
+    font-size: 14px;
+    color: $font-color-white;
+    font-weight: 700;
+  }
+
+  &:hover{
+    background-color: rgba(241, 243, 244, 0.8);
+  }
+
+  &:hover a{
+    color: $font-link-color-hover;
+  }
+}
+
+// на странице акции / Полезная информация
+.bar__link--type2{
+  border: 1px solid rgba(27, 27, 28, 0.1);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  a{
+    color: $font-link-color-hover;
+    margin-right: 5px;
+  }
+
+  .icon{
+    display: inline-block;
+    transform: rotate(-90deg) translateX(-2px);
+    color: $font-link-color-hover;
+    transition: all 0.4s;
+  }
+
+  .icon:before{
+    font-size: 12px;
+  }
+
+
+  &:hover{
+    background-color: rgba(241, 243, 244, 0.8);
+  }
+
+  &:hover a{
+    color: $font-link-color-hover;
+  }
+}

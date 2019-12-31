@@ -40,7 +40,7 @@
                     <li class="link-line"><a href="about.php">О компании</a></li>
                     <li class="link-line"><a href="">Акции</a></li>
                     <li class="link-line"><a href="">Услуги</a></li>
-                    <li class="link-line"><a href="">Вакансии</a></li>
+                    <li class="link-line"><a href="vacancies.php">Вакансии</a></li>
                     <li class="link-line"><a href="">Сервис</a></li>
                     <li class="link-line"><a href="contacts.php">Контакты</a></li>
                     <li class="link-line"><a href="">Новости</a></li>

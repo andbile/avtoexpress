@@ -1,0 +1,144 @@
+a{
+  color: $font-color-primary;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.4s;
+
+  &:visited{
+    color: $font-color-primary;
+  }
+
+  &:active{
+    color: $font-color-primary;
+  }
+
+  &:hover{
+    text-decoration: none;
+    color: $font-link-color-hover;
+  }
+}
+
+// линия под ссылкой
+.link-line a,
+.link-line-span span{
+  position: relative;
+}
+
+.link-line a:after,
+.link-line-span span:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: $bg-color-black;
+  opacity: 0.2;
+  transition: all 0.4s;
+}
+
+.link-line a:hover:after{
+  background-color: $font-link-color-hover;
+  opacity: 1;
+}
+
+.link-line-white a:after{
+  background-color: $font-color-white;
+}
+
+.link-line-span--white span:after{
+  background-color: $font-color-white;
+}
+
+.link-line-span--white:hover span:after{
+  background-color: $font-link-color-hover;
+  opacity: 1;
+}
+
+
+.content__link{
+  a{
+    position: relative;
+    margin-right: 5px;
+    color: $font-link-color-hover;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .icon{
+    display: inline-block;
+    transform: translateY(-1px);
+  }
+
+  .icon:before{
+    font-size: 10px;
+    color: $font-link-color-hover;
+  }
+
+  &:hover a{
+    color: darken($font-link-color-hover, 15%);
+  }
+
+  &:hover .icon:before{
+    color: darken($font-link-color-hover, 15%);
+  }
+}
+
+// ссылки на странице model_page.php (Другие комплектации)
+.content__link.content__link--link-line{
+  a{
+    margin-right: 2px;
+    font-size: 14px;
+    line-height: 18px;
+    transition: all 0.4s;
+  }
+
+  a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    transition: all 0.4s;
+    background-color: rgba(255, 133, 80, 0.5);
+  }
+
+  &:hover a:after{
+    color: darken($font-link-color-hover, 15%);
+    background-color: darken($font-link-color-hover, 15%);
+    opacity: 1;
+  }
+}
+
+// ссылка - чёрная с подчёркиванием внизу и галочкой направленной вниз
+.link-with-border--path-bottom{
+  display: inline-block;
+
+  a{
+    font-size: 14px;
+    line-height: 28px;
+    border-bottom: 1px dashed rgba(26, 27, 28, 0.5);
+    margin-right: 5px;
+    transition: all 0.4s;
+  }
+
+  .icon{
+    display: inline-block;
+    transform: rotate(-90deg) translateX(-2px);
+    transition: all 0.4s;
+  }
+  .icon:before{
+    font-size: 12px;
+  }
+
+  &:hover a{
+    color: $font-link-color-hover;
+    border-color: $font-link-color-hover;
+  }
+
+  &:hover .icon{
+    color: $font-link-color-hover;
+  }
+}

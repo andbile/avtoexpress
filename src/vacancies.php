@@ -2,11 +2,11 @@
 <!-- top main menu -->
 <? require_once 'template-parts/header.php' ?>
 <main>
-    <section class="s-vacancies container">
+    <section class="section-vacancies container">
 
-        <div class="s-vacancies__col-1">
+        <div class="section-vacancies__col-1">
 
-            <div class="s-vacancies__title-wrp">
+            <div class="sv__title-wrp">
                 <div class="content__title">Вакансии</div>
                 <div class="text">В связи с расширением‚ автосалон «Автоэкспресс» на конкурсной основе ведет набор
                     сотрудников
@@ -293,9 +293,9 @@
         </div>
 
 
-        <div class="s-vacancies__col-2">
-            <div class="col-2__text">Собеседования проводятся по предварительной записи:</div>
-            <div class="col-2__contacts">
+        <div class="section-vacancies__col-2">
+            <div class="sv__text">Собеседования проводятся по предварительной записи:</div>
+            <div class="sv__contacts">
                 <div class="tel">
                     <a href="tel:89109802434">8 (910) 980 24 34</a>
                 </div>

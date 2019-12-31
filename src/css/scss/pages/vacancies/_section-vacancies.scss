@@ -1,48 +1,51 @@
-.s-vacancies{
+.section-vacancies{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 58px;
+  border-top: 1px solid #E1E6E8;
 }
-
-.s-vacancies__col-2{
+// правая колонка
+.section-vacancies__col-2{
   flex: 0 0 352px;
   width: 352px;
   align-self: flex-start;
   padding: 50px;
   background-color: $bg-color-grey;
 
-  .col-2__text{
+  .sv__text{
     font-size: 15px;
     line-height: 22px;
     margin-bottom: 20px;
   }
 
-  .col-2__contacts .tel{
+  .sv__contacts .tel{
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
     margin-bottom: 5px;
   }
 
-  .col-2__contacts .mail{
+  .sv__contacts .mail{
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
   }
 }
 
-.s-vacancies__col-1{
+// девая колонка
+.section-vacancies__col-1{
   max-width: 700px;
   padding-bottom: 100px;
 
-  .s-vacancies__title-wrp{
+  .sv__title-wrp{
     max-width: 500px;
     margin-bottom: 50px;
-    .text{
-      font-size: 15px;
-      line-height: 22px;
-    }
+  }
+
+  .sv__title-wrp .text{
+    font-size: 15px;
+    line-height: 22px;
   }
 
   .content__title{

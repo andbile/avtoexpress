@@ -249,7 +249,7 @@
 <section class="mp-other-equipment">
         <div class="mp-other-equipment__head container">
             <div class="content__title">Другие комплектации</div>
-            <div class="mp-other-equipment__link">
+            <div class="link-with-border--path-bottom">
                 <a href="">По названию</a>
                 <span class="icon icon-path_left"></span>
             </div>
@@ -267,7 +267,7 @@
                     <div class="test-link link-line">
                         <a href="test_drive.php">Тест-драйв</a>
                     </div>
-                    <div class="look-link link-line">
+                    <div class="content__link content__link--link-line">
                         <a href="">Смотреть</a>
                         <span class="icon icon-path_right"></span>
                     </div>
@@ -285,7 +285,7 @@
                     <div class="test-link link-line">
                         <a href="test_drive.php">Тест-драйв</a>
                     </div>
-                    <div class="look-link link-line">
+                    <div class="content__link content__link--link-line">
                         <a href="">Смотреть</a>
                         <span class="icon icon-path_right"></span>
                     </div>
@@ -303,7 +303,7 @@
                     <div class="test-link link-line">
                         <a href="test_drive.php">Тест-драйв</a>
                     </div>
-                    <div class="look-link link-line">
+                    <div class="content__link content__link--link-line">
                         <a href="">Смотреть</a>
                         <span class="icon icon-path_right"></span>
                     </div>
@@ -321,7 +321,7 @@
                     <div class="test-link link-line">
                         <a href="test_drive.php">Тест-драйв</a>
                     </div>
-                    <div class="look-link link-line">
+                    <div class="content__link content__link--link-line">
                         <a href="">Смотреть</a>
                         <span class="icon icon-path_right"></span>
                     </div>
