@@ -11,33 +11,8 @@ jQuery(document).ready(function($) {
     // разворачивание списка
     expandSingleList ('[data-single-expandingList-open]', '[data-single-list-open-btn]');
 
-    function expandSingleList(selectorList, selectorBtn){
-
-        var $btn = $(selectorBtn);
-        var $list = $(selectorList);
-
-        $btn.on('click', showList);
-
-        function showList(event) {
-            event.preventDefault();
-            var $target = $(event.target);
-
-            console.log($target);
-            console.log($list);
-
-            $btn.toggleClass('active');
-            $list.toggleClass('active');
-
-
-
-          /*  var listItemNode = target.parentElement;*/
-
-           /* if(!listItemNode.classList.contains('how-get__list-item')) return;
-            listItemNode.classList.toggle('how-get__list-item--current');*/
-
-        }
-
-    }
+    // разворачивание списка vacancies.php
+    expandingList();
 
 
     //  маска ввода в полях ввода телефона
@@ -299,10 +274,7 @@ function Slider(dataAttr) {
             $slides.eq(i).addClass('slide-item--opacity');
         }
     };
-
-
 }
-
 
 // слайдер "Полезная информация"
 function sliderInformation(){
@@ -486,12 +458,6 @@ function sliderInformation(){
         return Math.floor(visibleWidth / sectionWidth);
     }
 }
-
-
-
-
-
-
 
 // появление модального окна в слайдере (index.php) при наведении на название марки машины
 function showPopupWindowInMainSlider() {
@@ -707,6 +673,7 @@ function showMainMenu(){
     });
 }
 
+// календарь test_drive.php
 function calendarInput(){
     var dateRangePickerOptions = {
         singleDatePicker: true,
@@ -749,4 +716,61 @@ function calendarInput(){
     if(document.getElementById('test-drive-calendar')){
        $('#test-drive-calendar input[name="test-drive-calendar"]').daterangepicker(dateRangePickerOptions);
     }
+}
+
+// список vacancies.php
+function expandingList() {
+
+    var listNode = document.querySelector('[data-expanding-list]');
+    if(!listNode) return;
+
+    listNode.addEventListener('click', showList);
+
+    function showList() {
+        var target = event.target;
+        var listItemNode = target.parentElement;
+        console.log(listItemNode);
+
+        if(!listItemNode.classList.contains('list__item')) return;
+        listItemNode.classList.toggle('list__item--current');
+
+        if(listItemNode.getAttribute('data-is-show') === 'false'){
+            listItemNode.setAttribute('data-is-show', 'true');
+        }else if(listItemNode.getAttribute('data-is-show') === 'true'){
+            listItemNode.setAttribute('data-is-show', 'false');
+            resetStiles(listItemNode);
+        }
+    }
+
+    // сбрасываем стили 'list__item--current' у родителя и потомков
+    function resetStiles(node) {
+        var currentList = node.querySelectorAll('.list__item--current');
+
+        for(var i = 0; i < currentList.length; i++){
+            if(currentList[i].classList.contains('list__item--current')){
+                currentList[i].classList.remove('list__item--current');
+            }
+        }
+    }
+}
+
+// разворачивание списка
+function expandSingleList(selectorList, selectorBtn){
+
+    var $btn = $(selectorBtn);
+    var $list = $(selectorList);
+
+    $btn.on('click', showList);
+
+    function showList(event) {
+        event.preventDefault();
+        var $target = $(event.target);
+
+        console.log($target);
+        console.log($list);
+
+        $btn.toggleClass('active');
+        $list.toggleClass('active');
+    }
+
 }

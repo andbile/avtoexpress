@@ -1,0 +1,163 @@
+// выпадающий список
+.drop-down-list__wrapper {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .list__title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    cursor: pointer;
+    border-bottom: 1px dashed;
+    transition: all 0.4s;
+  }
+
+  .list__title:hover{
+    color: $font-link-color-hover;
+  }
+
+  .icon{
+    display: inline-block;
+    transform: rotate(90deg) translateY(-2px);
+    margin-right: 5px;
+    transition: all 0.4s;
+  }
+
+  .icon:before{
+    font-size: 12px;
+  }
+
+  .list__content{
+    padding-left: 19px;
+  }
+
+  .main__list > li {
+    margin-bottom: 30px;
+  }
+
+  .content__text{
+    margin-bottom: 30px;
+  }
+
+  .list__item:last-child{
+    margin-bottom: 0;
+  }
+
+  .working-conditions__wrp{
+    margin-bottom: 20px;
+  }
+
+  .working-conditions__title{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .working-conditions__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 24px;
+
+    li{
+      position: relative;
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 15px;
+      padding-left: 15px;
+    }
+
+    li:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 4px;
+      height: 4px;
+      background-color: $bg-color-black;
+    }
+  }
+
+
+  .list__item > ul {
+    /*display: none;*/
+  }
+
+  .list__item--current > ul {
+    display: list-item;
+  }
+
+  .list__item--current .icon{
+    color: $font-link-color-hover;
+    transform: rotate(-90deg) translateY(-1px);
+  }
+
+  .list__item--current .list__title {
+    border-color: $font-link-color-hover;
+  }
+
+  // анимация
+  .list__item > ul {
+    overflow: hidden;
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transition-property: opacity, max-height, margin-top;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+  }
+
+  .list__item--current > ul {
+    margin-top: 10px;
+    display: block;
+    max-height: 2000px;
+    opacity: 1;
+  }
+}
+
+
+
+// ----------- responsive ----------
+@media (max-width: 992px){
+/*    .drop-down-list__wrapper{
+      padding-left: 50px;
+    }*/
+}
+
+@media (max-width: 768px){
+  /*  .drop-down-list__wrapper{
+      padding-left: 0;
+
+      .section-line{
+        width: 80%;
+      }
+    }
+
+  .drop-down-list__jobs-wrapper{
+    .current-procedure{
+      padding-left: 84px;
+    }
+  }*/
+}
+@media (max-width: 576px) {
+    /*.drop-down-list__wrapper{
+      .main__list{
+        font-size: 2.4rem;
+      }
+
+      .sub-main__list{
+        font-size: 1.8rem;
+      }
+    }
+
+  .drop-down-list__jobs-wrapper {
+    .current-procedure {
+      padding-left: 0;
+    }
+  }*/
+}
