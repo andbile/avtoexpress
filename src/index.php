@@ -576,91 +576,96 @@
     </div>
 
 
-    <div class="information__items information__items--slider" data-slider-information>
+    <div class="slider__wrapper" data-slider-information>
 
-        <div class="information-btn-wrp">
-            <span class="information-btn information-btn--prev" data-prev></span>
-            <span class="information-btn information-btn--next" data-next></span>
+        <div class="slider-btn-wrp  slider-btn-wrp--information">
+            <span class="slider-btn slider-btn--prev" data-prev></span>
+            <span class="slider-btn slider-btn--next" data-next></span>
         </div>
 
-        <div class="information-item--slider-wrp">
-            <a href="" class="information__item">
-                <div class="information__img">
-                    <img  src="img/information_preview_01.jpg" alt="Полезная информация">
-                </div>
-                <div class="information__content">
-                    <p class="information__title">ГАЗель Некст от 333 руб. в день</p>
-                    <p  class="information_description">Данная программа призвана обезопасить клиента, который …</p>
-                    <p class="information_description__date">27 сентября 2016</p>
-                </div>
-            </a>
-        </div>
+        <div class="slider-items-wrp">
 
-        <div class="information-item--slider-wrp">
-            <a href="" class="information__item">
-                <div class="information__img">
-                    <img  src="img/information_preview_02.jpg" alt="Полезная информация">
-                </div>
-                <div class="information__content">
-                    <p class="information__title">Лифан в Иваново, цены и комплектации</p>
-                    <p  class="information_description">С появлением на отечественном авторынке такой марки как …</p>
-                    <p class="information_description__date">3 марта 2017</p>
-                </div>
-            </a>
-        </div>
+            <div class="slide-item slide-item--information">
+                <a href="" class="information__item">
+                    <div class="information__img">
+                        <img  src="img/information_preview_01.jpg" alt="Полезная информация">
+                    </div>
+                    <div class="information__content">
+                        <p class="information__title">ГАЗель Некст от 333 руб. в день</p>
+                        <p  class="information_description">Данная программа призвана обезопасить клиента, который …</p>
+                        <p class="information_description__date">27 сентября 2016</p>
+                    </div>
+                </a>
+            </div>
 
-        <div class="information-item--slider-wrp">
-            <a href="" class="information__item">
-                <div class="information__img">
-                    <img  src="img/information_preview_03.jpg" alt="Полезная информация">
-                </div>
-                <div class="information__content">
-                    <p class="information__title">Конкурс «Мисс ЛАДА» Иваново </p>
-                    <p  class="information_description">21 августа состоялся яркий полуфинал конкурса «Автоледи …</p>
-                    <p class="information_description__date">21 августа 2016</p>
-                </div>
-            </a>
-        </div>
+            <div class="slide-item slide-item--information">
+                <a href="" class="information__item">
+                    <div class="information__img">
+                        <img  src="img/information_preview_02.jpg" alt="Полезная информация">
+                    </div>
+                    <div class="information__content">
+                        <p class="information__title">Лифан в Иваново, цены и комплектации</p>
+                        <p  class="information_description">С появлением на отечественном авторынке такой марки как …</p>
+                        <p class="information_description__date">3 марта 2017</p>
+                    </div>
+                </a>
+            </div>
 
-        <div class="information-item--slider-wrp">
-            <a href="" class="information__item">
-                <div class="information__img">
-                    <img  src="img/information_preview_04.jpg" alt="Полезная информация">
-                </div>
-                <div class="information__content">
-                    <p class="information__title">Пятидесятилетие «АвтоВаза». Как это было!</p>
-                    <p  class="information_description">В субботу, 16 июля, по всей России официальные дилеры LADA …</p>
-                    <p class="information_description__date">16 июля 2016</p>
-                </div>
-            </a>
-        </div>
+            <div class="slide-item slide-item--information">
+                <a href="" class="information__item">
+                    <div class="information__img">
+                        <img  src="img/information_preview_03.jpg" alt="Полезная информация">
+                    </div>
+                    <div class="information__content">
+                        <p class="information__title">Конкурс «Мисс ЛАДА» Иваново </p>
+                        <p  class="information_description">21 августа состоялся яркий полуфинал конкурса «Автоледи …</p>
+                        <p class="information_description__date">21 августа 2016</p>
+                    </div>
+                </a>
+            </div>
 
-        <div class="information-item--slider-wrp">
-            <a href="" class="information__item">
-                <div class="information__img">
-                    <img  src="img/information_preview_01.jpg" alt="Полезная информация">
-                </div>
-                <div class="information__content">
-                    <p class="information__title">ГАЗель Некст от 333 руб. в день</p>
-                    <p  class="information_description">Данная программа призвана обезопасить клиента, который …</p>
-                    <p class="information_description__date">27 сентября 2016</p>
-                </div>
-            </a>
-        </div>
+            <div class="slide-item slide-item--information">
+                <a href="" class="information__item">
+                    <div class="information__img">
+                        <img  src="img/information_preview_04.jpg" alt="Полезная информация">
+                    </div>
+                    <div class="information__content">
+                        <p class="information__title">Пятидесятилетие «АвтоВаза». Как это было!</p>
+                        <p  class="information_description">В субботу, 16 июля, по всей России официальные дилеры LADA …</p>
+                        <p class="information_description__date">16 июля 2016</p>
+                    </div>
+                </a>
+            </div>
 
-        <div class="information-item--slider-wrp">
-            <a href="" class="information__item">
-                <div class="information__img">
-                    <img  src="img/information_preview_02.jpg" alt="Полезная информация">
-                </div>
-                <div class="information__content">
-                    <p class="information__title">ГАЗель Некст от 333 руб. в день</p>
-                    <p  class="information_description">Данная программа призвана обезопасить клиента, который …</p>
-                    <p class="information_description__date">27 сентября 2016</p>
-                </div>
-            </a>
+            <div class="slide-item slide-item--information">
+                <a href="" class="information__item">
+                    <div class="information__img">
+                        <img  src="img/information_preview_01.jpg" alt="Полезная информация">
+                    </div>
+                    <div class="information__content">
+                        <p class="information__title">ГАЗель Некст от 333 руб. в день</p>
+                        <p  class="information_description">Данная программа призвана обезопасить клиента, который …</p>
+                        <p class="information_description__date">27 сентября 2016</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="slide-item slide-item--information">
+                <a href="" class="information__item">
+                    <div class="information__img">
+                        <img  src="img/information_preview_02.jpg" alt="Полезная информация">
+                    </div>
+                    <div class="information__content">
+                        <p class="information__title">ГАЗель Некст от 333 руб. в день</p>
+                        <p  class="information_description">Данная программа призвана обезопасить клиента, который …</p>
+                        <p class="information_description__date">27 сентября 2016</p>
+                    </div>
+                </a>
+            </div>
+
         </div>
     </div>
+
 </section>
 
 <section class="section-map">

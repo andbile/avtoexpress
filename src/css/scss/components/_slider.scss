@@ -6,6 +6,15 @@
   opacity: 0.2;
 }
 
+.slider-items-wrp{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
 // кнопки слайдра
 .slider-btn-wrp{
   position: absolute;
@@ -47,6 +56,16 @@
     bottom: -330px;
   }
 }
+
+// слайдер - Полезная информация
+.slider-btn-wrp--information{
+  .slider-btn{
+    bottom: -140px;
+  }
+}
+
+
+
 
 
 // ----------- responsive ----------

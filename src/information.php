@@ -16,7 +16,7 @@
 
         <div class="information__items-wrp">
 
-            <a href="" class="information__item information__item--type2">
+            <a href="news_article.php" class="information__item information__item--type2">
                 <div class="information__img">
                     <img  src="img/information_preview_type2_01.jpg" alt="Полезная информация">
                 </div>
@@ -27,7 +27,7 @@
             </a>
 
 
-            <a href="" class="information__item information__item--type2">
+            <a href="news_article.php" class="information__item information__item--type2">
                 <div class="information__img">
                     <img  src="img/information_preview_type2_02.jpg" alt="Полезная информация">
                 </div>
@@ -38,7 +38,7 @@
             </a>
 
 
-            <a href="" class="information__item information__item--type2">
+            <a href="news_article.php" class="information__item information__item--type2">
                 <div class="information__img">
                     <img  src="img/information_preview_type2_03.jpg" alt="Полезная информация">
                 </div>
@@ -49,7 +49,7 @@
             </a>
 
 
-            <a href="" class="information__item information__item--type2">
+            <a href="news_article.php" class="information__item information__item--type2">
                 <div class="information__img">
                     <img  src="img/information_preview_type2_03.jpg" alt="Полезная информация">
                 </div>
@@ -60,7 +60,7 @@
             </a>
 
 
-            <a href="" class="information__item information__item--type2">
+            <a href="news_article.php" class="information__item information__item--type2">
                 <div class="information__img">
                     <img  src="img/information_preview_type2_01.jpg" alt="Полезная информация">
                 </div>
@@ -71,7 +71,7 @@
             </a>
 
 
-            <a href="" class="information__item information__item--type2">
+            <a href="news_article.php" class="information__item information__item--type2">
                 <div class="information__img">
                     <img  src="img/information_preview_type2_02.jpg" alt="Полезная информация">
                 </div>
@@ -83,7 +83,7 @@
 
 
 
-            <a href="" class="information__item information__item--type2">
+            <a href="news_article.php" class="information__item information__item--type2">
                 <div class="information__img">
                     <img  src="img/information_preview_type2_03.jpg" alt="Полезная информация">
                 </div>
@@ -93,7 +93,7 @@
                 </div>
             </a>
 
-            <a href="" class="information__item information__item--type2">
+            <a href="news_article.php" class="information__item information__item--type2">
                 <div class="information__img">
                     <img  src="img/information_preview_type2_01.jpg" alt="Полезная информация">
                 </div>
@@ -103,7 +103,7 @@
                 </div>
             </a>
 
-            <a href="" class="information__item information__item--type2">
+            <a href="news_article.php" class="information__item information__item--type2">
                 <div class="information__img">
                     <img  src="img/information_preview_type2_02.jpg" alt="Полезная информация">
                 </div>

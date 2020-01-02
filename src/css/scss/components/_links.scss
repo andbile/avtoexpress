@@ -142,3 +142,36 @@ a{
     color: $font-link-color-hover;
   }
 }
+
+
+.link-right{
+  a{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-left: 5px;
+    transition: all 0.4s;
+    color: $font-color-white;
+  }
+
+  .icon{
+    display: inline-block;
+    transform: rotate(-180deg) translateY(-2px);
+    color: $font-color-white;
+    transition: all 0.4s;
+
+  }
+  .icon:before{
+    font-size: 12px;
+  }
+
+  &:hover a{
+    color: $font-link-color-hover;
+  }
+
+  &:hover .icon{
+    color: $font-link-color-hover;
+  }
+
+
+}

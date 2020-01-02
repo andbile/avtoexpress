@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
     showPopupWindowInMainSlider();
 
     // слайдер "Полезная информация"
-    sliderInformation();
+    //sliderInformation();
 
     // разворачивание списка
     expandSingleList ('[data-single-expandingList-open]', '[data-single-list-open-btn]');
@@ -55,9 +55,13 @@ jQuery(document).ready(function($) {
     calendarInput();
 
 
-    // слайдер сертификаты
+    // слайдер сертификаты // информация
     var certSlider = new Slider('[data-slider-certificates]');
     certSlider.run();
+
+    // слайдер информация
+    var informationSlider = new Slider('[data-slider-information]');
+    informationSlider.run();
 
 
 });

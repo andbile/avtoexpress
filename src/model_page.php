@@ -348,15 +348,16 @@
             </div>
         </div>
 
+    <div class="slider__wrapper" data-slider-information>
 
-        <div class="information__items information__items--slider" data-slider-information>
+        <div class="slider-btn-wrp  slider-btn-wrp--information">
+            <span class="slider-btn slider-btn--prev" data-prev></span>
+            <span class="slider-btn slider-btn--next" data-next></span>
+        </div>
 
-            <div class="information-btn-wrp">
-                <span class="information-btn information-btn--prev" data-prev></span>
-                <span class="information-btn information-btn--next" data-next></span>
-            </div>
+        <div class="slider-items-wrp">
 
-            <div class="information-item--slider-wrp">
+            <div class="slide-item slide-item--information">
                 <a href="" class="information__item">
                     <div class="information__img">
                         <img  src="img/information_preview_01.jpg" alt="Полезная информация">
@@ -369,7 +370,7 @@
                 </a>
             </div>
 
-            <div class="information-item--slider-wrp">
+            <div class="slide-item slide-item--information">
                 <a href="" class="information__item">
                     <div class="information__img">
                         <img  src="img/information_preview_02.jpg" alt="Полезная информация">
@@ -382,7 +383,7 @@
                 </a>
             </div>
 
-            <div class="information-item--slider-wrp">
+            <div class="slide-item slide-item--information">
                 <a href="" class="information__item">
                     <div class="information__img">
                         <img  src="img/information_preview_03.jpg" alt="Полезная информация">
@@ -395,7 +396,7 @@
                 </a>
             </div>
 
-            <div class="information-item--slider-wrp">
+            <div class="slide-item slide-item--information">
                 <a href="" class="information__item">
                     <div class="information__img">
                         <img  src="img/information_preview_04.jpg" alt="Полезная информация">
@@ -408,7 +409,7 @@
                 </a>
             </div>
 
-            <div class="information-item--slider-wrp">
+            <div class="slide-item slide-item--information">
                 <a href="" class="information__item">
                     <div class="information__img">
                         <img  src="img/information_preview_01.jpg" alt="Полезная информация">
@@ -421,7 +422,7 @@
                 </a>
             </div>
 
-            <div class="information-item--slider-wrp">
+            <div class="slide-item slide-item--information">
                 <a href="" class="information__item">
                     <div class="information__img">
                         <img  src="img/information_preview_02.jpg" alt="Полезная информация">
@@ -433,7 +434,13 @@
                     </div>
                 </a>
             </div>
+
         </div>
+    </div>
+
+
+
+
 </section>
 
 <section class="section-map">
