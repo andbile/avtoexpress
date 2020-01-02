@@ -38,12 +38,12 @@
 
                 <ul class="popup-menu__nav popup-menu__nav--left ">
                     <li class="link-line"><a href="about.php">О компании</a></li>
-                    <li class="link-line"><a href="">Акции</a></li>
+                    <li class="link-line"><a href="sale.php">Акции</a></li>
                     <li class="link-line"><a href="">Услуги</a></li>
                     <li class="link-line"><a href="vacancies.php">Вакансии</a></li>
-                    <li class="link-line"><a href="">Сервис</a></li>
+                    <li class="link-line"><a href="service.php">Сервис</a></li>
                     <li class="link-line"><a href="contacts.php">Контакты</a></li>
-                    <li class="link-line"><a href="">Новости</a></li>
+                    <li class="link-line"><a href="information.php">Новости</a></li>
                 </ul>
 
                 <div class="btn btn--orange"><a href="test_drive.php">Записаться на тест-драйв</a></div>

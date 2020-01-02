@@ -10,7 +10,7 @@
 }
 
 .btn.btn--orange{
-  background-color: $font-link-color-hover;
+  background-color: #FF8550;
 }
 
 .btn.btn--orange a{
@@ -18,7 +18,7 @@
 }
 
 .btn.btn--orange:hover{
-  background-color: darken($font-link-color-hover, 20%);
+  background-color: darken(#FF8550, 10%);
 }
 
 // кнопки с border

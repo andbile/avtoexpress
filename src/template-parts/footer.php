@@ -63,8 +63,8 @@
                     <li><a href="">Об авто</a></li>
                     <li><a href="">Услуги</a></li>
                     <li><a href="">Автозаметки</a></li>
-                    <li><a href="">Сервис</a></li>
-                    <li><a href="">Акции</a></li>
+                    <li><a href="service.php">Сервис</a></li>
+                    <li><a href="sale.php">Акции</a></li>
                     <li><a href="">Галерея</a></li>
                     <li><a href="contacts.php">Контакты</a></li>
                 </ul>
