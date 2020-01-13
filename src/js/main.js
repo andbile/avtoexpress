@@ -239,17 +239,21 @@ function Slider(dataAttr) {
         if($btnNode.is('[data-next]')){
             var $lastVisibleSlide =  $slides.not('.slide-item--opacity').filter(':last');
             // координаты последнего слайда
-            var rightPositionLastVisibleSlide = $lastVisibleSlide.position().left + slideWidth;
+            console.log($lastVisibleSlide);
+            var rightPositionLastVisibleSlide;
+            // если все не видимые слайды (когда, ширина больше ширины окна)
+            // TODO исправить - если ширина слайда больше ширины окна то все слайды делать видимыми
+            if($lastVisibleSlide.length === 0) {
+                rightPositionLastVisibleSlide = 0;
+            }else rightPositionLastVisibleSlide = $lastVisibleSlide.position().left + slideWidth;
+
             // координаты сдвига кнопки
             var rightBtnPosition =  visibleWidth - rightPositionLastVisibleSlide - $btnNode.innerWidth() / 2;
-            /*console.log(rightBtnPosition);
-            console.log(visibleWidth);*/
 
             if(rightBtnPosition < 0) rightBtnPosition = 0;
             // если меньше двух слайдов
             if($slides.not('.slide-item--opacity').length < 2){
                 rightBtnPosition = $(window).width()/2 - $btnNode.innerWidth()*2 + 10;
-                console.log($(window).width());
             }
 
             $btnNode.css('right', rightBtnPosition);
@@ -261,7 +265,6 @@ function Slider(dataAttr) {
 
             if($slides.not('.slide-item--opacity').length < 2){
                 leftBntPosition = $(window).width()/2 - $btnNode.innerWidth() + 10;
-                console.log($(window).width());
             }
 
             $btnNode.css('left', leftBntPosition);
@@ -637,12 +640,14 @@ function showMainMenu(){
     // основное меню
     var $menu = $('[data-main-menu]');
     // высота меню
-    var menuHeight = $menu.innerHeight();
+    var menuHeight = $menu.innerHeight() - 1;
     // установка высоты главному меню
     $parentMenu.innerHeight(menuHeight);
     // подменю
     var $submenu = $('[data-main-submenu]');
 
+    // TODO исправить на мобилке - если высота выпадающего меню больше высоты экрана не работает перемотка
+    // TODO сделать что бы перемотка работала до конца выпадающего меню, а белая половинка наезжала.
     // при скроле двигаем меню
     $(window).scroll(function(){
         var scrollTop = $(window).scrollTop();

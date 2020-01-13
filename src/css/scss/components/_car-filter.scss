@@ -41,27 +41,26 @@
 .car-filter__num-cars{
   font-size: 16px;
   line-height: 24px;
-}
 
-.car-filter__num-cars a{
-  position: relative;
-  padding-right: 18px;
-}
+  .icon{
+    padding-left: 4px;
+    display: inline-block;
+    transform: translateY(-1px);
+  }
 
-.car-filter__num-cars a:hover{
-  color: $font-link-color-hover;
-}
+  .icon:before{
+    font-size: 10px;
+  }
 
-.car-filter__num-cars a:after{
-  position: absolute;
-  font-family: 'svgfontregular';
-  content: 'e';
-  font-size: 10px;
-  line-height: 12px;
-  bottom: 2px;
-  right: 0;
-}
+  &:hover{
+    color: $font-link-color-hover;
+    transition: all 0.4s;
+  }
 
+  a:hover{
+    color: $font-link-color-hover;
+  }
+}
 
 .car-filter__used-cars{
   font-size: 14px;
@@ -89,6 +88,10 @@
     font-size: 14px;
     line-height: 24px;
     transition: all 0.4s;
+  }
+
+  .credit, .service{
+    white-space: nowrap;
   }
 
   .credit:hover,
@@ -243,3 +246,132 @@
   transform: rotate(45deg);
   transition: all 0.15s ease-in-out;
 }
+
+
+// ----------- responsive ----------
+@media (max-width: 1200px){
+  // brand_page.php
+  .car-filter--brand .car-filter__links-wrp{
+    flex-direction: column;
+    margin-left: 15px;
+
+    .credit{
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+}
+@media (max-width: 992px){
+  // index.php
+  .car-filter__used-cars{
+    display: none;
+  }
+
+  .car-filter__wrp{
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .car-filter__title, .car-filter__select, .car-filter__select, .car-filter__num-cars{
+    margin-right: 10px;
+  }
+
+  // brand_page.php
+  .car-filter--brand form{
+    flex-direction: column;
+  }
+
+  .car-filter--brand .car-filter__links-wrp{
+    order: 1;
+  }
+
+  .car-filter--brand .car-filter__wrp{
+    order: 2;
+  }
+
+  .car-filter--brand .car-filter__links-wrp{
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-bottom: 45px;
+
+    .credit{
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+  }
+
+
+
+
+
+
+
+}
+
+@media (max-width: 768px){
+  .car-filter__wrp{
+    flex-wrap: wrap;
+  }
+
+  .car-filter__title, .car-filter__select, .car-filter__num-cars{
+    width: 45%;
+  }
+
+  .car-filter__title{
+    order: 1;
+  }
+
+  .car-filter__num-cars{
+    order: 2;
+  }
+
+  .car-filter__select{
+    order: 3;
+    margin-top: 15px;
+  }
+
+
+
+}
+@media (max-width: 576px) {
+  .car-filter__wrp{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .car-filter__title, .car-filter__select, .car-filter__num-cars{
+    width: 100%;
+  }
+
+  .car-filter__title{
+    order: 1;
+
+    br{
+      display: none;
+    }
+  }
+
+  .car-filter__num-cars{
+    order: 3;
+    margin-top: 15px;
+
+    br{
+      display: none;
+    }
+  }
+
+  .car-filter__select{
+    order: 2;
+    margin-top: 15px;
+  }
+
+
+
+}
+
+@media (max-width: 320px){
+
+}
+// ----------- end responsive ----------

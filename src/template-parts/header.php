@@ -14,12 +14,22 @@
                     </div>
                 </div>
 
-                <ul class="brands">
-                    <li><a href="brand_page.php">УАЗ</a></li>
-                    <li><a href="brand_page.php">LADA</a></li>
-                    <li><a href="brand_page.php">ГАЗ</a></li>
-                    <li class="main-menu__btn" data-popup-btn><span></span></li>
-                </ul>
+                <div class="brands-with-popup-btn">
+                    <div class="brands">
+                        <a href="brand_page.php">УАЗ</a>
+                        <a href="brand_page.php">LADA</a>
+                        <a href="brand_page.php">ГАЗ</a>
+                    </div>
+
+                    <div>
+                        <span class="main-menu__btn" data-popup-btn>
+                            <span></span>
+                        </span>
+                    </div>
+                </div>
+
+
+
             </div>
 
             <div class="contacts">
@@ -34,39 +44,45 @@
         <!-- подменю -->
         <div class="container main-menu__popup-menu" data-main-submenu>
 
-            <div class="popup-menu__wrp-left-col">
-
-                <ul class="popup-menu__nav popup-menu__nav--left ">
-                    <li class="link-line"><a href="about.php">О компании</a></li>
-                    <li class="link-line"><a href="sale.php">Акции</a></li>
-                    <li class="link-line"><a href="">Услуги</a></li>
-                    <li class="link-line"><a href="vacancies.php">Вакансии</a></li>
-                    <li class="link-line"><a href="service.php">Сервис</a></li>
-                    <li class="link-line"><a href="contacts.php">Контакты</a></li>
-                    <li class="link-line"><a href="information.php">Новости</a></li>
-                </ul>
-
-                <div class="btn btn--orange"><a href="test_drive.php">Записаться на тест-драйв</a></div>
+            <div class="contacts">
+                <div class="address">ул. Загородная, д 22а</div>
+                <div class="tel"><a href="tel:+74932938852">+7 (4932) 938 852</a></div>
             </div>
 
+            <div class="popup-menu__navs-wrp">
 
 
-            <div class="popup-menu__wrp-right-col">
+                    <div class="popup-menu__nav popup-menu__nav--left">
+                        <ul class="">
+                            <li class="link-line"><a href="about.php">О компании</a></li>
+                            <li class="link-line"><a href="">Услуги</a></li>
+                            <li class="link-line"><a href="service.php">Сервис</a></li>
+                            <li class="link-line"><a href="information.php">Новости</a></li>
+                        </ul>
 
-                <div class="contacts">
-                    <div class="address">ул. Загородная, д 22а</div>
-                    <a class="tel" href="tel:+74932938852">+7 (4932) 938 852</a>
+                        <ul>
+                            <li class="link-line"><a href="sale.php">Акции</a></li>
+                            <li class="link-line"><a href="vacancies.php">Вакансии</a></li>
+                            <li class="link-line"><a href="contacts.php">Контакты</a></li>
+                        </ul>
+
+                    </div>
+
+
+
+                    <ul class="popup-menu__nav popup-menu__nav--right">
+                        <li class="link-line"><a href="">Сервис</a></li>
+                        <li class="link-line"><a href="">Кузовной ремонт</a></li>
+                        <li class="link-line"><a href="test_drive.php">Тест-драйв</a></li>
+                        <li class="link-line"><a href="">Трейд-Ин</a></li>
+                        <li class="link-line"><a href="">Автомобили с пробегом</a></li>
+                    </ul>
+
                 </div>
 
-                <ul class="popup-menu__nav popup-menu__nav--right">
-                    <li class="link-line"><a href="">Сервис</a></li>
-                    <li class="link-line"><a href="">Кузовной ремонт</a></li>
-                    <li class="link-line"><a href="test_drive.php">Тест-драйв</a></li>
-                    <li class="link-line"><a href="">Трейд-Ин</a></li>
-                    <li class="link-line"><a href="">Автомобили с пробегом</a></li>
-                </ul>
 
-
+            <div class="popup-menu__bot-links-wrp">
+                <div class="btn btn--orange"><a href="test_drive.php">Записаться на тест-драйв</a></div>
 
                 <div class="links_wrp">
                     <div class="credit link-line">
@@ -85,6 +101,12 @@
                     </form>
                 </div>
             </div>
+
+
+
+
+
+
         </div>
     </div>
 </header>

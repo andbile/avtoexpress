@@ -416,7 +416,10 @@
                 </select>
             </div>
 
-            <div class="car-filter__num-cars"><a href="">72 новых <br> автомобиля</a></div>
+            <div class="car-filter__num-cars">
+                <a href="">72 новых <br> автомобиля</a>
+                <span class="icon icon-path_right"></span>
+            </div>
         </div>
 
 

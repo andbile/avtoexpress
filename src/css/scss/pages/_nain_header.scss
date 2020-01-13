@@ -28,6 +28,8 @@
   .col-left{
     display: flex;
     flex-direction: row;
+    flex-basis: 590px;
+    justify-content: space-between;
     align-items:center;
   }
 
@@ -35,7 +37,6 @@
     display: flex;
     flex-direction: row;
     align-items:center;
-    margin-right: 100px;
   }
 
   .logo-wrp .logo a{
@@ -69,23 +70,20 @@
 
 
   // марки машин
+  .brands-with-popup-btn{
+    display: flex;
+    flex-direction: row;
+  }
+
   .brands{
     display: flex;
     flex-direction: row;
-    list-style-type: none;
-    padding: 0;
   }
 
-  .brands li{
-    margin-right: 40px;
-  }
   .brands a{
+    margin-right: 40px;
     font-size: 14px;
     font-weight: 700;
-  }
-
-  .brands li:last-child{
-    margin-right: 0;
   }
 
   .brands--active a{
@@ -156,6 +154,7 @@
 
   .address{
     margin-right: 25px;
+    padding-left: 25px;
     font-size: 14px;
     color: $font-color-grey;
     white-space: nowrap;
@@ -178,19 +177,17 @@
   opacity: 0;
   display: none;
   padding-top: 25px;
-  padding-bottom: 70px;
-  flex-direction: row;
-  justify-content: space-between;
+  padding-bottom: 65px;
   background-color: $bg-color-grey;
 }
 
 .main-menu__popup-menu.active{
-  display: flex;
+  display: block;
 }
 
-.popup-menu__wrp-left-col{
+.popup-menu__navs-wrp{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -203,22 +200,31 @@
   li{
     margin-bottom: 15px;
   }
+
+  li:last-child{
+    margin-bottom: 0;
+  }
 }
 
 .popup-menu__nav--left{
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 475px;
-  padding: 25px 0 0 0;
+  padding: 20px 0 0 0;
   font-size: 24px;
   line-height: 36px;
 
-  li{
-    width: 48%;
+  ul:first-child{
+    margin-right: 100px;
   }
 
-  li:nth-child(odd){
-    margin-right: 2%;
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li{
+    white-space: nowrap;
   }
 }
 
@@ -227,19 +233,22 @@
   text-align: right;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 80px;
+  padding-top: 78px;
 
   li{
     margin-bottom: 10px;
+    white-space: nowrap;
   }
 }
 
-.popup-menu__wrp-right-col .contacts{
-  margin-bottom: 80px;
-}
 
 // нижние ссылки (Заявка на кредит / Запись на ТО / поиск)
-.popup-menu__wrp-right-col{
+.popup-menu__bot-links-wrp{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+
   .links_wrp{
     position: relative;
     display: flex;
@@ -250,16 +259,20 @@
 
   .links_wrp .credit{
     margin-right: 40px;
+    white-space: nowrap;
+
   }
 
   .links_wrp .service{
     margin-right: 70px;
+    white-space: nowrap;
   }
 
   .links_wrp .credit a,
   .links_wrp .service a{
     font-size: 14px;
     line-height: 24px;
+    white-space: nowrap;
     transition: all 0.4s;
   }
 
@@ -339,3 +352,143 @@
   box-shadow: 0 0 10px $font-link-color-hover;
   width: 200px;
 }
+
+
+
+// ----------- responsive ----------
+@media (max-width: 1050px){
+  .logo-wrp .address-link{
+    display: none;
+  }
+
+}
+
+@media (max-width: 992px){
+  .top-menu__wrapper .contacts{
+    display: none;
+  }
+
+  .top-menu__wrapper .col-left{
+    flex-basis: 100%;
+
+    .brands{
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+  }
+
+  .popup-menu__bot-links-wrp{
+    .links_wrp .credit{
+      margin-right: 35px;
+    }
+
+    .links_wrp .service{
+      margin-right: 45px;
+    }
+
+
+
+
+  }
+
+
+
+}
+
+@media (max-width: 768px){
+  .main-menu__popup-menu{
+    padding-bottom: 40px;
+  }
+
+  .popup-menu__navs-wrp{
+    flex-direction: column;
+  }
+
+  .popup-menu__nav--left{
+    padding-top: 40px;
+
+    ul:first-child{
+      margin-right: 50px;
+    }
+  }
+
+
+
+
+  .popup-menu__nav--right{
+    text-align: left;
+    padding-top: 40px;
+  }
+
+  .main-menu__popup-menu .contacts{
+    flex-direction: column;
+    align-items: flex-start;
+
+    .address{
+      padding: 0;
+      margin: 0 0 7px 0;
+    }
+  }
+
+
+  .popup-menu__bot-links-wrp{
+    flex-direction: column;
+    align-items: flex-start;
+
+    .btn{
+      margin-bottom: 40px;
+    }
+
+    .links_wrp{
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    .main-menu__search{
+      right: 0;
+    }
+  }
+
+}
+
+
+@media (max-width: 576px) {
+  .top-menu__wrapper .brands{
+    display: none;
+  }
+
+  .popup-menu__nav--left {
+    width: 100%;
+    justify-content: space-between;
+
+
+    ul:first-child{
+      margin-right: 0;
+    }
+  }
+
+
+
+
+
+
+
+  .popup-menu__bot-links-wrp{
+
+    .links_wrp{
+      flex-direction: column;
+    }
+
+    .links_wrp .credit{
+      margin-bottom: 10px;
+    }
+
+  }
+
+
+
+}
+@media (max-width: 320px){
+
+}
+// ----------- end responsive ----------

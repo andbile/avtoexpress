@@ -14,7 +14,7 @@
     </div>
 </section>
 
-<section class="car-filter container">
+<section class="car-filter car-filter--brand container">
 
         <form action="" method="post" name="car-filter">
 

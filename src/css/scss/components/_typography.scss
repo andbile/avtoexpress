@@ -1,3 +1,9 @@
+body{
+  font: $font-primary;
+  background-color: $bg-color-primary;
+  color: $font-color-primary;
+}
+
 ul{
   margin: 0;
 }
@@ -25,13 +31,6 @@ ul{
     background-color: $bg-color-black;
   }
 }
-
-
-
-
-
-
-
 
 .content__title{
   font-size: 40px;
