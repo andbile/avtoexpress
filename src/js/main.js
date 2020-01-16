@@ -64,7 +64,85 @@ jQuery(document).ready(function($) {
     informationSlider.run();
 
 
+    // адаптивное изображение img
+    $(".bock_img").each(function(){
+        var adapBlock = $(this);
+        var adapImg = adapBlock.find("img");
+        if(adapBlock.height() > adapImg.height()){
+            adapImg.css("max-width", "none");
+        }
+        else if(adapBlock.width() > adapImg.width()){
+            adapImg.css("max-height", "none");
+        }
+    });
+
+    // адаптивное изображение, которое должно заполнить абсолютно всю ширину и высоту блока
+    fixResponsiveImg();
+    var isEventResizeImg = false;
+    $(window).resize(function() {
+
+        setTimeout(function () {
+            if(!isEventResizeImg){
+                fixResponsiveImg();
+                isEventResizeImg = true;
+            }
+
+        },500);
+        isEventResizeImg = false;
+    });
+
 });
+// end jQuery(document).ready(function($)
+
+
+
+
+
+
+
+// адаптивное изображение, которое должно заполнить абсолютно всю ширину и высоту блока
+function fixResponsiveImg() {
+
+    // сброс настроек
+    function reset($img){
+        $img.removeAttr("width")
+            .removeAttr("height")
+            .css({ width: "", height: "" })
+            .css({ maxWidth: "100%", maxHeight: "100%" });
+    }
+
+    $("[data-bock-img--full]").each(function(){
+            var $adapBlock = $(this);
+            var $adapImg = $adapBlock.find("img");
+
+            reset($adapImg);
+
+            // ширина и высота фото из атрибутов img
+            var imgWidth = $adapImg.width();
+            var imgHeight = $adapImg.height();
+            // соотношение ширины к высоты
+            var ratio = imgWidth / imgHeight;
+
+            var newWidth, newHeight;
+
+            if($adapBlock.width() > $adapImg.width()){
+
+                $adapImg.css({width: "100%", height: ""});
+
+                // получаем новую высоту после увеличения ширины
+                newHeight = $adapBlock.width() / ratio;
+                $adapImg.css({height: (newHeight + 'px'), maxHeight: "none"});
+            }
+
+            if($adapBlock.height() > $adapImg.height()){
+                $adapImg.css("height", "100%");
+                // получаем новую ширину после увеличения высоты
+                newWidth = $adapBlock.height() * ratio;
+                $adapImg.css("width", (newWidth + 'px'))
+                        .css("max-width", 'none');
+            }
+        });
+}
 
 // slider
 function Slider(dataAttr) {
@@ -239,7 +317,7 @@ function Slider(dataAttr) {
         if($btnNode.is('[data-next]')){
             var $lastVisibleSlide =  $slides.not('.slide-item--opacity').filter(':last');
             // координаты последнего слайда
-            console.log($lastVisibleSlide);
+
             var rightPositionLastVisibleSlide;
             // если все не видимые слайды (когда, ширина больше ширины окна)
             // TODO исправить - если ширина слайда больше ширины окна то все слайды делать видимыми

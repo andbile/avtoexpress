@@ -435,15 +435,14 @@
     <div class="box-brand-items">
 
         <div class="box-brand-item">
-            <div class="box-brand-item__img"><img src="img/car_01.jpg" alt="Фото автомобиля"></div>
+            <div class="box-brand-item__img bock_img-full" data-bock-img--full><img src="img/car_01.jpg" alt="Фото автомобиля"></div>
             <div class="box-brand-item__content">
                 <div class="box-brand-item__title">LADA</div>
                 <div class="box-brand-item__link link-line link-line-white"><a href="">Смотреть</a></div>
             </div>
         </div>
-
         <div class="box-brand-item">
-            <div class="box-brand-item__img"><img src="img/car_02.jpg" alt="Фото автомобиля"></div>
+            <div class="box-brand-item__img bock_img-full" data-bock-img--full><img src="img/car_02.jpg"  alt="Фото автомобиля"></div>
             <div class="box-brand-item__content">
                 <div class="box-brand-item__title">УАЗ</div>
                 <div class="box-brand-item__link link-line link-line-white"><a href="">Смотреть</a></div>
@@ -451,24 +450,24 @@
         </div>
 
         <div class="box-brand-item">
-            <div class="box-brand-item__img"><img src="img/car_03.jpg" alt="Фото автомобиля"></div>
+            <div class="box-brand-item__img bock_img-full" data-bock-img--full><img src="img/car_03.jpg"  alt="Фото автомобиля"></div>
             <div class="box-brand-item__content">
                 <div class="box-brand-item__title">ГАЗ</div>
                 <div class="box-brand-item__link link-line link-line-white"><a href="">Смотреть</a></div>
             </div>
         </div>
 
+
+        <ul class="box-brand__links">
+            <li class="link-line"><a href="">Сервис</a></li>
+            <li class="link-line"><a href="">Кузовной ремонт</a></li>
+            <li class="link-line"><a href="test_drive.php">Тест-драйв</a></li>
+            <li class="link-line"><a href="">Трейд-Ин</a></li>
+
+        </ul>
+
+
     </div>
-
-
-
-    <ul class="box-brand__links">
-        <li class="link-line"><a href="">Сервис</a></li>
-        <li class="link-line"><a href="">Кузовной ремонт</a></li>
-        <li class="link-line"><a href="test_drive.php">Тест-драйв</a></li>
-        <li class="link-line"><a href="">Трейд-Ин</a></li>
-    </ul>
-
 </section>
 
 <section class="index-section-3">
