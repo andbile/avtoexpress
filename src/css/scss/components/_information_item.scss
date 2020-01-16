@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 50px;
-  padding-right: 6.11%;
 }
 
 .slide-item--information{
@@ -69,50 +68,49 @@
   opacity: 0.4;
 }
 
-/*.information__item--opacity{
-  opacity: 0.2;
-}
-
-.information__item--opacity .information__item:hover{
-  box-shadow: none;
-}*/
- // кнопки
-/*.information-btn-wrp{
-  position: absolute;
-  width: 100%;
-  z-index: 5;
-}*/
-
-/*.information-btn{
-  position: absolute;
-  bottom: -140px;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}*/
-
-/*.information-btn:after{
-  content: '';
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-}*/
-
-/*.information-btn--prev{
-  background: url("../img/icon_arrow_next.svg") no-repeat center center;
-  transform: rotate(180deg);
-  display: none;
-}
-
-.information-btn--next:after{
-  background: url("../img/icon_arrow_next.svg") no-repeat center center;
-}*/
 
 // блоки Полезная информация на странице information.php
 .information__item--type2{
   width: 418px;
   margin-bottom: 30px;
 }
+
+// ----------- responsive ----------
+@media (max-width: 1030px){
+
+}
+
+@media (max-width: 992px){
+
+
+}
+
+@media (max-width: 768px){
+
+
+}
+
+
+@media (max-width: 576px) {
+
+
+}
+
+@media (max-width: 350px) {
+  .information__item{
+    width: 290px;
+  }
+
+  .information__img{
+    height: 152px;
+  }
+
+}
+
+
+@media (max-width: 320px){
+
+}
+
+
+

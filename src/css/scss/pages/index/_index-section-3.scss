@@ -1,35 +1,53 @@
 .index-section-3{
-  padding: 100px 6.11%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
   .content__title{
     margin-bottom: 40px;
   }
 }
 
+.index-section-3__wrp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .index-section-3__content{
-  flex: 0 0 45%;
+  flex: none;
+  width: 45%;
+
+  p:first-child{
+    margin-top: 0;
+  }
 }
 
 .index-section-3__content .content__link{
   margin-top: 35px;
 }
 
-.index-section-3__slider{
+.is-3__building-slider{
   position: relative;
-  width: 600px;
-  height: 460px;
+  flex: none;
+  width: 47.8%;
+
+  .building-slider__items{
+    position: relative;
+  }
+
+  .building-slider__item{
+    position: relative;
+    width: 100%;
+    height: 32.15vw;
+    max-height: 460px;
+  }
 
   .address_wrp{
     position: absolute;
-    width: 305px;
-    height: 405px;
+    width: 60%;
+    height: 87.7%;
     bottom: 0;
     left: 0;
-    padding-left: 70px;
-    padding-bottom: 20px;
     background-color: $bg-color-grey;
 
   }
@@ -37,29 +55,75 @@
   .address{
     position: absolute;
     bottom: 20px;
-    left: 70px;
+    left: 11.59%;
     font-size: 14px;
     line-height: 20px;
     color: #9B9D9E;
   }
 
-  .slider{
+  .building-slider__img{
     position: absolute;
     top: 0;
-    right: 0;
-    width: 534px;
-    height: 400px;
-    z-index: 1;
-
-  }
-
-  .slider .img{
-    width: 100%;
-    height: 100%;
-  }
-
-  .slider img{
-    max-height: 100%;
-    max-width: 100%;
+    left: 11.59%;
+    height: 86.4%;
+    width: 88.41%;
   }
 }
+
+// ----------- responsive ----------
+@media (max-width: 1030px){
+
+}
+
+@media (max-width: 992px){
+  .index-section-3__wrp {
+    flex-wrap: wrap;
+  }
+
+  .index-section-3__content{
+    width: 100%;
+    margin-bottom: 20px;
+    order: 2;
+  }
+
+  .is-3__building-slider{
+    width: 100%;
+    order: 1;
+    margin-bottom: 30px;
+  }
+
+  .building-slider__item{
+    height: 50vw;
+    min-height: 350px;
+  }
+
+  .building-slider__img{
+    left: 8.59%;
+    width: 91.41%;
+  }
+
+  .is-3__building-slider .address{
+    left: 8.59%;
+  }
+
+}
+
+@media (max-width: 768px){
+  .building-slider__item .address_wrp{
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+  .index-section-3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+}
+@media (max-width: 320px){
+
+}
+// ----------- end responsive ----------

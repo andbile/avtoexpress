@@ -470,41 +470,68 @@
     </div>
 </section>
 
-<section class="index-section-3">
+<section class="index-section-3 container">
 
-            <div class="index-section-3__content">
 
-                <h2 class="content__title">Официальный дилер «Автоэкспресс»</h2>
-                <div class="content__text">
-                    <p>Автоэкспресс заявил о себе в автомобильном бизнесе в 1992 году.</p>
-                    <p>На данный момент это один из крупнейших, успешно и стабильно развивающийся официальный дилер LADA, ГАЗ,
-                        УАЗ, Great Wall, Geely, Lifan, Fiat и Fiat Profesional. По маркам ГАЗ, УАЗ, GEELY, Fiat автосалон
-                        является Единственным официальным дилером в Иваново и Ивановской области.</p>
-                    <p>Преимуществом нашего автосалона является большой выставочный зал, где представлен широкий выбор
-                        автомобилей ЛАДА в разных комплектациях и цветах. Каждый квартал мы знакомим своих клиентов с новинками
-                        как отечественного, так и иностранного производства!</p>
+    <h2 class="content__title">Официальный дилер «Автоэкспресс»</h2>
 
-                    <div class="content__link">
-                        <a href="">Узнать больше</a>
-                        <span class="icon icon-path_right"></span>
+    <div class="index-section-3__wrp">
+
+        <div class="index-section-3__content">
+
+            <div class="content__text">
+                <p>Автоэкспресс заявил о себе в автомобильном бизнесе в 1992 году.</p>
+                <p>На данный момент это один из крупнейших, успешно и стабильно развивающийся официальный дилер LADA, ГАЗ,
+                    УАЗ, Great Wall, Geely, Lifan, Fiat и Fiat Profesional. По маркам ГАЗ, УАЗ, GEELY, Fiat автосалон
+                    является Единственным официальным дилером в Иваново и Ивановской области.</p>
+                <p>Преимуществом нашего автосалона является большой выставочный зал, где представлен широкий выбор
+                    автомобилей ЛАДА в разных комплектациях и цветах. Каждый квартал мы знакомим своих клиентов с новинками
+                    как отечественного, так и иностранного производства!</p>
+
+                <div class="content__link">
+                    <a href="">Узнать больше</a>
+                    <span class="icon icon-path_right"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="is-3__building-slider" >
+
+
+            <div class="building-slider__items" data-slider-building>
+
+                <div class="building-slider__item">
+                    <div class="address_wrp"></div>
+                    <div class="address">зул. Калашникова, д. 26А</div>
+
+                    <div class="building-slider__img bock_img-full" data-bock-img--full>
+                        <img src="img/slider_02_01.jpg" alt="Фото автоцентра">
                     </div>
                 </div>
-            </div>
 
-            <div class="index-section-3__slider">
-
-                <div class="address_wrp">
+                <div class="building-slider__item">
+                    <div class="address_wrp"></div>
                     <div class="address">зул. Калашникова, д. 26А</div>
+
+                    <div class="building-slider__img bock_img-full" data-bock-img--full>
+                        <img src="img/slider_02_01.jpg" alt="Фото автоцентра">
+                    </div>
                 </div>
 
-                <div class="slider" data-slider-building>
-                    <div class="img"><img src="img/slider_02_01.jpg" alt="Фото автоцентра"></div>
-                    <div class="img"><img src="img/slider_02_01.jpg" alt="Фото автоцентра"></div>
-                    <div class="img"><img src="img/slider_02_01.jpg" alt="Фото автоцентра"></div>
+                <div class="building-slider__item">
+                    <div class="address_wrp"></div>
+                    <div class="address">зул. Калашникова, д. 26А</div>
+
+                    <div class="building-slider__img bock_img-full" data-bock-img--full>
+                        <img src="img/slider_02_01.jpg" alt="Фото автоцентра">
+                    </div>
                 </div>
+
+
             </div>
+        </div>
+    </div>
 
-            
 
 </section>
 
@@ -515,7 +542,7 @@
             <div class="bars__row bar--m-bottom">
 
                 <div class="bar__common bar__two-thirds bar--m-right">
-                    <div class="bar__img"><img src="img/bar_2-3_01.jpg" alt="Фото автомобиля"></div>
+                    <div class="bar__img bock_img-full" data-bock-img--full><img src="img/bar_2-3_01.jpg" alt="Фото автомобиля"></div>
                     <div class="bar__content-wrp">
                         <div class="bar__content">
                             <h2 class="content__title">Газель Некст<br> от 333 ₽ в день</h2>
@@ -527,7 +554,7 @@
 
 
                 <div class="bar__common bar_third">
-                    <div class="bar__img"><img src="img/bar_1-3_01.jpg" alt="Фото автомобиля"></div>
+                    <div class="bar__img bock_img-full" data-bock-img--full><img src="img/bar_1-3_01.jpg" alt="Фото автомобиля"></div>
                     <div class="bar__content-wrp">
                         <div class="bar__content">
                             <h2 class="content__title">Городской формат для бизнеса</h2>
@@ -543,7 +570,7 @@
 
 
                 <div class="bar__common bar_third bar--m-right">
-                    <div class="bar__img"><img src="img/bar_1-3_02.jpg" alt="Фото автомобиля"></div>
+                    <div class="bar__img bock_img-full" data-bock-img--full><img src="img/bar_1-3_02.jpg" alt="Фото автомобиля"></div>
                     <div class="bar__content-wrp">
                         <div class="bar__content">
                             <h2 class="content__title">Мы дарим вам бонусы</h2>
@@ -555,7 +582,7 @@
 
 
                 <div class="bar__common bar__two-thirds">
-                    <div class="bar__img"><img src="img/bar_2-3_02.jpg" alt="Фото автомобиля"></div>
+                    <div class="bar__img bock_img-full" data-bock-img--full><img src="img/bar_2-3_02.jpg" alt="Фото автомобиля"></div>
                     <div class="bar__content-wrp">
                         <div class="bar__content">
                             <h2 class="content__title">Бонус от нашего<br> партнера</h2>
@@ -568,7 +595,7 @@
             </div>
 </section>
 
-<section class="index-section-4">
+<section class="index-section-4 container">
     <div class="information-title_wrp">
         <h2 class="content__title">Полезная информация</h2>
         <div class="content__link">

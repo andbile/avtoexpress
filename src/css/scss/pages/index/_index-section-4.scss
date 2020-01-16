@@ -1,4 +1,32 @@
 .index-section-4{
   padding-top: 110px;
-  padding-left: 6.11%;
+  /*padding-left: 6.11%;*/
+  padding-right: 0;
+}
+
+
+// ----------- responsive ----------
+@media (max-width: 1030px){
+
+}
+
+@media (max-width: 992px){
+
+
+}
+
+@media (max-width: 768px){
+
+
+}
+
+
+@media (max-width: 576px) {
+  .index-section-4{
+    padding-top: 50px;
+  }
+
+}
+@media (max-width: 320px){
+
 }

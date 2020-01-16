@@ -111,9 +111,27 @@
 
 .index-section-3 .slick-dots--type1{
   right: 0;
-  bottom: -30px;
+  bottom: 4.32%;
 
   li button:before{
     background-color: #E1E6E8;
   }
+}
+
+@media (max-width: 576px) {
+  .slick-dots--type1 li.slick-active,
+  .slick-dots--type1 li.slick-active button,
+  .slick-dots--type1 li.slick-active button:before  {
+    width: 0;
+  }
+
+  .slick-dots--type1 li.slick-active button:after{
+    left:0;
+    width: 4px;
+  }
+
+
+}
+@media (max-width: 320px){
+
 }

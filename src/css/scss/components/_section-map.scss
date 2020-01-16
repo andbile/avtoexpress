@@ -6,3 +6,31 @@
     height: 300px;
   }
 }
+
+// ----------- responsive ----------
+@media (max-width: 1030px){
+
+}
+
+@media (max-width: 992px){
+
+
+}
+
+@media (max-width: 768px){
+  .section-map #map{
+    height: 420px;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+  .section-map{
+    padding-top: 50px;
+  }
+
+}
+@media (max-width: 320px){
+
+}
