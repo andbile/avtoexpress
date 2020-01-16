@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 50px;
+  padding-right: 6.11%;
 }
 
 .slide-item--information{
@@ -86,13 +87,22 @@
 }
 
 @media (max-width: 768px){
+  .information-title_wrp{
+    flex-direction: column;
+    align-items: flex-start;
 
+    .content__title{
+      margin-bottom: 15px;
+    }
+  }
 
 }
 
 
 @media (max-width: 576px) {
-
+  .information-title_wrp{
+    padding-right: 3%;
+  }
 
 }
 
