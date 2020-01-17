@@ -225,7 +225,7 @@
 
     <div class="bars__row">
         <div class="bar__common bar_third bar--m-right">
-            <div class="bar__img bock_img-full" data-bock-img--full><img src="img/bar_1-3_03.jpg" alt="Фото автомобиля"></div>
+            <div class="bock_img-full" data-bock-img--full><img src="img/bar_1-3_03.jpg" alt="Фото автомобиля"></div>
             <div class="bar__content-wrp">
                 <div class="bar__content">
                     <h2 class="content__title">Мы дарим вам бонусы</h2>
@@ -236,7 +236,7 @@
         </div>
 
         <div class="bar__common bar__two-thirds">
-            <div class="bar__img bock_img-full" data-bock-img--full><img src="img/bar_2-3_03.jpg" alt="Фото автомобиля"></div>
+            <div class="bock_img-full" data-bock-img--full><img src="img/bar_2-3_03.jpg" alt="Фото автомобиля"></div>
             <div class="bar__content-wrp">
                 <div class="bar__content">
                     <h2 class="content__title">Бонус от нашего<br> партнера</h2>

@@ -1225,11 +1225,10 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-/*.bars__column{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}*/
+.bars__row .bock_img-full {
+  height: 100%;
+  width: 100%; }
+
 .bar__common {
   position: relative;
   min-width: 500px;
@@ -1247,43 +1246,11 @@ a {
       -ms-flex: 0 1 65%;
           flex: 0 1 65%; }
 
-.bar__one-two {
-  width: 718px; }
-
-/*.bar__full{
-  width: 1440px;
-}*/
-.bar__one-two-small {
-  width: 357px; }
-
 .bar--m-right {
   margin-right: 4px; }
 
 .bar--m-bottom {
   margin-bottom: 4px; }
-
-.bar__img {
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%; }
-
-.bar__img img {
-  /* max-width: 100%;
-  max-height: 100%;*/ }
-
-.bar__common--type2 {
-  position: relative; }
-
-.bar__one-two--h708 {
-  height: 708px; }
-
-.bar__one-two--h366 {
-  height: 366px; }
-
-.bar__one-two--h338 {
-  height: 338px; }
 
 .bar__content-wrp {
   position: absolute;
@@ -1313,6 +1280,73 @@ a {
 .bar_text {
   font-size: 15px;
   line-height: 20px; }
+
+.bars__row--container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.bar__common--type2 {
+  position: relative; }
+
+.bar__common--type2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.bar__one-two {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 48.0vw;
+  height: 50.15vw;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 718px;
+  max-height: 708px; }
+
+.bar__one-two--half-height {
+  height: 24.9vw;
+  width: 100%;
+  max-height: 366px;
+  margin-bottom: 2px; }
+
+.bar__fourth {
+  height: 25vw;
+  width: 23.2vw;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-height: 338px;
+  margin-top: 2px; }
+
+.bar__fourth:first-child {
+  margin-right: 2px; }
+
+.bar__fourth:last-child {
+  margin-left: 2px; }
+
+.bar--mp-margin-1 {
+  margin-right: 2px; }
+
+.bar--mp-margin-2 {
+  margin-left: 2px; }
 
 @media (max-width: 1000px) {
   .bar__common {
@@ -1350,7 +1384,41 @@ a {
 
 @media (max-width: 576px) {
   .bar__content-wrp {
-    padding: 30px; } }
+    padding: 30px; }
+  .bars__row--container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .bar__one-two {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 100%;
+    height: 90vw; }
+  .bar__one-two--half-height {
+    height: 45vw; }
+  .bars__row--container-fourth {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    height: 45vw; }
+  .bar__fourth {
+    width: 50%;
+    height: 100%; }
+  .bar--mp-margin-1 {
+    margin-right: 0;
+    margin-bottom: 2px; }
+  .bar--mp-margin-2 {
+    margin-top: 2px;
+    margin-left: 0; } }
 
 .information-title_wrp {
   display: -webkit-box;
@@ -3460,16 +3528,9 @@ a {
   width: 100%; }
 
 .mp-slider__img {
+  height: 44.3vw;
   max-height: 560px;
-  /* line-height: 560px;*/
   text-align: center; }
-
-.mp-slider__img img {
-  display: inline-block;
-  vertical-align: middle;
-  max-height: 100%;
-  max-width: 100%;
-  margin: 0 auto; }
 
 .mp-slider__wrp {
   position: relative; }
@@ -3501,9 +3562,15 @@ button.mp-slider-btn.slick-prev {
   display: none; }
 
 button.mp-slider-btn.slick-next {
-  /*  left: calc(50% + 45px);*/
   left: -webkit-calc(50% - 25px);
   left: calc(50% - 25px); }
+
+@media (max-width: 576px) {
+  .mp-slider {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .mp-slider__img {
+    height: 64.3vw; } }
 
 .mp-specifications {
   display: -webkit-box;

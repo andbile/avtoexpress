@@ -52,7 +52,6 @@
 </section>
 
 
-
 <section class="mp-slider container">
     <div class="mp-slider__content">
         <div class="content__title--type2">Новая LADA Granta держит слово</div>
@@ -67,45 +66,44 @@
             <button class="mp-slider-btn slick-prev slick-arrow" aria-label="Prev" type="button" style="">Pre</button>
             <button class="mp-slider-btn slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
         </div>
-        <div class="mp-slider__items" data-slider-model-page>
-            <div class="mp-slider__img"><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
-            <div class="mp-slider__img"><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
-            <div class="mp-slider__img"><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
-            <div class="mp-slider__img"><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
-            <div class="mp-slider__img"><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
+        <div class="mp-slider__items" data-slider-model-page> <!-- data-slider-model-page -->
+            <div class="mp-slider__img bock_img-full" data-bock-img--full><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
+            <div class="mp-slider__img bock_img-full" data-bock-img--full><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
+            <div class="mp-slider__img bock_img-full" data-bock-img--full><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
+            <div class="mp-slider__img bock_img-full" data-bock-img--full><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
+            <div class="mp-slider__img bock_img-full" data-bock-img--full><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
         </div>
     </div>
 
 </section>
 
+
 <section class="mp-bars">
 
-        <div class="bars__row">
+        <div class="bars__row bars__row--container">
 
-            <div class="bar__common--type2 bar__one-two bar__one-two--h708 bar--m-right">
-                <div class="bar__img"><img src="img/bar_1-2_01.jpg" alt="Фото автомобиля"></div>
+            <div class="bar__one-two bar--mp-margin-1">
+                <div class="bock_img-full" data-bock-img--full><img src="img/bar_1-2_01.jpg" alt="Фото автомобиля"></div>
             </div>
 
-            <div class="bar__common--type2 bar__one-two">
+            <div class="bar__one-two bar__common--type2 bar--mp-margin-2">
 
-                <div class="bars__column">
-                    <div class="bar__one-two bar__one-two--h366 bar--m-bottom">
-                        <div class="bar__img"><img src="img/bar_1-2_02.jpg" alt="Фото автомобиля"></div>
+                    <div class="bar__one-two bar__one-two--half-height">
+                        <div class="bock_img-full" data-bock-img--full><img src="img/bar_1-2_02.jpg" alt="Фото автомобиля"></div>
                     </div>
 
-                    <div class="bars__row">
-                        <div class="bar__common--type2 bar__one-two-small bar__one-two--h338 bar--m-right">
-                            <div class="bar__img"><img src="img/bar_1-2_03.jpg" alt="Фото автомобиля"></div>
+                    <div class="bars__row bars__row--container bars__row--container-fourth">
+                        <div class="bar__common--type2 bar__fourth">
+                            <div class="bock_img-full" data-bock-img--full><img src="img/bar_1-2_03.jpg" alt="Фото автомобиля"></div>
                         </div>
 
-                        <div class="bar__common--type2 bar__one-two-small bar__one-two--h338">
-                            <div class="bar__img"><img src="img/bar_1-2_04.jpg" alt="Фото автомобиля"></div>
+                        <div class="bar__common--type2 bar__fourth">
+                            <div class="bock_img-full" data-bock-img--full><img src="img/bar_1-2_04.jpg" alt="Фото автомобиля"></div>
                         </div>
 
                     </div>
-                </div>
+
             </div>
-
         </div>
     </section>
 
