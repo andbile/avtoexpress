@@ -3,22 +3,28 @@
 <? require_once 'template-parts/header.php' ?>
 <main>
 <section class="mp-main_preview container">
-        <div class="mp-main_preview__img"><img src="img/model_big_01.png" alt="Фото машины"></div>
 
-        <div class="mp-main_preview__content">
-
-            <div class="mp-main_preview__link link-line">
-                <span class="icon icon-path_left"></span>
-                <a href="brand_page.php">LADA Granta</a>
-            </div>
-
-            <div class="content__title--type2">Лифтбек Норма Платина</div>
-            <div class="mp-main_preview__price">от 499 400 &#x20bd;</div>
-            <div class="btn btn--orange"><a href="test_drive.php">Записаться на тест-драйв</a></div>
+    <div class="mp-main_preview__content">
+        <div class="mp-main_preview__link link-line">
+            <span class="icon icon-path_left"></span>
+            <a href="brand_page.php">LADA Granta</a>
         </div>
+        <div class="content__title--type2">Лифтбек Норма Платина</div>
+    </div>
 
 
-    </section>
+    <div class="mp-main_preview__img bock_img"><img src="img/model_big_01.png" alt="Фото машины"></div>
+
+
+
+    <div class="mp-main_preview__content--price-btn">
+        <div class="mp-main_preview__price">от 499 400 &#x20bd;</div>
+        <div class="btn btn--orange"><a href="test_drive.php">Записаться на тест-драйв</a></div>
+    </div>
+
+</section>
+
+
 
 <section class="mp-links container">
     <div class="mp-links__col-1">
