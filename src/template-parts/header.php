@@ -44,6 +44,29 @@
         <!-- подменю -->
         <div class="container main-menu__popup-menu" data-main-submenu>
 
+            <div class="col-left--popup-menu__wrp">
+                <div class="col-left--popup-menu">
+                    <div class="logo-wrp">
+                        <div class="address-link">
+                            <span class="icon icon-mark_map"></span>
+                            <a href="">Иваново</a>
+                        </div>
+                    </div>
+
+                    <div class="brands-with-popup-btn">
+                        <div class="brands">
+                            <a href="brand_page.php">УАЗ</a>
+                            <a href="brand_page.php">LADA</a>
+                            <a href="brand_page.php">ГАЗ</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
             <div class="contacts">
                 <div class="address">ул. Загородная, д 22а</div>
                 <div class="tel"><a href="tel:+74932938852">+7 (4932) 938 852</a></div>
