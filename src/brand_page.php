@@ -66,114 +66,166 @@
 
 <section class="model__items">
 
-    <div class="model__item container">
-        <div class="model_img"><a href="model_page.php"><img src="img/model_01.png" alt="Фото автомобиля"></a></div>
-        <div class="model__content">
-            <div class="model__brand">LADA</div>
-            <div class="model__model-name">Granta лифтбек</div>
-            <div class="model__price">Стоимость от <b>404 800 &#x20bd;</b></div>
-            <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-            <div class="model__get-request content__link link-line">
-                <a href="">Оформить заявку</a>
-                <span class="icon icon-path_right"></span>
+
+    <div class="model__item">
+        <div class="model__item-wrp">
+            <div class="model__img"><a href="model_page.php"><img src="img/model_01.png" alt="Фото автомобиля"></a></div>
+            <div class="model__content">
+                <div> <div class="model__brand">LADA</div>
+                    <div class="model__model-name">Granta лифтбек</div>
+                    <div class="model__price">Стоимость от <b>404 800 &#x20bd;</b></div>
+                </div>
+                <div class="model__get-links-wrp">
+                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line">
+                        <a href="">Оформить заявку</a>
+                        <span class="icon icon-path_right"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
-    <div class="model__item container">
-        <div class="model_img"><a href="model_page.php"><img src="img/model_02.png" alt="Фото автомобиля"></a></div>
-        <div class="model__content">
-            <div class="model__brand">LADA</div>
-            <div class="model__model-name">Vesta</div>
-            <div class="model__price">Стоимость от <b>648 900 &#x20bd;</b></div>
-            <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-            <div class="model__get-request content__link link-line">
-                <a href="">Оформить заявку</a>
-                <span class="icon icon-path_right"></span>
+
+    <div class="model__item">
+        <div class="model__item-wrp">
+            <div class="model__img"><a href="model_page.php"><img src="img/model_02.png" alt="Фото автомобиля"></a></div>
+            <div class="model__content">
+                <div> <div class="model__brand">LADA</div>
+                    <div class="model__model-name">Vesta</div>
+                    <div class="model__price">Стоимость от <b>648 900 &#x20bd;</b></div>
+                </div>
+                <div class="model__get-links-wrp">
+                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line">
+                        <a href="">Оформить заявку</a>
+                        <span class="icon icon-path_right"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
-    <div class="model__item container">
-        <div class="model_img"><a href="model_page.php"><img src="img/model_03.png" alt="Фото автомобиля"></a></div>
-        <div class="model__content">
-            <div class="model__brand">LADA</div>
-            <div class="model__model-name">XRAY</div>
-            <div class="model__price">Стоимость от <b>404 800 &#x20bd;</b></div>
-            <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-            <div class="model__get-request content__link link-line">
-                <a href="">Оформить заявку</a>
-                <span class="icon icon-path_right"></span>
-            </div>
-        </div>
-    </div>
 
-    <div class="model__item container">
-        <div class="model_img"><a href="model_page.php"><img src="img/model_04.png" alt="Фото автомобиля"></a></div>
-        <div class="model__content">
-            <div class="model__brand">LADA</div>
-            <div class="model__model-name">Largus</div>
-            <div class="model__price">Стоимость от <b>648 900 &#x20bd;</b></div>
-            <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-            <div class="model__get-request content__link link-line">
-                <a href="">Оформить заявку</a>
-                <span class="icon icon-path_right"></span>
+
+    <div class="model__item">
+        <div class="model__item-wrp">
+            <div class="model__img"><a href="model_page.php"><img src="img/model_03.png" alt="Фото автомобиля"></a></div>
+            <div class="model__content">
+                <div> <div class="model__brand">LADA</div>
+                    <div class="model__model-name">XRAY</div>
+                    <div class="model__price">Стоимость от <b>404 800 &#x20bd;</b></div>
+                </div>
+                <div class="model__get-links-wrp">
+                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line">
+                        <a href="">Оформить заявку</a>
+                        <span class="icon icon-path_right"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
-    <div class="model__item container">
-        <div class="model_img"><a href="model_page.php"><img src="img/model_01.png" alt="Фото автомобиля"></a></div>
-        <div class="model__content">
-            <div class="model__brand">LADA</div>
-            <div class="model__model-name">Kalina</div>
-            <div class="model__price">Стоимость от <b>404 800 &#x20bd;</b></div>
-            <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-            <div class="model__get-request content__link link-line">
-                <a href="">Оформить заявку</a>
-                <span class="icon icon-path_right"></span>
+
+    <div class="model__item">
+        <div class="model__item-wrp">
+            <div class="model__img"><a href="model_page.php"><img src="img/model_04.png" alt="Фото автомобиля"></a></div>
+            <div class="model__content">
+                <div> <div class="model__brand">LADA</div>
+                    <div class="model__model-name">Largus</div>
+                    <div class="model__price">Стоимость от <b>648 900 &#x20bd;</b></div>
+                </div>
+                <div class="model__get-links-wrp">
+                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line">
+                        <a href="">Оформить заявку</a>
+                        <span class="icon icon-path_right"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="model__item container">
-        <div class="model_img"><a href="model_page.php"><img src="img/model_02.png" alt="Фото автомобиля"></a></div>
-        <div class="model__content">
-            <div class="model__brand">LADA</div>
-            <div class="model__model-name">Priora</div>
-            <div class="model__price">Стоимость от <b>648 900 &#x20bd;</b></div>
-            <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-            <div class="model__get-request content__link link-line">
-                <a href="">Оформить заявку</a>
-                <span class="icon icon-path_right"></span>
+
+
+    <div class="model__item">
+        <div class="model__item-wrp">
+            <div class="model__img"><a href="model_page.php"><img src="img/model_01.png" alt="Фото автомобиля"></a></div>
+            <div class="model__content">
+                <div> <div class="model__brand">LADA</div>
+                    <div class="model__model-name">Kalina</div>
+                    <div class="model__price">Стоимость от <b>648 900 &#x20bd;</b></div>
+                </div>
+                <div class="model__get-links-wrp">
+                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line">
+                        <a href="">Оформить заявку</a>
+                        <span class="icon icon-path_right"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="model__item container">
-        <div class="model_img"><a href="model_page.php"><img src="img/model_01.png" alt="Фото автомобиля"></a></div>
-        <div class="model__content">
-            <div class="model__brand">LADA</div>
-            <div class="model__model-name">4x4</div>
-            <div class="model__price">Стоимость от <b>404 800 &#x20bd;</b></div>
-            <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-            <div class="model__get-request content__link link-line">
-                <a href="">Оформить заявку</a>
-                <span class="icon icon-path_right"></span>
+
+
+
+
+
+
+    <div class="model__item">
+        <div class="model__item-wrp">
+            <div class="model__img"><a href="model_page.php"><img src="img/model_02.png" alt="Фото автомобиля"></a></div>
+            <div class="model__content">
+                <div> <div class="model__brand">LADA</div>
+                    <div class="model__model-name">Priora</div>
+                    <div class="model__price">Стоимость от <b>648 900 &#x20bd;</b></div>
+                </div>
+                <div class="model__get-links-wrp">
+                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line">
+                        <a href="">Оформить заявку</a>
+                        <span class="icon icon-path_right"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+
+    <div class="model__item">
+        <div class="model__item-wrp">
+            <div class="model__img"><a href="model_page.php"><img src="img/model_02.png" alt="Фото автомобиля"></a></div>
+            <div class="model__content">
+                <div> <div class="model__brand">LADA</div>
+                    <div class="model__model-name">4x4</div>
+                    <div class="model__price">Стоимость от <b>648 900 &#x20bd;</b></div>
+                </div>
+                <div class="model__get-links-wrp">
+                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line">
+                        <a href="">Оформить заявку</a>
+                        <span class="icon icon-path_right"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </section>
+
 
 <section class="bars__section">
 
     <div class="bars__row">
         <div class="bar__common bar_third bar--m-right">
-            <div class="bar__img"><img src="img/bar_1-3_03.jpg" alt="Фото автомобиля"></div>
+            <div class="bar__img bock_img-full" data-bock-img--full><img src="img/bar_1-3_03.jpg" alt="Фото автомобиля"></div>
             <div class="bar__content-wrp">
                 <div class="bar__content">
                     <h2 class="content__title">Мы дарим вам бонусы</h2>
@@ -184,7 +236,7 @@
         </div>
 
         <div class="bar__common bar__two-thirds">
-            <div class="bar__img"><img src="img/bar_2-3_03.jpg" alt="Фото автомобиля"></div>
+            <div class="bar__img bock_img-full" data-bock-img--full><img src="img/bar_2-3_03.jpg" alt="Фото автомобиля"></div>
             <div class="bar__content-wrp">
                 <div class="bar__content">
                     <h2 class="content__title">Бонус от нашего<br> партнера</h2>
