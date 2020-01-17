@@ -25,7 +25,6 @@
 </section>
 
 
-
 <section class="mp-links container">
     <div class="mp-links__col-1">
 
@@ -51,6 +50,8 @@
         <div class="mp-link--type2"><a href="">Комплектация</a></div>
     </div>
 </section>
+
+
 
 <section class="mp-slider container">
     <div class="mp-slider__content">
