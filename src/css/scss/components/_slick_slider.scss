@@ -119,16 +119,22 @@
 }
 
 @media (max-width: 576px) {
-  .slick-dots--type1 li.slick-active,
-  .slick-dots--type1 li.slick-active button,
-  .slick-dots--type1 li.slick-active button:before  {
-    width: 0;
+  .is-3__building-slider{
+
+    .slick-dots--type1 li.slick-active,
+    .slick-dots--type1 li.slick-active button,
+    .slick-dots--type1 li.slick-active button:before  {
+      width: 0;
+    }
+
+    .slick-dots--type1 li.slick-active button:after{
+      left:0;
+      width: 4px;
+    }
+
   }
 
-  .slick-dots--type1 li.slick-active button:after{
-    left:0;
-    width: 4px;
-  }
+
 
 
 }

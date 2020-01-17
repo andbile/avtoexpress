@@ -21,37 +21,37 @@
 
 
                 <ul class="main-slider__list" data-btn-hover-list>
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="1">
+                    <li class="main-slider__list-item" data-hover-slide-id="1">
                         <div class="car__img"><img src="img/hover_car_01.png" alt="Фото машины"></div>
                         <span class="list-btn">Патриот АКПП</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="2">
+                    <li class="main-slider__list-item" data-hover-slide-id="2">
                         <div class="car__img"><img src="img/hover_car_02.png" alt="Фото машины"></div>
                         <span class="list-btn">Обновленный Патриот</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="3">
+                    <li class="main-slider__list-item" data-hover-slide-id="3">
                         <div class="car__img"><img src="img/hover_car_03.png" alt="Фото машины"></div>
                         <span class="list-btn">Обновленный Пикап</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="4">
+                    <li class="main-slider__list-item" data-hover-slide-id="4">
                         <div class="car__img"><img src="img/hover_car_04.png" alt="Фото машины"></div>
                         <span class="list-btn">Хантер</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="5">
+                    <li class="main-slider__list-item" data-hover-slide-id="5">
                         <div class="car__img"><img src="img/hover_car_05.png" alt="Фото машины"></div>
                         <span class="list-btn">Хантер Экспедиционный</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="6">
+                    <li class="main-slider__list-item" data-hover-slide-id="6">
                         <div class="car__img"><img src="img/hover_car_06.png" alt="Фото машины"></div>
                         <span class="list-btn">Коммерческие автомобили</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="7">
+                    <li class="main-slider__list-item" data-hover-slide-id="7">
                         <div class="car__img"><img src="img/hover_car_07.png" alt="Фото машины"></div>
                         <span class="list-btn">«Буханка» Комби Трофи</span>
                     </li>
@@ -146,37 +146,37 @@
 
 
                 <ul class="main-slider__list" data-btn-hover-list>
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="1">
+                    <li class="main-slider__list-item" data-hover-slide-id="1">
                         <div class="car__img"><img src="img/hover_car_01.png" alt="Фото машины"></div>
                         <span class="list-btn">Патриот АКПП</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="2">
+                    <li class="main-slider__list-item" data-hover-slide-id="2">
                         <div class="car__img"><img src="img/hover_car_02.png" alt="Фото машины"></div>
                         <span class="list-btn">Обновленный Патриот</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="3">
+                    <li class="main-slider__list-item" data-hover-slide-id="3">
                         <div class="car__img"><img src="img/hover_car_03.png" alt="Фото машины"></div>
                         <span class="list-btn">Обновленный Пикап</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="4">
+                    <li class="main-slider__list-item" data-hover-slide-id="4">
                         <div class="car__img"><img src="img/hover_car_04.png" alt="Фото машины"></div>
                         <span class="list-btn">Хантер</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="5">
+                    <li class="main-slider__list-item" data-hover-slide-id="5">
                         <div class="car__img"><img src="img/hover_car_05.png" alt="Фото машины"></div>
                         <span class="list-btn">Хантер Экспедиционный</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="6">
+                    <li class="main-slider__list-item" data-hover-slide-id="6">
                         <div class="car__img"><img src="img/hover_car_06.png" alt="Фото машины"></div>
                         <span class="list-btn">Коммерческие автомобили</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="7">
+                    <li class="main-slider__list-item" data-hover-slide-id="7">
                         <div class="car__img"><img src="img/hover_car_07.png" alt="Фото машины"></div>
                         <span class="list-btn">«Буханка» Комби Трофи</span>
                     </li>
@@ -271,37 +271,37 @@
 
 
                 <ul class="main-slider__list" data-btn-hover-list>
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="1">
+                    <li class="main-slider__list-item" data-hover-slide-id="1">
                         <div class="car__img"><img src="img/hover_car_01.png" alt="Фото машины"></div>
                         <span class="list-btn">Патриот АКПП</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="2">
+                    <li class="main-slider__list-item" data-hover-slide-id="2">
                         <div class="car__img"><img src="img/hover_car_02.png" alt="Фото машины"></div>
                         <span class="list-btn">Обновленный Патриот</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="3">
+                    <li class="main-slider__list-item" data-hover-slide-id="3">
                         <div class="car__img"><img src="img/hover_car_03.png" alt="Фото машины"></div>
                         <span class="list-btn">Обновленный Пикап</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="4">
+                    <li class="main-slider__list-item" data-hover-slide-id="4">
                         <div class="car__img"><img src="img/hover_car_04.png" alt="Фото машины"></div>
                         <span class="list-btn">Хантер</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="5">
+                    <li class="main-slider__list-item" data-hover-slide-id="5">
                         <div class="car__img"><img src="img/hover_car_05.png" alt="Фото машины"></div>
                         <span class="list-btn">Хантер Экспедиционный</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="6">
+                    <li class="main-slider__list-item" data-hover-slide-id="6">
                         <div class="car__img"><img src="img/hover_car_06.png" alt="Фото машины"></div>
                         <span class="list-btn">Коммерческие автомобили</span>
                     </li>
 
-                    <li class="main-slider__list-item link-line-span link-line-span--white" data-hover-slide-id="7">
+                    <li class="main-slider__list-item" data-hover-slide-id="7">
                         <div class="car__img"><img src="img/hover_car_07.png" alt="Фото машины"></div>
                         <span class="list-btn">«Буханка» Комби Трофи</span>
                     </li>

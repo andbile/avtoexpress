@@ -685,7 +685,7 @@ function showPopupWindowInMainSlider() {
         currentState.imgBtn.addClass('active');
 
         // вызваниваем по центру фото относительно нажатой кнопки
-        imageAlign();
+        //imageAlign();
 
         // анимация появления
         TweenMax.to(currentState.imgBtn, 0.4, {delay:0.1, opacity: 1});
