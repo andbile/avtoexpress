@@ -9,17 +9,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    // TODO исправить когда будет адаптив
     overflow: hidden;
   }
 
   .brand__bg img{
-    max-height: 100%;
-    /*max-width: 100%;*/
-    // TODO исправить когда будет адаптив
     position: absolute;
     right: 0;
     width: 1440px;
+    max-height: 100%;
   }
 
   .brand__content{
@@ -44,7 +41,6 @@
   }
 
   .brand__img img{
-
     display: inline-block;
     vertical-align: middle;
     max-width: 100%;
@@ -53,11 +49,50 @@
 
   .content__title--type2{
     align-self: center;
-   line-height: 1;
+    line-height: 1;
   }
 
   .brand__text{
     font-size: 15px;
     line-height: 24px;
   }
+}
+
+// ----------- responsive ----------
+@media (max-width: 1030px){
+
+}
+
+@media (max-width: 992px){
+
+
+}
+
+@media (max-width: 768px){
+  .section-top-photo {
+    .brand__bg img{
+      right: -10%;
+    }
+  }
+
+}
+
+
+@media (max-width: 576px) {
+  .section-top-photo {
+
+    .brand__bg img{
+      right: -30%;
+    }
+
+    .brand__img{
+      height: 40px;
+      line-height: 40px;
+      margin-right: 10px;
+    }
+  }
+
+}
+@media (max-width: 320px){
+
 }
