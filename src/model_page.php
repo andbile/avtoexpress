@@ -164,9 +164,9 @@
     <div class="mp-specifications__col-2">
         <div class="content__title">Комплектация</div>
 
-        <div class="mp-specifications__list-wrp">
+        <div class="mp-specifications__list-wrp" data-single-expandingList-open>
 
-            <ul class="mp-specifications__list">
+            <ul class="list-with-squares">
                 <li>Подушка безопасности водителя;</li>
                 <li>Подголовники задних сидений 2 шт.;</li>
                 <li>Крепления для детских сидений ISOFIX;</li>
@@ -180,7 +180,7 @@
                 <li>Заднее сиденье с раскладкой в пропорции 60/40;</li>
             </ul>
 
-            <ul class="mp-specifications__list">
+            <ul class="list-with-squares">
                 <li>Розетка 12V;</li>
                 <li>Электроусилитель рулевого управления;</li>
                 <li>Регулируемая по высоте рулевая колонка;</li>
@@ -196,33 +196,12 @@
             </ul>
         </div>
 
+        <div class="link-with-border--path-bottom" data-single-list-open-btn>
+            <a href="">Показать все</a>
+            <span class="icon icon-path_left"></span>
+        </div>
+
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </section>
 
@@ -264,17 +243,20 @@
 
             <div class="mp-other-equipment__content-row">
                 <div class="col-1">
-                    <div class="spec">1.6л 8-кл (87 л.с.), 5МТ / Standart</div>
-                    <div class="art">(21901-A0-545)</div>
+                    <span class="spec">1.6л 8-кл (87 л.с.), 5МТ / Standart
+                        <span class="art">(21901-A0-545)</span>
+                    </span>
                 </div>
                 <div class="col-2">
                     <div class="price">444 900 &#x20bd;</div>
-                    <div class="test-link link-line">
-                        <a href="test_drive.php">Тест-драйв</a>
-                    </div>
-                    <div class="content__link content__link--link-line">
-                        <a href="">Смотреть</a>
-                        <span class="icon icon-path_right"></span>
+                    <div class="col-2__links-wrp">
+                        <div class="test-link link-line">
+                            <a href="test_drive.php">Тест-драйв</a>
+                        </div>
+                        <div class="content__link content__link--link-line">
+                            <a href="">Смотреть</a>
+                            <span class="icon icon-path_right"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -282,17 +264,20 @@
 
             <div class="mp-other-equipment__content-row">
                 <div class="col-1">
-                    <div class="spec">1.6л 8-кл (87 л.с.), 5МТ / Classic</div>
-                    <div class="art">(21901-A1-567)</div>
+                    <span class="spec">1.6л 8-кл (87 л.с.), 5МТ / Classic
+                        <span class="art">(21901-A1-567)</span>
+                    </span>
                 </div>
                 <div class="col-2">
                     <div class="price">480 500 &#x20bd;</div>
-                    <div class="test-link link-line">
-                        <a href="test_drive.php">Тест-драйв</a>
-                    </div>
-                    <div class="content__link content__link--link-line">
-                        <a href="">Смотреть</a>
-                        <span class="icon icon-path_right"></span>
+                    <div class="col-2__links-wrp">
+                        <div class="test-link link-line">
+                            <a href="test_drive.php">Тест-драйв</a>
+                        </div>
+                        <div class="content__link content__link--link-line">
+                            <a href="">Смотреть</a>
+                            <span class="icon icon-path_right"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -300,17 +285,21 @@
 
             <div class="mp-other-equipment__content-row">
                 <div class="col-1">
-                    <div class="spec">1.6л 8-кл (87 л.с.), 5МТ / Classic / Optima</div>
-                    <div class="art">(21901-A1-575)</div>
+                    <span class="spec">1.6л 8-кл (87 л.с.), 5МТ / Classic / Optima
+                        <span class="art">(21901-A1-575)</span>
+                    </span>
+
                 </div>
                 <div class="col-2">
                     <div class="price">506 500 &#x20bd;</div>
-                    <div class="test-link link-line">
-                        <a href="test_drive.php">Тест-драйв</a>
-                    </div>
-                    <div class="content__link content__link--link-line">
-                        <a href="">Смотреть</a>
-                        <span class="icon icon-path_right"></span>
+                    <div class="col-2__links-wrp">
+                        <div class="test-link link-line">
+                            <a href="test_drive.php">Тест-драйв</a>
+                        </div>
+                        <div class="content__link content__link--link-line">
+                            <a href="">Смотреть</a>
+                            <span class="icon icon-path_right"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -318,33 +307,30 @@
 
             <div class="mp-other-equipment__content-row">
                 <div class="col-1">
-                    <div class="spec">1.6л 8-кл (87 л.с.), 5МТ / Comfort</div>
-                    <div class="art">(21901-A1-568)</div>
+                    <span class="spec">1.6л 8-кл (87 л.с.), 5МТ / Comfort
+                         <span class="art">(21901-A1-568)</span>
+                    </span>
                 </div>
                 <div class="col-2">
                     <div class="price">526 500 &#x20bd;</div>
-                    <div class="test-link link-line">
-                        <a href="test_drive.php">Тест-драйв</a>
-                    </div>
-                    <div class="content__link content__link--link-line">
-                        <a href="">Смотреть</a>
-                        <span class="icon icon-path_right"></span>
+                    <div class="col-2__links-wrp">
+                        <div class="test-link link-line">
+                            <a href="test_drive.php">Тест-драйв</a>
+                        </div>
+                        <div class="content__link content__link--link-line">
+                            <a href="">Смотреть</a>
+                            <span class="icon icon-path_right"></span>
+                        </div>
                     </div>
                 </div>
             </div>
 
 
-
-
-
         </div>
-
-
-
 </section>
 
 
-<section class="mp-information-slider">
+<section class="mp-information-slider container">
         <div class="information-title_wrp">
             <h2 class="content__title">Новости и события</h2>
             <div class="content__link">
