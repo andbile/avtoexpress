@@ -1,27 +1,20 @@
 .section-test-drive{
   position: relative;
-  display: flex;
-  flex-direction: row;
   border-top: 1px solid #E1E6E8;
 
-  .test-drive__col-1,
-  .test-drive__col-2{
-    flex: 0 0 50%;
-    width: 50%;
-  }
-
   .test-drive__col-1{
+    position: relative;
     padding-top: 56px;
+    padding-bottom: 60px;
+    z-index: 1;
   }
 
   .test-drive__img{
-    width: 726px;
-    height: 701px;
-  }
-
-  .test-drive__img img{
-    max-width: 100%;
-    max-height: 100%;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
   }
 
 
@@ -41,15 +34,16 @@ form.form-test-drive{
 }
 
 .form-test-drive__select-wrp{
-  position: absolute;
-  padding: 40px 56px;
+  position: relative;
+  padding: 40px 15px 40px 3.6%;
   background-color: $bg-color-grey;
+  margin-bottom: 48px;
+  z-index: 3;
 }
 
 .form-test-drive__select-wrp{
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -57,9 +51,58 @@ form.form-test-drive{
   margin-right: 30px;
 }
 
+.form-test-drive__select--address .current{
+  display: inline-block;
+  overflow: hidden;
+}
+
+
+.form-test-drive__select--address{
+  width: 350px;
+  .current{
+    max-width: 320px;
+  }
+}
+
+.form-test-drive__select--car{
+  width: 300px;
+  .current{
+    max-width: 270px;
+  }
+}
+
+
+
+.form-test-drive__select--time{
+  max-width: 200px;
+  .current{
+    max-width: 170px;
+  }
+}
+
+.form-test-drive__select#test-drive-calendar{
+  max-width: 200px;
+  input{
+    transform: translateY(-4px);
+  }
+}
+
+.form-test-drive__select--time, .form-test-drive__select#test-drive-calendar{
+  min-width: 140px;
+}
+
+.form-test-drive__select-wrp-1, .form-test-drive__select-wrp-2{
+  display: flex;
+  align-items: center;
+
+
+}
+
+
+
+
 .form-test-drive__input-wrp{
-  position: relative;
-  top: 180px;
+  width: 48%;
 
   .title{
     font-size: 16px;
@@ -69,14 +112,13 @@ form.form-test-drive{
   }
 
   .form-test-drive__item{
-    width: 60%;
+    width: 300px;
   }
 
   input{
     font-size: 14px;
     line-height: 20px;
     color: $bg-color-black;
-    opacity: 0.5;
     border: none;
     outline: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -104,6 +146,8 @@ form.form-test-drive{
       cursor: pointer;
       padding-left: 25px;
       transition: all 0.4s;
+      font-size: 14px;
+      line-height: 20px;
     }
 
     label:before{
@@ -133,8 +177,101 @@ form.form-test-drive{
     opacity: 1;
     color: $font-color-white;
     cursor: pointer;
+    margin-bottom: 0;
   }
 }
 
+
+// ----------- responsive ----------
+@media (max-width: 1300px){
+  .form-test-drive__select-wrp{
+    width: 100%;
+  }
+
+  .form-test-drive__select-wrp-1, .form-test-drive__select-wrp-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-test-drive__select-wrp-1{
+    margin-right: 40px;
+  }
+
+  .form-test-drive__select-wrp-1 > div{
+    width: 350px;
+    margin-bottom: 25px;
+
+  }
+
+  .form-test-drive__select-wrp-2 > div:first-child{
+    margin-bottom: 25px;
+  }
+
+  .form-test-drive__select-wrp-2 > div:last-child{
+    transform: translateY(2px);
+  }
+
+
+}
+
+@media (max-width: 992px){
+
+
+}
+
+@media (max-width: 768px){
+  .test-drive__img{
+   display: none;
+  }
+
+  .form-test-drive__input-wrp{
+    width: 100%;
+  }
+
+  .form-test-drive__select-wrp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-test-drive__select-wrp-1{
+    margin-right: 0;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+
+  .form-test-drive__select-wrp-1,
+  .form-test-drive__select-wrp-2{
+    width: 100%;
+  }
+
+  .form-test-drive__select-wrp-1 > div{
+    width: 100%;
+  }
+
+  .form-test-drive__select,
+  .form-test-drive__select#test-drive-calendar,
+  .form-test-drive__select--time {
+    width: 100%;
+    margin-right: 0;
+    max-width: none;
+
+    .current{
+      width: calc(100% - 5px);
+      max-width: none;
+      overflow: hidden;
+    }
+  }
+
+
+
+}
+@media (max-width: 320px){
+
+}
 
 
