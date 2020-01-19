@@ -3,7 +3,10 @@
 <? require_once 'template-parts/header.php' ?>
 <main>
 <section class="section-about__top-photo">
-        <div class="about__img"><img src="img/bg_about.jpg" alt="Фото автомобиля"></div>
+        <div class="about__img">
+            <div class="about__bg-gradient"></div>
+            <img src="img/bg_about.jpg" alt="Фото автомобиля">
+        </div>
 
         <div class="about__content container">
             <div class="content__title--type2">О компании</div>
@@ -11,112 +14,125 @@
         </div>
 </section>
 
-<section class="section-about__text-content container">
+<section class="section-about__text-content ">
 
-    <div class="section-about__col-1">
-        <div class="content__text">
-            <p>Группа компаний ООО «Автоэкспресс-Плюс» заявила о себе в автомобильном бизнесе в 1992 году.</p>
-            <p>На данный момент это одна из крупнейших, успешно и стабильно развивающяяся компания, которая является
-                официальным дилером марок: LADA, ГАЗ, УАЗ, Great Wall, Geely, Lifan , Fiat Profesional.</p>
-            <p>По маркам ГАЗ,GEELY, Lifan, Fiat Profesional компания является единственным официальным дилером в Иваново
-                и Ивановской области.</p>
-        </div>
+    <div class="section-about__col-wrp">
+        <div class="section-about__col-1">
+            <div class="content__text">
+                <p>Группа компаний ООО «Автоэкспресс-Плюс» заявила о себе в автомобильном бизнесе в 1992 году.</p>
+                <p>На данный момент это одна из крупнейших, успешно и стабильно развивающяяся компания, которая является
+                    официальным дилером марок: LADA, ГАЗ, УАЗ, Great Wall, Geely, Lifan , Fiat Profesional.</p>
+                <p>По маркам ГАЗ,GEELY, Lifan, Fiat Profesional компания является единственным официальным дилером в Иваново
+                    и Ивановской области.</p>
+            </div>
 
-        <div class="section-about__service-items">
+            <div class="section-about__service-items">
 
-            <div class="section-about__service-item">
-                <div class="section-about__service-title">
-                    <span class="icon icon-rocket"></span>
-                    <span>Порядочность</span>
+                <div class="section-about__service-item">
+                    <div class="section-about__service-title">
+                        <span class="icon icon-rocket"></span>
+                        <span>Порядочность</span>
+                    </div>
+                    <div class="section-about__service-description">Обязательное выполнение всех своих обязательств перед клиентом</div>
                 </div>
-                <div class="section-about__service-description">Обязательное выполнение всех своих обязательств перед клиентом</div>
-            </div>
 
 
-            <div class="section-about__service-item">
-                <div class="section-about__service-title">
-                    <span class="icon icon-rocket"></span>
-                    <span>Профессионализм</span>
+                <div class="section-about__service-item">
+                    <div class="section-about__service-title">
+                        <span class="icon icon-rocket"></span>
+                        <span>Профессионализм</span>
+                    </div>
+                    <div class="section-about__service-description">Наши сотрудники действительно разбираются в машинах и любят свое дело</div>
                 </div>
-                <div class="section-about__service-description">Наши сотрудники действительно разбираются в машинах и любят свое дело</div>
-            </div>
 
 
-            <div class="section-about__service-item">
-                <div class="section-about__service-title">
-                    <span class="icon icon-rocket"></span>
-                    <span>Качество</span>
+                <div class="section-about__service-item">
+                    <div class="section-about__service-title">
+                        <span class="icon icon-rocket"></span>
+                        <span>Качество</span>
+                    </div>
+                    <div class="section-about__service-description">Мы используем только современное оборудование и оригинальные запчасти</div>
                 </div>
-                <div class="section-about__service-description">Мы используем только современное оборудование и оригинальные запчасти</div>
-            </div>
-
-
-
-        </div>
-        
-        
-        <div class="section-about__img-block-wrp">
-            <div class="section-about__img-block">
-                <img src="img/build_01.jpg" alt="Здание">
             </div>
         </div>
-
-        <div class="content__text">
-            <p>Каждый квартал мы знакомим своих клиентов с новинками как отечественного, так и иностранного
-                производства!</p>
-            <p>Менеджеры отделов продаж всегда готовы предложить высококвалифицированную помощь в выборе автомобиля, а
-                также условий приобретения и обслуживания, провести бесплатный тест-драйв.</p>
-            <p>Наша миссия - непрерывное совершенствование в области продаж и послепродажного обслуживания автомобилей
-                для максимального комфорта клиентов.</p>
-            <p>Наши принципы, которые помогают нам работать и удовлетворять потребности наших клиентов.</p>
-        </div>
-
-        <div class="section-about__your-choice-wrp">
-            <div class="content__title">Почему клиенты<br> предпочитают нас?</div>
-
-            <ul class="section-about__your-choice-list" data-single-expandingList-open>
-                <li>Индивидуальный подход к каждому клиенту. Мы профессионально подберем вам автомобиль исходя из ваших предпочтений.</li>
-                <li>Мы не навязываем вам никакого дополнительного оборудования, вы покупаете дополнительное оборудование у нас только по вашему желанию.</li>
-                <li>Мы всегда готовы предоставить вам дополнительные индивидуальные скидки на автомобиль и дополнительное оборудование.</li>
-                <li>Продавец-консультант проведет для вас бесплатно Тест-драйв с презентацией автомобиля.</li>
-
-
-                <li>Индивидуальный подход к каждому клиенту. Мы профессионально подберем вам автомобиль исходя из ваших предпочтений.</li>
-                <li>Мы не навязываем вам никакого дополнительного оборудования, вы покупаете дополнительное оборудование у нас только по вашему желанию.</li>
-                <li>Мы всегда готовы предоставить вам дополнительные индивидуальные скидки на автомобиль и дополнительное оборудование.</li>
-                <li>Продавец-консультант проведет для вас бесплатно Тест-драйв с презентацией автомобиля.</li>
-            </ul>
-
-            <div class="link-with-border--path-bottom" data-single-list-open-btn>
-                <a href="">Читать больше</a>
-                <span class="icon icon-path_left"></span>
+        <div class="section-about__col-2">
+            <div class="about__address-block-wrp">
+                <div class="address-block__name">Дилерский центр «Автоэкспресс»</div>
+                <div class="address-block__address">ул. Загородная</div>
+                <div class="address-block__text">Официальный дилер LADA и ГАЗ в г. Иваново и Ивановской области. Сертифицированный сервисный центр.</div>
+                <div class="address-block__address-full">
+                    <span class="icon icon-mark_map"></span>
+                    <span>г. Иваново, ул. Загородная, д. 22а</span><br>
+                    <span class="address-block__address-howget">Район южного аэропорта, перед ТЦ МЕТРО</span>
+                </div>
             </div>
 
-        </div>
-    </div>
-    <div class="section-about__col-2">
-        <div class="about__address-block-wrp">
-            <div class="address-block__name">Дилерский центр «Автоэкспресс»</div>
-            <div class="address-block__address">ул. Загородная</div>
-            <div class="address-block__text">Официальный дилер LADA и ГАЗ в г. Иваново и Ивановской области. Сертифицированный сервисный центр.</div>
-            <div class="address-block__address-full">
-                <span class="icon icon-mark_map"></span>
-                <span>г. Иваново, ул. Загородная, д. 22а</span><br>
-                <span class="address-block__address-howget">Район южного аэропорта, перед ТЦ МЕТРО</span>
-            </div>
-        </div>
-
-        <div class="about__address-block-wrp">
-            <div class="address-block__name">Дилерский центр «Автоэкспресс»</div>
-            <div class="address-block__address">ул. Калашникова</div>
-            <div class="address-block__text">Единственный официальный дилер УАЗ и ГАЗ в г. Иваново и Ивановской области. Сертифицированный сервисный центр.</div>
-            <div class="address-block__address-full">
-                <span class="icon icon-mark_map"></span>
-                <span>г. Иваново, ул. Калашникова, д. 26а</span><br>
-                <span class="address-block__address-howget">Район северного аэродрома, после Минеевского моста, справа от ИвТекМаш</span>
+            <div class="about__address-block-wrp">
+                <div class="address-block__name">Дилерский центр «Автоэкспресс»</div>
+                <div class="address-block__address">ул. Калашникова</div>
+                <div class="address-block__text">Единственный официальный дилер УАЗ и ГАЗ в г. Иваново и Ивановской области. Сертифицированный сервисный центр.</div>
+                <div class="address-block__address-full">
+                    <span class="icon icon-mark_map"></span>
+                    <span>г. Иваново, ул. Калашникова, д. 26а</span><br>
+                    <span class="address-block__address-howget">Район северного аэродрома, после Минеевского моста, справа от ИвТекМаш</span>
+                </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+    <div class="section-about__col-3 container">
+
+        <div class="section-about__col-3-wrp">
+
+            <div class="section-about__img-block-wrp">
+                <div class="section-about__img-block bock_img-full" data-bock-img--full>
+                    <img src="img/build_01.jpg" alt="Здание">
+                </div>
+            </div>
+
+            <div class="content__text">
+                <p>Каждый квартал мы знакомим своих клиентов с новинками как отечественного, так и иностранного
+                    производства!</p>
+                <p>Менеджеры отделов продаж всегда готовы предложить высококвалифицированную помощь в выборе автомобиля, а
+                    также условий приобретения и обслуживания, провести бесплатный тест-драйв.</p>
+                <p>Наша миссия - непрерывное совершенствование в области продаж и послепродажного обслуживания автомобилей
+                    для максимального комфорта клиентов.</p>
+                <p>Наши принципы, которые помогают нам работать и удовлетворять потребности наших клиентов.</p>
+            </div>
+
+            <div class="section-about__your-choice-wrp">
+                <div class="content__title">Почему клиенты<br> предпочитают нас?</div>
+
+                <ul class="section-about__your-choice-list" data-single-expandingList-open>
+                    <li>Индивидуальный подход к каждому клиенту. Мы профессионально подберем вам автомобиль исходя из ваших предпочтений.</li>
+                    <li>Мы не навязываем вам никакого дополнительного оборудования, вы покупаете дополнительное оборудование у нас только по вашему желанию.</li>
+                    <li>Мы всегда готовы предоставить вам дополнительные индивидуальные скидки на автомобиль и дополнительное оборудование.</li>
+                    <li>Продавец-консультант проведет для вас бесплатно Тест-драйв с презентацией автомобиля.</li>
+
+
+                    <li>Индивидуальный подход к каждому клиенту. Мы профессионально подберем вам автомобиль исходя из ваших предпочтений.</li>
+                    <li>Мы не навязываем вам никакого дополнительного оборудования, вы покупаете дополнительное оборудование у нас только по вашему желанию.</li>
+                    <li>Мы всегда готовы предоставить вам дополнительные индивидуальные скидки на автомобиль и дополнительное оборудование.</li>
+                    <li>Продавец-консультант проведет для вас бесплатно Тест-драйв с презентацией автомобиля.</li>
+                </ul>
+
+                <div class="link-with-border--path-bottom" data-single-list-open-btn>
+                    <a href="">Читать больше</a>
+                    <span class="icon icon-path_left"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
 
 
 </section>

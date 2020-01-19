@@ -3,7 +3,11 @@
 <? require_once 'template-parts/header.php' ?>
 <main>
 <section class="section-top-photo container">
-    <div class="brand__bg"><img src="img/bg_brand_01.jpg" alt="Фото автомобиля"></div>
+    <div class="brand__bg">
+        <div class="brand__bg-gradient"></div>
+        <img src="img/bg_brand_01.jpg" alt="Фото автомобиля">
+
+    </div>
 
     <div class="brand__content">
         <div class="brand__logo">
