@@ -71,17 +71,32 @@
 
 
 // блоки Полезная информация на странице information.php
+
 .information__item--type2{
   width: 418px;
   margin-bottom: 30px;
 }
 
+.information__item--type2{
+    flex: 0 1 33%;
+}
+
+
+
 // ----------- responsive ----------
-@media (max-width: 1030px){
+@media (max-width: 1440px){
+
+
+  .information__item--type2{
+    flex: 0 1 32%;
+  }
 
 }
 
 @media (max-width: 992px){
+  .information__item--type2{
+    flex: 0 1 49%;
+  }
 
 
 }
@@ -102,6 +117,10 @@
 @media (max-width: 576px) {
   .information-title_wrp{
     padding-right: 3%;
+  }
+
+  .information__item--type2{
+    flex: 0 1 100%;
   }
 
 }

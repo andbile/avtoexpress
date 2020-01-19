@@ -17,7 +17,7 @@
         <div class="information__items-wrp">
 
             <a href="news_article.php" class="information__item information__item--type2">
-                <div class="information__img">
+                <div class="information__img bock_img-full" data-bock-img--full>
                     <img  src="img/information_preview_type2_01.jpg" alt="Полезная информация">
                 </div>
                 <div class="information__content">
@@ -28,7 +28,7 @@
 
 
             <a href="news_article.php" class="information__item information__item--type2">
-                <div class="information__img">
+                <div class="information__img bock_img-full" data-bock-img--full>
                     <img  src="img/information_preview_type2_02.jpg" alt="Полезная информация">
                 </div>
                 <div class="information__content">
@@ -39,7 +39,7 @@
 
 
             <a href="news_article.php" class="information__item information__item--type2">
-                <div class="information__img">
+                <div class="information__img bock_img-full" data-bock-img--full>
                     <img  src="img/information_preview_type2_03.jpg" alt="Полезная информация">
                 </div>
                 <div class="information__content">
@@ -50,7 +50,7 @@
 
 
             <a href="news_article.php" class="information__item information__item--type2">
-                <div class="information__img">
+                <div class="information__img bock_img-full" data-bock-img--full>
                     <img  src="img/information_preview_type2_03.jpg" alt="Полезная информация">
                 </div>
                 <div class="information__content">
@@ -61,7 +61,7 @@
 
 
             <a href="news_article.php" class="information__item information__item--type2">
-                <div class="information__img">
+                <div class="information__img bock_img-full" data-bock-img--full>
                     <img  src="img/information_preview_type2_01.jpg" alt="Полезная информация">
                 </div>
                 <div class="information__content">
@@ -72,7 +72,7 @@
 
 
             <a href="news_article.php" class="information__item information__item--type2">
-                <div class="information__img">
+                <div class="information__img bock_img-full" data-bock-img--full>
                     <img  src="img/information_preview_type2_02.jpg" alt="Полезная информация">
                 </div>
                 <div class="information__content">
@@ -84,7 +84,7 @@
 
 
             <a href="news_article.php" class="information__item information__item--type2">
-                <div class="information__img">
+                <div class="information__img bock_img-full" data-bock-img--full>
                     <img  src="img/information_preview_type2_03.jpg" alt="Полезная информация">
                 </div>
                 <div class="information__content">
@@ -94,7 +94,7 @@
             </a>
 
             <a href="news_article.php" class="information__item information__item--type2">
-                <div class="information__img">
+                <div class="information__img bock_img-full" data-bock-img--full>
                     <img  src="img/information_preview_type2_01.jpg" alt="Полезная информация">
                 </div>
                 <div class="information__content">
@@ -104,7 +104,7 @@
             </a>
 
             <a href="news_article.php" class="information__item information__item--type2">
-                <div class="information__img">
+                <div class="information__img bock_img-full" data-bock-img--full>
                     <img  src="img/information_preview_type2_02.jpg" alt="Полезная информация">
                 </div>
                 <div class="information__content">
