@@ -140,14 +140,16 @@
 
 
 <section class="section-about-2 container">
+
     <div class="sa-col-1">
         <div class="sa__img-block-wrp2">
-            <div class="sa__img-block2">
+            <div class="sa__img-block2 block bock_img-full" data-bock-img--full>
                 <img src="img/build_02.jpg" alt="Здание">
             </div>
         </div>
-
     </div>
+
+
     <div class="sa-col-2">
 
         <div class="content__title">Отдельного внимания заслуживает сервисный центр</div>
@@ -171,10 +173,10 @@
 
 </section>
 
-    <section class="certificate-slider">
+<section class="certificate-slider">
 
 
-        <div class="content__title">Сертификаты и благодарности</div>
+        <div class="content__title container">Сертификаты и благодарности</div>
 
         <div class="slider__wrapper" data-slider-certificates>
 

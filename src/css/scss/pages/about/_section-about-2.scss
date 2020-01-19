@@ -3,9 +3,25 @@
   flex-direction: row;
   padding-bottom: 100px;
 
+  // фото
   .sa-col-1{
-    margin-right: 55px;
+    flex: none;
+    width: 42%;
+    min-width: 430px;
+    margin-right: 4.3%;
   }
+
+  .sa__img-block-wrp2{
+    height: 324px;
+    width: 100%;
+    background-color: $bg-color-grey;
+  }
+
+  .sa__img-block2{
+    height: 100%;
+    width: 95%;
+  }
+
 
   .sa-col-2{
     flex-grow: 1;
@@ -17,19 +33,69 @@
   }
 }
 
-.sa__img-block-wrp2{
-  height: 324px;
-  width: 530px;
-  background-color: $bg-color-grey;
+
+
+// ----------- responsive ----------
+@media (max-width: 1030px){
+
 }
 
-.sa__img-block2{
-  display: inline-block;
-  height: 324px;
-  width: 500px;
+@media (max-width: 992px){
+  .section-about-2{
+    flex-direction: column;
+
+    .sa-col-1{
+      flex: none;
+      width: 100%;
+      min-width: 530px;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+
+    .sa__img-block-wrp2{
+      height: 324px;
+      width: 530px;
+      background-color: $bg-color-grey;
+      margin: 0 auto;
+    }
+
+    .sa__img-block2{
+      height: 100%;
+      width: 95%;
+    }
+
+  }
+
 }
 
-.sa__img-block2 img{
-  max-height: 100%;
-  max-width: 100%;
+@media (max-width: 768px){
+  .section-about-2{
+    padding-bottom: 50px;
+  }
+
+  .section-about__your-choice-wrp{
+    padding-bottom: 50px;
+  }
+
 }
+
+@media (max-width: 576px) {
+  .section-about-2{
+
+    .sa-col-1{
+      min-width: 0;
+    }
+
+    .sa__img-block-wrp2{
+      height: 60vw;
+      width: 100%;
+    }
+  }
+
+
+
+}
+@media (max-width: 320px){
+
+}
+

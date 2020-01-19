@@ -255,6 +255,12 @@
 @media (max-width: 768px){
   .section-about__text-content{
 
+    .section-about__col-1{
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+
+
     .section-about__col-2{
       flex-direction: column;
       padding-left: 0;
@@ -267,8 +273,8 @@
       padding-bottom: 40px;
 
       &:first-child, &:last-child{
-        padding-left: 6.11%;
-        padding-right: 6.11%;
+        padding-left: 3%;
+        padding-right: 3%;
       }
 
       &:first-child{
