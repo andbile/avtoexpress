@@ -1244,6 +1244,12 @@ a {
       -ms-flex: 0 1 65%;
           flex: 0 1 65%; }
 
+.bar__full {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 100%;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%; }
+
 .bar--m-right {
   margin-right: 4px; }
 
@@ -4999,6 +5005,10 @@ form.form-test-drive {
   padding-bottom: 100px; }
   .bars__section--sale .bar__link--type2 {
     margin-top: 50px; }
+
+@media (max-width: 768px) {
+  .bars__section--sale {
+    padding-bottom: 50px; } }
 
 .section-service {
   display: -webkit-box;
