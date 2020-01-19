@@ -4,7 +4,10 @@
 <main>
     <section class="section-article__top-part">
 
-        <div class="sa-top-part__img"><img src="img/bg_news-article.jpg" alt="Фото автомобиля"></div>
+        <div class="sa-top-part__img">
+            <div class="sa-top-part__bg-gradient"></div>
+            <img src="img/bg_news-article.jpg" alt="Фото автомобиля">
+        </div>
 
         <div class="sa-top-part__content container">
 
@@ -61,7 +64,9 @@
                 и подогрев передних сидений – это не самые важные функции автомобиля.</p>
         </div>
 
-        <div class="sa-main-text__img"><img src="img/article_img_01.jpg" alt="Фото автомобиля"></div>
+        <div class="sa-main-text__img bock_img-full" data-bock-img--full>
+            <img src="img/article_img_01.jpg" alt="Фото автомобиля">
+        </div>
 
         <div class="content__text">
             <p>Машины Лады как никакие другие автомобили приспособлены для эксплуатации в России. Наши дороги и
@@ -112,7 +117,7 @@
     </section>
 
 
-    <section class="section-article__slider">
+    <section class="section-article__slider container">
         <div class="information-title_wrp">
             <h2 class="content__title">Полезная информация</h2>
             <div class="content__link">

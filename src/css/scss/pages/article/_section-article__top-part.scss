@@ -2,25 +2,32 @@
   position: relative;
   height: 300px;
 
+  .sa-top-part__bg-gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(19, 19, 20, 0.0001) 34.95%, #131314 70.62%);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
   .sa-top-part__img{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    // TODO исправить когда будет адаптив
     overflow: hidden;
   }
 
   .sa-top-part__img img{
-    max-height: 100%;
-    /*max-width: 100%;*/
-    // TODO исправить когда будет адаптив
     position: absolute;
-    right: 0;
+    left: 50%;
+    margin-left: -720px;
     width: 1440px;
+    max-height: 100%;
   }
-
 }
 
 .sa-top-part__content{
@@ -34,8 +41,6 @@
   height: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-
-
 
   .link-line--sa-top-part a:after{
     background-color: #ffffff;
@@ -79,5 +84,29 @@
   .count-views{
     margin-left: 5px;
   }
+}
+
+// ----------- responsive ----------
+@media (max-width: 1030px){
+
+}
+
+@media (max-width: 992px){
+
+
+}
+
+@media (max-width: 768px){
+
+
+}
+
+
+@media (max-width: 576px) {
+
+
+}
+@media (max-width: 320px){
+
 }
 

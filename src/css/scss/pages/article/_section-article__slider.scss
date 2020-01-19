@@ -1,4 +1,33 @@
 .section-article__slider{
   padding-top: 85px;
   padding-bottom: 65px;
+  padding-right: 0;
+}
+
+
+// ----------- responsive ----------
+@media (max-width: 1030px){
+
+}
+
+@media (max-width: 992px){
+
+
+}
+
+@media (max-width: 768px){
+  .section-article__slider{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+
+
+}
+@media (max-width: 320px){
+
 }
