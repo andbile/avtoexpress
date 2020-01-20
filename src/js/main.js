@@ -724,16 +724,24 @@ function showMainMenu(){
     // подменю
     var $submenu = $('[data-main-submenu]');
 
-    // TODO исправить на мобилке - если высота выпадающего меню больше высоты экрана не работает перемотка
-    // TODO сделать что бы перемотка работала до конца выпадающего меню, а белая половинка наезжала.
     // при скроле двигаем меню
     $(window).scroll(function(){
-        var scrollTop = $(window).scrollTop();
-        if (scrollTop > 1){
-            $menu.addClass("fixed");
-        } else if(scrollTop <= 1) {
+
+        // отключением движение меню за склором на мобилках
+
+        if($(window).width() > '769'){
+
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 1){
+                $menu.addClass("fixed");
+            } else if(scrollTop <= 1) {
+                $menu.removeClass("fixed");
+            }
+
+        }else if($(window).width() <= '769'){
             $menu.removeClass("fixed");
         }
+
     });
 
     // показываем выпадающее меню

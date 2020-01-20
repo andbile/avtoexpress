@@ -10,16 +10,13 @@
 
 }
 
-// TODO "протестировать на рызных фото, js-м подгонят ширину в зависимости от высоты"
-
-
 .main-slider__img{
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .main-slider__img.blur img{
@@ -27,11 +24,10 @@
 }
 
 .main-slider__img img{
-  position: absolute;
+  /*position: absolute;
   right: 0;
-  // TODO исправить когда будет адаптив
   width: 1440px;
-  height: 100%;
+  height: 100%;*/
 }
 
 .main-slider__content, .main-slider__list{
@@ -110,7 +106,6 @@
     width: 125px;
     height: 75px;
     text-align: center;
-    /*left: 0;*/
     right: 0;
     display: none;
     opacity: 0;
@@ -257,6 +252,10 @@
   .main-slider__popup-item .popup__header{
     font-size: 40px;
     line-height: 46px;
+  }
+
+  .main-slider__list{
+    display: none;
   }
 
 }

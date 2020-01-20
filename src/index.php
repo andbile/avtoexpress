@@ -10,7 +10,7 @@
 
             <div class="main-slider__item">
 
-                <div class="main-slider__img"><img src="img/main_slide_01.jpg" alt="Фото машины"></div>
+                <div class="main-slider__img bock_img-full" data-bock-img--full><img src="img/main_slide_01.jpg" alt="Фото машины"></div>
 
                 <div class="main-slider__content">
                     <div class="main-slider__title">1 Официальный дилер «Автоэкспресс»</div>
@@ -135,7 +135,7 @@
 
             <div class="main-slider__item">
 
-                <div class="main-slider__img"><img src="img/main_slide_01.jpg" alt="Фото машины"></div>
+                <div class="main-slider__img bock_img-full" data-bock-img--full><img src="img/main_slide_01.jpg" alt="Фото машины"></div>
 
                 <div class="main-slider__content">
                     <div class="main-slider__title">2 Официальный дилер «Автоэкспресс»</div>
@@ -260,7 +260,7 @@
 
             <div class="main-slider__item">
 
-                <div class="main-slider__img"><img src="img/main_slide_01.jpg" alt="Фото машины"></div>
+                <div class="main-slider__img bock_img-full" data-bock-img--full><img src="img/main_slide_01.jpg" alt="Фото машины"></div>
 
                 <div class="main-slider__content">
                     <div class="main-slider__title">3 Официальный дилер «Автоэкспресс»</div>
