@@ -1,24 +1,24 @@
 .section-service{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   border-top: 1px solid #E1E6E8;
   padding-top: 70px;
   padding-bottom: 120px;
+}
 
-  .section-service__col-1{
-    flex: 0 0 680px;
-    width: 680px;
-  /*  padding-top: 35px;*/
-  }
+.section-service__col-wrp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.section-service__col-1{
+  flex: 0 1 680px;
+  margin-right: 20px;
+}
 
-  .section-service__col-2{
-    flex: 0 0 440px;
-    width: 440px;
-    align-self: flex-start;
-  }
-
+.section-service__col-2{
+  flex: 0 1 440px;
+  min-width: 350px;
+  align-self: flex-start;
 }
 
 // левая колонка
@@ -37,15 +37,13 @@
       opacity: 0.4;
     }
   }
-
-
 }
 
 // правая колонка
 .section-service__col-2{
 
   .service__address-block-wrp{
-    padding: 40px 50px;
+    padding: 9.1% 11.3%;
     background-color: $bg-color-grey;
     margin-bottom: 2px;
 
@@ -108,4 +106,88 @@
   .service__address-block-wrp:last-child{
     margin-bottom: 0;
   }
+}
+
+
+// ----------- responsive ----------
+@media (max-width: 1030px){
+
+}
+
+@media (max-width: 992px){
+  .section-service{
+    padding-top: 0;
+  }
+
+  .section-service__col-wrp{
+    flex-direction: column;
+  }
+
+  .section-service__col-1{
+    margin-right: 0;
+    order: 2;
+  }
+
+  .section-service__col-2{
+    flex: 0 1 100%;
+    min-width: 0;
+    order: 1;
+    margin-bottom: 40px;
+    align-self: stretch;
+
+
+    .service__address-block-wrp{
+      padding: 20px;
+      display: flex;
+    }
+
+    .address-block__contacts-wrp{
+      margin-right: 5%;
+    }
+
+    .service__address-block-wrp--schedule{
+
+      .btn{
+        max-width: 270px;
+        margin-left: 30px;
+        align-self: flex-start;
+      }
+    }
+
+
+  }
+
+
+
+}
+
+@media (max-width: 768px){
+  .section-service{
+    padding-bottom: 50px;
+
+  }
+
+}
+
+
+@media (max-width: 576px) {
+  .section-service__col-2{
+
+    .service__address-block-wrp{
+      flex-direction: column;
+    }
+
+    .service__address-block-wrp--schedule{
+      .btn{
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+
+  }
+
+
+}
+@media (max-width: 320px){
+
 }

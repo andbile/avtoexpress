@@ -1,26 +1,40 @@
 .section-service__our-services-2{
-  display: flex;
-  flex-direction: row;
+  position: relative;
   background-color: $bg-color-grey;
   padding-top: 80px;
   padding-bottom: 80px;
-
+  padding-left: calc(6.11% + 70px);
 
   .more-link{
-    text-align: center;
-    margin-right: 85px;
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    left: 6.11%;
+    top: 0;
+    transition: all 0.4s;
+
+    a{
+      position: absolute;
+      top: 50%;
+      font-size: 14px;
+      line-height: 14px;
+      transform: rotate(-90deg) translate(10px, -2px);
+    }
+
+    &:hover{
+      background-color: $font-link-color-hover;
+    }
+
+    &:hover a{
+      color: $font-color-white;
+    }
+
   }
 
-  .more-link a{
-    display: inline-block;
-    font-size: 14px;
-    line-height: 20px;
-    transform: rotate(-90deg) translateX(-50%);
-  }
+
 
   .our-services-2__links-wrp{
     display: flex;
-    flex: 1 0 auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
@@ -29,14 +43,17 @@
   .our-services-2__links-wrp-2{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    flex-grow: 1;
+    padding-right: 40px;
   }
 
   .our-services-2__link{
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
-    margin-right: 85px;
     max-width: 200px;
+    margin-right: 10%;
   }
 
   .our-services-2__link:last-child{
@@ -44,5 +61,74 @@
   }
 
 
+
+}
+
+// ----------- responsive ----------
+@media (max-width: 1100px){
+  .section-service__our-services-2{
+
+
+    .our-services-2__link{
+      margin-right: 5%;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 992px){
+  .section-service__our-services-2{
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .our-services-2__links-wrp-2{
+      flex-direction: column;
+    }
+
+    .our-services-2__link{
+      max-width: unset;
+      margin-bottom: 10px;
+    }
+
+    .our-services-2__link:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+@media (max-width: 768px){
+  .section-service__our-services-2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+    .our-services-2__links-wrp{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .our-services-2__links-wrp-2{
+      flex: 1 0 auto;
+      margin-bottom: 20px;
+      padding-right: 10px;
+    }
+
+    .our-services-2__link{
+      margin-right: 0;
+    }
+
+  }
+
+}
+
+
+@media (max-width: 576px) {
+  .section-service__our-services-2{
+    padding-left: calc(3% + 65px);
+  }
+
+}
+@media (max-width: 320px){
 
 }

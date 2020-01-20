@@ -1,11 +1,12 @@
 .section-service__our-services{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding-bottom: 70px;
 
   .our-services__item{
     position: relative;
-    flex: 0 0 25%;
+    flex: 0 1 25%;
     padding-left: 30px;
     padding-right: 20px;
   }
@@ -31,5 +32,46 @@
     font-size: 15px;
     line-height: 22px;
   }
+}
+
+
+// ----------- responsive ----------
+@media (max-width: 1030px){
+
+}
+
+@media (max-width: 992px){
+  .section-service__our-services{
+
+    .our-services__item{
+      flex: 0 1 50%;
+      margin-bottom: 30px;
+    }
+
+
+  }
+
+
+}
+
+@media (max-width: 768px){
+  .section-service__our-services{
+    padding-bottom: 50px;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+  .section-service__our-services{
+
+    .our-services__item{
+      flex: 0 1 100%;
+    }
+  }
+
+}
+@media (max-width: 320px){
+
 }
 

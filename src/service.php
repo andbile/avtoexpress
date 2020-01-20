@@ -3,40 +3,90 @@
 <? require_once 'template-parts/header.php' ?>
 <main>
 
-    <section class="section-service container">
+<section class="section-service container">
 
 
-        <div class="section-service__col-1">
+        <div class="section-service__col-wrp">
 
-            <div class="section-service__title_wrp">
-                <h2 class="content__title">Сервис</h2>
-                <div class="title__text">Обслуживание автомобиля или автопарка в сертифицированных автосервисах</div>
+            <div class="section-service__col-1">
+
+                <div class="section-service__title_wrp">
+                    <h2 class="content__title">Сервис</h2>
+                    <div class="title__text">Обслуживание автомобиля или автопарка в сертифицированных автосервисах</div>
+                </div>
+
+                <div class="content__text">
+                    <p>Станция технического обслуживания компании Автоэкспресс-Плюс работает на рынке уже более 20 лет, мы
+                        обладаем огромным опытом в ремонте и техническом обслуживании легковых и грузовых автомобилей ,
+                        фургонов и автобусов разных марок иностранного и отечественного производства. Мы одни из немногих в
+                        Иваново и Ивановской области занимаемся сертифицированным обслуживанием китайских автомобилей
+                        (Geely, Lifan, Chery, Great Wall и др.).</p>
+                    <p>Располагаем всем необходимым оборудованием и квалифицированным персоналом и предлагаем широкий спектр
+                        услуг по доступным ценам.</p>
+                </div>
+
+                <div class="content__title">Цель нашей работы — Ваша безопасность и комфорт на дороге!</div>
+
+                <div class="content__text">
+                    <p>Каждый клиент, обращаясь в компанию «Автоэкспресс» получает ряд преимуществ, делающих сотрудничество
+                        с нашей компанией удобным и выгодным, а ремонт быстрым и качественным. Наш автотехцентр оснащены
+                        самым современным оборудованием для проведения слесарных, диагностических и кузовных работ.
+                        Специалисты нашего сервиса обучались и проходят постоянные курсы повышения квалификации в учебных
+                        центрах.</p>
+                </div>
+
             </div>
 
+            <div class="section-service__col-2">
 
-            <div class="content__text">
-                <p>Станция технического обслуживания компании Автоэкспресс-Плюс работает на рынке уже более 20 лет, мы
-                    обладаем огромным опытом в ремонте и техническом обслуживании легковых и грузовых автомобилей ,
-                    фургонов и автобусов разных марок иностранного и отечественного производства. Мы одни из немногих в
-                    Иваново и Ивановской области занимаемся сертифицированным обслуживанием китайских автомобилей
-                    (Geely, Lifan, Chery, Great Wall и др.).</p>
-                <p>Располагаем всем необходимым оборудованием и квалифицированным персоналом и предлагаем широкий спектр
-                    услуг по доступным ценам.</p>
+                <div class="service__address-block-wrp">
+                    <div class="address-block__contacts-wrp">
+                        <div class="address-block__name">Дилерский центр «Автоэкспресс»</div>
+                        <div class="address-block__address">ул. Загородная</div>
+                    </div>
+
+                    <div class="address-block__contacts-full-wrp">
+                        <div class="address-block__address-full">
+                            <span class="icon icon-mark_map"></span>
+                            <span>г. Иваново, ул. Загородная, д. 22а</span><br>
+                        </div>
+                        <div class="address-block__address-tel"><a href="tel:+74932938852">+7 (4932) 938 852</a></div>
+                    </div>
+
+                </div>
+
+                <div class="service__address-block-wrp">
+                    <div class="address-block__contacts-wrp">
+                        <div class="address-block__name">Дилерский центр «Автоэкспресс»</div>
+                        <div class="address-block__address">ул. Калашникова</div>
+                    </div>
+
+                    <div class="address-block__contacts-full-wrp">
+                        <div class="address-block__address-full">
+                            <span class="icon icon-mark_map"></span>
+                            <span>г. Иваново, ул. Калашникова, д. 26а</span><br>
+                        </div>
+                        <div class="address-block__address-tel"><a href="tel:+74932335862">+7 (4932) 33 58 62</a></div>
+                    </div>
+
+                </div>
+
+                <div class="service__address-block-wrp service__address-block-wrp--schedule">
+                    <div>
+                        <div class="address-block__text">График работы автоцентров</div>
+                        <div class="address-block__schedule">С 08:00 до 20:00, без выходных</div>
+                    </div>
+
+                    <div class="btn btn--orange"><a href="">Записаться на сервис</a></div>
+
+                </div>
+
             </div>
 
-            <div class="content__title">Цель нашей работы — Ваша безопасность и комфорт на дороге!</div>
+        </div>
 
 
-            <div class="content__text">
-                <p>Каждый клиент, обращаясь в компанию «Автоэкспресс» получает ряд преимуществ, делающих сотрудничество
-                    с нашей компанией удобным и выгодным, а ремонт быстрым и качественным. Наш автотехцентр оснащены
-                    самым современным оборудованием для проведения слесарных, диагностических и кузовных работ.
-                    Специалисты нашего сервиса обучались и проходят постоянные курсы повышения квалификации в учебных
-                    центрах.</p>
-            </div>
-
-
-
+        <div class="section-service__col-3">
             <div class="drop-down-list__wrapper">
                 <ul class="main__list" data-expanding-list>
 
@@ -99,50 +149,12 @@
 
                 </ul>
             </div>
-
-        </div>
-
-        <div class="section-service__col-2">
-
-            <div class="service__address-block-wrp">
-                <div class="address-block__name">Дилерский центр «Автоэкспресс»</div>
-                <div class="address-block__address">ул. Загородная</div>
-                <div class="address-block__address-full">
-                    <span class="icon icon-mark_map"></span>
-                    <span>г. Иваново, ул. Загородная, д. 22а</span><br>
-                </div>
-                <div class="address-block__address-tel"><a href="tel:+74932938852">+7 (4932) 938 852</a></div>
-            </div>
-
-
-
-
-            <div class="service__address-block-wrp">
-                <div class="address-block__name">Дилерский центр «Автоэкспресс»</div>
-                <div class="address-block__address">ул. Калашникова</div>
-                <div class="address-block__address-full">
-                    <span class="icon icon-mark_map"></span>
-                    <span>г. Иваново, ул. Калашникова, д. 26а</span><br>
-                </div>
-                <div class="address-block__address-tel"><a href="tel:+74932335862">+7 (4932) 33 58 62</a></div>
-            </div>
-
-
-            <div class="service__address-block-wrp">
-                <div class="address-block__text">График работы автоцентров</div>
-                <div class="address-block__schedule">С 08:00 до 20:00, без выходных</div>
-
-                <div class="btn btn--orange"><a href="">Записаться на сервис</a></div>
-
-            </div>
-
-
         </div>
 
 
     </section>
 
-    <section class="section-service__our-services container">
+<section class="section-service__our-services container">
 
         <div class="our-services__item">
             <span class="icon icon-rocket"></span>
@@ -185,6 +197,8 @@
     </section>
 
 
+
+
     <section class="section-service__our-services-2 container">
         <div class="more-link">
             <a href="">Еще</a>
@@ -210,7 +224,7 @@
     </section>
 
 
-    <section class="section-service__slider">
+    <section class="section-service__slider container">
         <div class="information-title_wrp">
             <h2 class="content__title">Новости и акции сервиса</h2>
         </div>
