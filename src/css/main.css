@@ -703,11 +703,14 @@ a {
   text-align: center;
   font-size: 14px;
   font-weight: 700;
-  padding-top: 16px;
-  padding-bottom: 16px;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s; }
+  .btn a {
+    display: inline-block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%; }
 
 .btn.btn--orange {
   background-color: #FF8550; }
