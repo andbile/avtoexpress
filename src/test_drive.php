@@ -101,7 +101,7 @@
                             <label for="per-data">Соглашаюсь с «обработкой персональнных данных»</label>
                         </div>
 
-                        <input type="submit" class="btn btn--orange" name="send_req" value="Войти">
+                        <input type="submit" class="btn btn--orange" name="send_req" value="Отправить заявку">
 
 
 
