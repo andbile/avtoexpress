@@ -133,7 +133,6 @@
   font-style: normal;
 }
 
-
 .icon-rocket:before { content: '\e800'; } /* '' */
 .icon-search:before { content: '\e801'; } /* '' */
 .icon-speedometer:before { content: '\e802'; } /* '' */
@@ -144,9 +143,9 @@
 .icon-path_right:before { content: '\e807'; } /* '' */
 .icon-check:before { content: '\e808'; } /* '' */
 .icon-eye:before { content: '\e809'; } /* '' */
+.icon-cancel:before { content: '\e80a'; } /* '' */
 .icon-path_left:before { content: '\e812'; } /* '' */
 .icon-check-empty:before { content: '\f096'; } /* '' */
-
 
 
 .icon:before{
@@ -189,6 +188,10 @@
 
 .icon-eye:before{
   font-size: 10px;
+}
+
+.icon-cancel:before{
+  /*font-size: 10px;*/
 }
 
 

@@ -285,4 +285,5 @@
 <!-- footer -->
 <?php require_once 'template-parts/footer.php'?>
 <?php require_once 'template-parts/privacy_policy.php' ?>
+<?php require_once 'template-parts/modal.php' ?>
 <?php require_once 'template-parts/page_bottom.php' ?>

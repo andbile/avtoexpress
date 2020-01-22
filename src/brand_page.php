@@ -61,8 +61,6 @@
                 </div>
             </div>
 
-           <!-- <div class="car-filter__used-cars link-line-span link-line-span--white"><a href=""><span>Автомобили</span><br><span>с пробегом</span></a></div>-->
-
             <input type="submit" class="" name="car-filter" value="">
         </form>
     </section>
@@ -80,8 +78,8 @@
                     <div class="model__price">Стоимость от <b>404 800 &#x20bd;</b></div>
                 </div>
                 <div class="model__get-links-wrp">
-                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-                    <div class="model__get-request content__link link-line">
+                    <div class="model__get-phone link-line" data-action="modal_window" data-target="request_call"><a href="" >Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line" data-action="modal_window" data-target="make_request">
                         <a href="">Оформить заявку</a>
                         <span class="icon icon-path_right"></span>
                     </div>
@@ -89,6 +87,8 @@
             </div>
         </div>
     </div>
+
+
 
 
 
@@ -101,8 +101,8 @@
                     <div class="model__price">Стоимость от <b>648 900 &#x20bd;</b></div>
                 </div>
                 <div class="model__get-links-wrp">
-                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-                    <div class="model__get-request content__link link-line">
+                    <div class="model__get-phone link-line" data-action="modal_window" data-target="request_call"><a href="">Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line" data-action="modal_window" data-target="make_request">
                         <a href="">Оформить заявку</a>
                         <span class="icon icon-path_right"></span>
                     </div>
@@ -123,8 +123,8 @@
                     <div class="model__price">Стоимость от <b>404 800 &#x20bd;</b></div>
                 </div>
                 <div class="model__get-links-wrp">
-                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-                    <div class="model__get-request content__link link-line">
+                    <div class="model__get-phone link-line" data-action="modal_window" data-target="request_call"><a href="">Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line" data-action="modal_window" data-target="make_request">
                         <a href="">Оформить заявку</a>
                         <span class="icon icon-path_right"></span>
                     </div>
@@ -144,8 +144,8 @@
                     <div class="model__price">Стоимость от <b>648 900 &#x20bd;</b></div>
                 </div>
                 <div class="model__get-links-wrp">
-                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-                    <div class="model__get-request content__link link-line">
+                    <div class="model__get-phone link-line" data-action="modal_window" data-target="request_call"><a href="">Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line" data-action="modal_window" data-target="make_request">
                         <a href="">Оформить заявку</a>
                         <span class="icon icon-path_right"></span>
                     </div>
@@ -165,8 +165,8 @@
                     <div class="model__price">Стоимость от <b>648 900 &#x20bd;</b></div>
                 </div>
                 <div class="model__get-links-wrp">
-                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-                    <div class="model__get-request content__link link-line">
+                    <div class="model__get-phone link-line" data-action="modal_window" data-target="request_call"><a href="">Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line" data-action="modal_window" data-target="make_request">
                         <a href="">Оформить заявку</a>
                         <span class="icon icon-path_right"></span>
                     </div>
@@ -190,8 +190,8 @@
                     <div class="model__price">Стоимость от <b>648 900 &#x20bd;</b></div>
                 </div>
                 <div class="model__get-links-wrp">
-                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-                    <div class="model__get-request content__link link-line">
+                    <div class="model__get-phone link-line" data-action="modal_window" data-target="request_call"><a href="">Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line" data-action="modal_window" data-target="make_request">
                         <a href="">Оформить заявку</a>
                         <span class="icon icon-path_right"></span>
                     </div>
@@ -211,8 +211,8 @@
                     <div class="model__price">Стоимость от <b>648 900 &#x20bd;</b></div>
                 </div>
                 <div class="model__get-links-wrp">
-                    <div class="model__get-phone link-line"><a href="">Заказать звонок</a></div>
-                    <div class="model__get-request content__link link-line">
+                    <div class="model__get-phone link-line" data-action="modal_window" data-target="request_call"><a href="">Заказать звонок</a></div>
+                    <div class="model__get-request content__link link-line" data-action="modal_window" data-target="make_request">
                         <a href="">Оформить заявку</a>
                         <span class="icon icon-path_right"></span>
                     </div>
@@ -295,4 +295,5 @@
 <!-- footer -->
 <?php require_once 'template-parts/footer.php'?>
 <?php require_once 'template-parts/privacy_policy.php' ?>
+<?php require_once 'template-parts/modal.php' ?>
 <?php require_once 'template-parts/page_bottom.php' ?>

@@ -28,12 +28,12 @@
 <section class="mp-links container">
     <div class="mp-links__col-1">
 
-        <div class="mp-link link-line link-line--grey">
+        <div class="mp-link link-line link-line--grey" data-action="modal_window" data-target="request_credit">
             <span class="icon icon-steering_wheel"></span>
             <a href="">Заявка на кредит</a>
         </div>
 
-        <div class="mp-link link-line link-line--grey">
+        <div class="mp-link link-line link-line--grey" data-action="modal_window" data-target="make_request">
             <span class="icon icon-speedometer"></span>
             <a href="">Заявка на покупку</a>
         </div>
@@ -66,7 +66,7 @@
             <button class="mp-slider-btn slick-prev slick-arrow" aria-label="Prev" type="button" style="">Pre</button>
             <button class="mp-slider-btn slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
         </div>
-        <div class="mp-slider__items" data-slider-model-page> <!-- data-slider-model-page -->
+        <div class="mp-slider__items" data-slider-model-page>
             <div class="mp-slider__img bock_img-full" data-bock-img--full><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
             <div class="mp-slider__img bock_img-full" data-bock-img--full><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
             <div class="mp-slider__img bock_img-full" data-bock-img--full><img src="img/slider_img_01.jpg" alt="фото автомобиля"></div>
@@ -470,5 +470,6 @@
 <!-- footer -->
 <?php require_once 'template-parts/footer.php'?>
 <?php require_once 'template-parts/privacy_policy.php' ?>
+<?php require_once 'template-parts/modal.php' ?>
 <?php require_once 'template-parts/page_bottom.php' ?>
 

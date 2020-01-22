@@ -459,7 +459,7 @@
 
 
         <ul class="box-brand__links">
-            <li class="link-line"><a href="">Сервис</a></li>
+            <li class="link-line"><a href="service.php">Сервис</a></li>
             <li class="link-line"><a href="">Кузовной ремонт</a></li>
             <li class="link-line"><a href="test_drive.php">Тест-драйв</a></li>
             <li class="link-line"><a href="">Трейд-Ин</a></li>
@@ -733,4 +733,5 @@
 <!-- footer -->
 <?php require_once 'template-parts/footer.php'?>
 <?php require_once 'template-parts/privacy_policy.php' ?>
+<?php require_once 'template-parts/modal.php' ?>
 <?php require_once 'template-parts/page_bottom.php' ?>

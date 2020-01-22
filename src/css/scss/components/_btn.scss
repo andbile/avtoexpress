@@ -14,6 +14,20 @@
   }
 }
 
+input[type='submit'].btn{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type='submit'].btn.btn--orange{
+  color: #ffffff;
+}
+
+
+
 .btn.btn--orange{
   background-color: #FF8550;
 }
