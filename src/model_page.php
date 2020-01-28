@@ -46,8 +46,8 @@
     </div>
 
     <div class="mp-links__col-2">
-        <div class="mp-link--type2"><a href="">Характеристики</a></div>
-        <div class="mp-link--type2"><a href="">Комплектация</a></div>
+        <div class="mp-link--type2"><a href="#t_spec">Характеристики</a></div>
+        <div class="mp-link--type2"><a href="#t_equipment">Комплектация</a></div>
     </div>
 </section>
 
@@ -109,7 +109,7 @@
 
 <section class="mp-specifications container">
 
-    <div class="mp-specifications__col-1">
+    <div class="mp-specifications__col-1" id="t_spec">
         <div class="content__title">Характеристики</div>
 
         <table class="mp-specifications__table">
@@ -162,7 +162,7 @@
 
 
     <div class="mp-specifications__col-2">
-        <div class="content__title">Комплектация</div>
+        <div class="content__title" id="t_equipment">Комплектация</div>
 
         <div class="mp-specifications__list-wrp" data-single-expandingList-open>
 
