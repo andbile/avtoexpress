@@ -11,7 +11,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 0 1 50%;
+    flex: none;
+    width: 50%;
+    /*flex: 0 1 50%;*/
     padding-top: 56px;
     padding-bottom: 100px;
   }
@@ -123,12 +125,12 @@
 
     .contacts__col-1{
       border-right: none;
-      flex: 0 1 100%;
+      width: 100%;
       padding-bottom: 70px;
     }
 
     .contacts__col-2{
-      flex: 0 1 100%;
+      width: 100%;
       padding-bottom: 70px;
 
     }
