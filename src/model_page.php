@@ -13,7 +13,7 @@
     </div>
 
 
-    <div class="mp-main_preview__img bock_img"><img src="img/model_big_01.png" alt="Фото машины"></div>
+    <div class="mp-main_preview__img"><img src="img/model_big_01.png" alt="Фото машины"></div>
 
 
 
