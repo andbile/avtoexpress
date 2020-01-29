@@ -424,7 +424,7 @@
 
 
 
-            <div class="car-filter__used-cars link-line-span link-line-span--white"><a href=""><span>Автомобили</span><br><span>с пробегом</span></a></div>
+            <div class="car-filter__used-cars link-line-span link-line-span--white"><a href="cars_used.php"><span>Автомобили</span><br><span>с пробегом</span></a></div>
 
             <input type="submit" class="" name="car-filter" value="">
         </form>

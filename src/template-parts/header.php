@@ -94,11 +94,11 @@
 
 
                     <ul class="popup-menu__nav popup-menu__nav--right">
-                        <li class="link-line"><a href="">Сервис</a></li>
+                        <li class="link-line"><a href="service.php">Сервис</a></li>
                         <li class="link-line"><a href="">Кузовной ремонт</a></li>
                         <li class="link-line"><a href="test_drive.php">Тест-драйв</a></li>
                         <li class="link-line"><a href="">Трейд-Ин</a></li>
-                        <li class="link-line"><a href="">Автомобили с пробегом</a></li>
+                        <li class="link-line"><a href="cars_used.php">Автомобили с пробегом</a></li>
                     </ul>
 
                 </div>
