@@ -62,6 +62,10 @@ jQuery(document).ready(function($) {
     var informationSlider = new Slider('[data-slider-information]');
     informationSlider.run();
 
+    // слайдер б/у машины
+    var usedCarsSlider = new Slider('[data-slider-car-used]');
+    usedCarsSlider.run();
+
 
     // адаптивное изображение img
     $(".bock_img").each(function(){
@@ -154,7 +158,10 @@ function modal() {
 
 
 // адаптивное изображение, которое должно заполнить абсолютно всю ширину и высоту блока
-function fixResponsiveImg() {
+function fixResponsiveImg($parentNode) {
+
+
+    // TODO если передавать параметр, применять только к отдельному узлу
 
     // сброс настроек
     function reset($img){
@@ -164,41 +171,61 @@ function fixResponsiveImg() {
             .css({ maxWidth: "100%", maxHeight: "100%" });
     }
 
+    // обработка только одного узла
+    // TODO исправить
+    if($parentNode){
+        if($parentNode.is('.bock_img-full')){
+        fix($parentNode);
+        }
+    }else{
     $("[data-bock-img--full]").each(function(){
-            var $adapBlock = $(this);
-            var $adapImg = $adapBlock.find("img");
+        var $adapBlock = $(this);
+        fix($adapBlock);
+    });
+}
 
-            reset($adapImg);
+    // или обработка всех узлов на странице
 
-            // ширина и высота фото из атрибутов img
-            var imgWidth = $adapImg.width();
-            var imgHeight = $adapImg.height();
-            // соотношение ширины к высоты
-            var ratio = imgWidth / imgHeight;
 
-            var newWidth, newHeight;
+    function fix($adapBlock) {
+        var $adapImg = $adapBlock.find("img");
 
-            if($adapBlock.width() > $adapImg.width()){
+        reset($adapImg);
 
-                $adapImg.css({width: "100%", height: ""});
+        // ширина и высота фото из атрибутов img
+        var imgWidth = $adapImg.width();
+        var imgHeight = $adapImg.height();
+        // соотношение ширины к высоты
+        var ratio = imgWidth / imgHeight;
 
-                // получаем новую высоту после увеличения ширины
-                newHeight = $adapBlock.width() / ratio;
-                $adapImg.css({height: (newHeight + 'px'), maxHeight: "none"});
-            }
+        var newWidth, newHeight;
 
-            if($adapBlock.height() > $adapImg.height()){
-                $adapImg.css("height", "100%");
-                // получаем новую ширину после увеличения высоты
-                newWidth = $adapBlock.height() * ratio;
-                $adapImg.css("width", (newWidth + 'px'))
-                        .css("max-width", 'none');
-            }
-        });
+        if($adapBlock.width() > $adapImg.width()){
+
+            $adapImg.css({width: "100%", height: ""});
+
+            // получаем новую высоту после увеличения ширины
+            newHeight = $adapBlock.width() / ratio;
+            $adapImg.css({height: (newHeight + 'px'), maxHeight: "none"});
+        }
+
+        if($adapBlock.height() > $adapImg.height()){
+            $adapImg.css("height", "100%");
+            // получаем новую ширину после увеличения высоты
+            newWidth = $adapBlock.height() * ratio;
+            $adapImg.css("width", (newWidth + 'px'))
+                .css("max-width", 'none');
+        }
+
+    }
+
 }
 
 // slider
 function Slider(dataAttr) {
+
+    // TODO расчёт количества слайдев идёт на основе класса slide-item--opacity, оказалось не универсальный вариант, надо переделать
+
     this.$parentSlider = $(dataAttr);
     var self = this;
 
@@ -243,6 +270,10 @@ function Slider(dataAttr) {
 
     // смена слайдов
     $parentBtn.on('click', show);
+
+
+    $slides.on('click', toggleSlide);
+
 
     // при сресайзе, сбрасываем все настройки по умолчанию
     var isEventResize = false;
@@ -294,6 +325,31 @@ function Slider(dataAttr) {
     }
 
 
+    // переключения слайдов при клике на привью
+    function toggleSlide(event) {
+
+        if(!$(this).is('.slide-item--preview-img')) return;
+
+        // узел с полномерным фото
+        var $fullImgParentNode = self.$parentSlider.find('.slider-full-img--model-used');
+        // удаляем фото
+        $fullImgParentNode.empty();
+
+        // делаем копию фото на котором кликнули
+        var $previewImg = $(this).find('img');
+
+        var $cloneImg = $previewImg.clone();
+
+        $cloneImg.appendTo($fullImgParentNode);
+
+        // после смены слайда необходимо сделать перерасчёт ширины/высоты img в блоке
+        setTimeout(function () {
+            fixResponsiveImg($fullImgParentNode);
+        }, 100);
+
+    }
+
+
     // смена слайдов
     function show (event) {
         var $target = $(event.target);
@@ -324,6 +380,13 @@ function Slider(dataAttr) {
                         }
                     }});
 
+                // костыль - отключение прозрачности, для слайдера - бу машины
+            /*    if($currentUnVisibleSliders.is('.slide-item--preview-img')){
+                    $currentUnVisibleSliders.removeAttr('style');
+                }
+                console.log($currentUnVisibleSliders);*/
+
+
                 TweenMax.to($firstSlide, 0.5, {marginLeft: shift});
 
                 countSliders++;
@@ -352,6 +415,13 @@ function Slider(dataAttr) {
                             $btnLeft.css('display', 'none');
                         }
 
+                        // костыль - отключение прозрачности, для слайдера - бу машины
+                        // TODO исправить в следующем проекте, так как слайдер б/у машины основан на на сладйере информация
+                      /*  if($lastVisibleSlide.is('.slide-item--preview-img')){
+                            console.log($lastVisibleSlide);
+                            $lastVisibleSlide.removeAttr('style');
+                        }*/
+
                     }});
 
                 TweenMax.to($firstSlide, 0.5, {marginLeft: shift});
@@ -373,7 +443,6 @@ function Slider(dataAttr) {
 
             var rightPositionLastVisibleSlide;
             // если все не видимые слайды (когда, ширина больше ширины окна)
-            // TODO исправить - если ширина слайда больше ширины окна то все слайды делать видимыми
             if($lastVisibleSlide.length === 0) {
                 rightPositionLastVisibleSlide = 0;
             }else rightPositionLastVisibleSlide = $lastVisibleSlide.position().left + slideWidth;
@@ -387,6 +456,11 @@ function Slider(dataAttr) {
                 rightBtnPosition = $(window).width()/2 - $btnNode.innerWidth()*2 + 10;
             }
 
+            // отдельное условия для слайдера - бу машины
+            if($btnNode.is('.slider-btn--model-used')){
+                rightBtnPosition = '';
+            }
+
             $btnNode.css('right', rightBtnPosition);
         }
 
@@ -398,13 +472,18 @@ function Slider(dataAttr) {
                 leftBntPosition = $(window).width()/2 - $btnNode.innerWidth() + 10;
             }
 
+            // отдельное условия для слайдера - бу машины
+            if($btnNode.is('.slider-btn--model-used')){
+                leftBntPosition = '';
+            }
+
             $btnNode.css('left', leftBntPosition);
         }
     };
 
     // первоначальное определение видимых/не видимых слайдов и расстановка классов
     this.initialSliders = function () {
-        // количество слайдов, которые полностью входят в видимую часть сладера
+        // количество слайдов, которые полностью входят в видимую часть слайдера
         var numberVisibleSlides = Math.floor(visibleWidth / slideWidth);
 
         // расстановка классов для слайдеров которые не влазят в видимую часть

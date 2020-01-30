@@ -1,0 +1,111 @@
+.model-used-slider{
+  flex: none;
+  min-width: 500px;
+  width: 51%;
+}
+
+.slider-full-img--model-used{
+  width: 100%;
+  height: 396px;
+  margin-bottom: 16px;
+}
+
+.slide-item--preview-img{
+  padding-right: 16px;
+  cursor: pointer;
+
+  // корректировка прозрачности при отработке js
+  &.slide-item--opacity{
+    opacity: 1 !important;
+  }
+
+  .img-wrp{
+    width: 149px;
+    height: 88px;
+  }
+
+
+
+  &:hover, &.slide-item--opacity:hover{
+    opacity: 0.4 !important;
+  }
+}
+
+
+// слайдер - бу машины
+.slider-btn-wrp---model-used{
+  .slider-btn{
+    top: 50%;
+  }
+
+  .slider-btn--prev{
+    left: 0;
+    transform: translate(-50%, 50%) rotate(180deg);
+  }
+
+  .slider-btn--next{
+    right: 0;
+    transform: translate(50%, 50%);
+  }
+
+}
+
+
+
+// ----------- responsive ----------
+@media (max-width: 1200px){
+
+
+}
+
+@media (max-width: 992px){
+  .model-used-slider{
+    /*width: 645px;*/
+    width: 100%;
+    max-width: 645px;
+    margin: 0 auto;
+  }
+
+  .slider-full-img--model-used{
+      height: 45vw;
+  }
+
+}
+
+@media (max-width: 768px){
+  .slider-full-img--model-used{
+    height: 60vw;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+  .model-used-slider{
+    max-width: none;
+    min-width: 0;
+  }
+
+  .slider-btn-wrp---model-used{
+    .slider-btn--prev{
+      left: 0;
+      transform: translateY(50%) rotate(180deg);
+    }
+
+    .slider-btn--next{
+      right: 0;
+      transform: translateY(50%);
+    }
+
+  }
+
+}
+
+@media (max-width: 320px){
+
+}
+
+
+
+
+
