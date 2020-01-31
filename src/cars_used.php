@@ -147,7 +147,7 @@
 
         <div class="models-used__item">
             <div class="models-used__item-wrp">
-                <div class="models-used__img bock_img-full" data-bock-img--full><img src="img/used_avto_3.jpg" alt="Фото автомобиля"></a></div>
+                <div class="models-used__img bock_img-full" data-bock-img--full><a href="current_model_used.php"><img src="img/used_avto_3.jpg" alt="Фото автомобиля"></a></div>
                 <div class="models-used__content">
                     <div class="content__title"><a href="current_model_used.php">Daewoo Matiz 2005</a></div>
                     <div class="models-used__specifications">
