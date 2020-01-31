@@ -3836,6 +3836,10 @@ button.mp-slider-btn.slick-next {
       -ms-transform: rotate(90deg) translateX(2px);
           transform: rotate(90deg) translateX(2px); }
 
+.mp-specifications--current-model-used .mp-specifications__list-wrp {
+  max-height: none;
+  margin-bottom: 50px; }
+
 @media (max-width: 992px) {
   .mp-specifications .content__title {
     font-size: 32px; }
