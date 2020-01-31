@@ -208,12 +208,12 @@
 <section class="mp-links--2 container">
         <div class="mp-links__col-1">
 
-            <div class="mp-link link-line link-line--grey">
+            <div class="mp-link link-line link-line--grey" data-action="modal_window" data-target="request_credit">
                 <span class="icon icon-steering_wheel"></span>
                 <a href="">Заявка на кредит</a>
             </div>
 
-            <div class="mp-link link-line link-line--grey">
+            <div class="mp-link link-line link-line--grey" data-action="modal_window" data-target="make_request">
                 <span class="icon icon-speedometer"></span>
                 <a href="">Заявка на покупку</a>
             </div>
@@ -224,7 +224,6 @@
             </div>
 
         </div>
-
 
         <div class="btn btn--orange"><a href="test_drive.php">Записаться на тест-драйв</a></div>
 
