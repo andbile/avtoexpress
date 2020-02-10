@@ -74,34 +74,25 @@
 
             <div class="popup-menu__navs-wrp">
 
+                <ul class="popup-menu__nav popup-menu__nav--left">
+                    <li class="link-line"><a href="about.php">О компании</a></li>
+                    <li class="link-line"><a href="sale.php">Акции</a></li>
+                    <li class="link-line"><a href="">Услуги</a></li>
+                    <li class="link-line"><a href="vacancies.php">Вакансии</a></li>
+                    <li class="link-line"><a href="service.php">Сервис</a></li>
+                    <li class="link-line"><a href="information.php">Новости</a></li>
+                    <li class="link-line"><a href="contacts.php">Контакты</a></li>
+                </ul>
 
-                    <div class="popup-menu__nav popup-menu__nav--left">
-                        <ul class="">
-                            <li class="link-line"><a href="about.php">О компании</a></li>
-                            <li class="link-line"><a href="">Услуги</a></li>
-                            <li class="link-line"><a href="service.php">Сервис</a></li>
-                            <li class="link-line"><a href="information.php">Новости</a></li>
-                        </ul>
-
-                        <ul>
-                            <li class="link-line"><a href="sale.php">Акции</a></li>
-                            <li class="link-line"><a href="vacancies.php">Вакансии</a></li>
-                            <li class="link-line"><a href="contacts.php">Контакты</a></li>
-                        </ul>
-
-                    </div>
-
-
-
-                    <ul class="popup-menu__nav popup-menu__nav--right">
+                <ul class="popup-menu__nav popup-menu__nav--right">
                         <li class="link-line"><a href="service.php">Сервис</a></li>
                         <li class="link-line"><a href="">Кузовной ремонт</a></li>
                         <li class="link-line"><a href="test_drive.php">Тест-драйв</a></li>
                         <li class="link-line"><a href="">Трейд-Ин</a></li>
                         <li class="link-line"><a href="cars_used.php">Автомобили с пробегом</a></li>
-                    </ul>
+                </ul>
 
-                </div>
+             </div>
 
 
             <div class="popup-menu__bot-links-wrp">
