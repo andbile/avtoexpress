@@ -44,7 +44,8 @@ form.form-test-drive{
 .form-test-drive__select-wrp{
   display: inline-flex;
   flex-direction: row;
-  align-items: center;
+/*  align-items: center;*/
+ /* align-items: flex-start;*/
 }
 
 .form-test-drive__select{

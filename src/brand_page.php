@@ -23,7 +23,6 @@
         <form action="" method="post" name="car-filter">
 
             <div class="car-filter__wrp">
-                <div class="car-filter__title">Автомобили<br> в наличии</div>
 
                 <div class='car-filter__select'>
                     <label for="select-brand">Марка</label>
@@ -46,7 +45,6 @@
                     </select>
                 </div>
 
-                <div class="car-filter__num-cars"><a href="">34 новых <br> автомобиля</a></div>
             </div>
 
 

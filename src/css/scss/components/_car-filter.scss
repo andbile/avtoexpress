@@ -31,36 +31,6 @@
   margin-right: 30px;
 }
 
-.car-filter__title{
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  margin-right: 80px;
-}
-
-.car-filter__num-cars{
-  font-size: 16px;
-  line-height: 24px;
-
-  .icon{
-    padding-left: 4px;
-    display: inline-block;
-    transform: translateY(-1px);
-  }
-
-  .icon:before{
-    font-size: 10px;
-  }
-
-  &:hover{
-    color: $font-link-color-hover;
-    transition: all 0.4s;
-  }
-
-  a:hover{
-    color: $font-link-color-hover;
-  }
-}
 
 .car-filter__used-cars{
   font-size: 14px;
@@ -154,6 +124,10 @@
   }
 }
 
+.car-filter__select{
+  width: 250px;
+}
+
 .form-test-drive__select{
   width: auto;
   margin-right: 32px;
@@ -166,9 +140,6 @@
     opacity: 0.4;
     margin-bottom: 7px;
   }
-
-
-
 
   .nice-select{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -216,8 +187,6 @@
     background-color: transparent;
     width: 100%;
   }
-
-
 }
 
 .form-test-drive__select#test-drive-calendar:after{
@@ -249,6 +218,17 @@
 
 
 // ----------- responsive ----------
+@media (max-width: 1300px){
+
+  .form-test-drive__select#test-drive-calendar{
+    margin-bottom: 27px;
+  }
+
+  .form-test-drive__select#test-drive-calendar input[name="test-drive-calendar"]{
+    line-height: 25px;
+  }
+}
+
 @media (max-width: 1200px){
   // brand_page.php
   .car-filter--brand .car-filter__links-wrp{
@@ -273,7 +253,7 @@
     justify-content: space-between;
   }
 
-  .car-filter__title, .car-filter__select, .car-filter__select, .car-filter__num-cars{
+  .car-filter__select, .car-filter__select{
     margin-right: 10px;
   }
 
@@ -301,13 +281,6 @@
       margin-bottom: 0;
     }
   }
-
-
-
-
-
-
-
 }
 
 @media (max-width: 768px){
@@ -315,20 +288,11 @@
     flex-wrap: wrap;
   }
 
-  .car-filter__title, .car-filter__select, .car-filter__num-cars{
+  .car-filter__select{
     width: 45%;
   }
 
-  .car-filter__title{
-    order: 1;
-  }
-
-  .car-filter__num-cars{
-    order: 2;
-  }
-
   .car-filter__select{
-    order: 3;
     margin-top: 15px;
   }
 
@@ -341,25 +305,8 @@
     padding-right: 20px;
   }
 
-  .car-filter__title, .car-filter__select, .car-filter__num-cars{
+  .car-filter__select{
     width: 100%;
-  }
-
-  .car-filter__title{
-    order: 1;
-
-    br{
-      display: none;
-    }
-  }
-
-  .car-filter__num-cars{
-    order: 3;
-    margin-top: 15px;
-
-    br{
-      display: none;
-    }
   }
 
   .car-filter__select{

@@ -835,31 +835,6 @@ input[type='submit'].btn.btn--orange {
 .car-filter__select {
   margin-right: 30px; }
 
-.car-filter__title {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  margin-right: 80px; }
-
-.car-filter__num-cars {
-  font-size: 16px;
-  line-height: 24px; }
-  .car-filter__num-cars .icon {
-    padding-left: 4px;
-    display: inline-block;
-    -webkit-transform: translateY(-1px);
-        -ms-transform: translateY(-1px);
-            transform: translateY(-1px); }
-  .car-filter__num-cars .icon:before {
-    font-size: 10px; }
-  .car-filter__num-cars:hover {
-    color: #cc6a40;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s; }
-  .car-filter__num-cars a:hover {
-    color: #cc6a40; }
-
 .car-filter__used-cars {
   font-size: 14px;
   line-height: 24px; }
@@ -940,6 +915,9 @@ input[type='submit'].btn.btn--orange {
   .form-test-drive__select .nice-select .option.selected.focus {
     background-color: #3f3f42; }
 
+.car-filter__select {
+  width: 250px; }
+
 .form-test-drive__select {
   width: auto;
   margin-right: 32px; }
@@ -1012,6 +990,12 @@ input[type='submit'].btn.btn--orange {
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out; }
 
+@media (max-width: 1300px) {
+  .form-test-drive__select#test-drive-calendar {
+    margin-bottom: 27px; }
+  .form-test-drive__select#test-drive-calendar input[name="test-drive-calendar"] {
+    line-height: 25px; } }
+
 @media (max-width: 1200px) {
   .car-filter--brand .car-filter__links-wrp {
     -webkit-box-orient: vertical;
@@ -1033,7 +1017,7 @@ input[type='submit'].btn.btn--orange {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .car-filter__title, .car-filter__select, .car-filter__select, .car-filter__num-cars {
+  .car-filter__select, .car-filter__select {
     margin-right: 10px; }
   .car-filter--brand form {
     -webkit-box-orient: vertical;
@@ -1072,46 +1056,17 @@ input[type='submit'].btn.btn--orange {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-  .car-filter__title, .car-filter__select, .car-filter__num-cars {
-    width: 45%; }
-  .car-filter__title {
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1; }
-  .car-filter__num-cars {
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2; }
   .car-filter__select {
-    -webkit-box-ordinal-group: 4;
-    -webkit-order: 3;
-        -ms-flex-order: 3;
-            order: 3;
+    width: 45%; }
+  .car-filter__select {
     margin-top: 15px; } }
 
 @media (max-width: 576px) {
   .car-filter__wrp {
     padding-left: 20px;
     padding-right: 20px; }
-  .car-filter__title, .car-filter__select, .car-filter__num-cars {
+  .car-filter__select {
     width: 100%; }
-  .car-filter__title {
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1; }
-    .car-filter__title br {
-      display: none; }
-  .car-filter__num-cars {
-    -webkit-box-ordinal-group: 4;
-    -webkit-order: 3;
-        -ms-flex-order: 3;
-            order: 3;
-    margin-top: 15px; }
-    .car-filter__num-cars br {
-      display: none; }
   .car-filter__select {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
@@ -4179,10 +4134,8 @@ form.form-test-drive {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  /*  align-items: center;*/
+  /* align-items: flex-start;*/ }
 
 .form-test-drive__select {
   margin-right: 30px; }
