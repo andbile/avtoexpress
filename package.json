@@ -24,7 +24,7 @@
     "gulp-uglify-es": "^1.0.4",
     "install": "^0.13.0",
     "jshint": "^2.10.3",
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "jquery": "^3.4.1",
